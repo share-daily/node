@@ -1,0 +1,2458 @@
+proxies:
+- name: 🌍 SD-JP-IEPL                                    国际专线，全天候稳定
+  type: ss
+  server: idc-tunnel.xssx.win
+  port: 62780
+  udp: true
+  cipher: 2022-blake3-aes-128-gcm
+  password: gyKRDZaU7H9DXBVjEKDdAw==
+- name: 🇭🇰HK_@WangCai_8 2
+  type: http
+  server: 146.70.9.226
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇵🇭PH_@WangCai_8
+  type: http
+  server: 128.1.209.254
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 5
+  type: http
+  server: 82.102.25.210
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 7
+  type: http
+  server: 103.107.198.242
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇵🇭PH_@WangCai_8 2
+  type: http
+  server: 129.227.103.90
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇭🇰HK_@WangCai_8 3
+  type: http
+  server: 146.70.9.242
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 4
+  type: http
+  server: 82.102.25.50
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 6
+  type: http
+  server: 103.107.198.226
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇻🇳VN_@WangCai_8 2
+  type: http
+  server: 103.9.79.218
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇻🇳VN_@WangCai_8
+  type: http
+  server: 103.9.79.185
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇮🇳IN_@WangCai_8 2
+  type: http
+  server: 129.154.248.18
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇮🇳IN_@WangCai_8 3
+  type: http
+  server: 165.231.253.66
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇮🇳IN_@WangCai_8
+  type: http
+  server: 103.26.207.94
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇦🇺AU_@WangCai_8 8
+  type: http
+  server: 103.107.197.146
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇦🇺AU_@WangCai_8 11
+  type: http
+  server: 116.90.72.242
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇦🇺AU_@WangCai_8 3
+  type: http
+  server: 103.1.213.210
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇦🇺AU_@WangCai_8 5
+  type: http
+  server: 103.62.50.130
+  port: 9443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇮🇳IN_@WangCai_8 4
+  type: http
+  server: 165.231.253.210
+  port: 9443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇦🇺AU_@WangCai_8 10
+  type: http
+  server: 103.137.14.34
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 美国 - Los Angeles - 14
+  type: http
+  server: 138.199.35.199
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇮🇹IT_@WangCai_8 8
+  type: http
+  server: 185.183.105.146
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 美国 - Los Angeles - 8
+  type: http
+  server: 138.199.35.220
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇮🇹IT_@WangCai_8 7
+  type: http
+  server: 185.183.105.130
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇷🇸RS_@WangCai_8
+  type: http
+  server: 146.70.221.18
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇦🇺AU_@WangCai_8 2
+  type: http
+  server: 103.1.212.242
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇮🇳IN_@WangCai_8 5
+  type: http
+  server: 165.231.253.242
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇦🇺AU_@WangCai_8 4
+  type: http
+  server: 103.62.50.130
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 美国 - Los Angeles - 12
+  type: http
+  server: 138.199.35.195
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 美国 - Los Angeles - 11
+  type: http
+  server: 138.199.35.204
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
+- name: 美国 - Los Angeles - 5
+  type: http
+  server: 138.199.35.208
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 美国 - San Jose - 1
+  type: http
+  server: fan.596189.xyz
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 美国 - Los Angeles - 15
+  type: http
+  server: 138.199.35.213
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇨🇿CZ_@WangCai_8
+  type: http
+  server: 185.216.35.66
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 33
+  type: http
+  server: 156.146.56.110
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇩🇰DK_@WangCai_8 2
+  type: http
+  server: 185.245.84.50
+  port: 9443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 美国 - Los Angeles - 3
+  type: http
+  server: 138.199.35.210
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇧🇪BE_@WangCai_8
+  type: http
+  server: 146.70.123.98
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 32
+  type: http
+  server: 156.146.56.97
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 美国 - Los Angeles - 16
+  type: http
+  server: fan.226278.xyz
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇧🇪BE_@WangCai_8 2
+  type: http
+  server: 146.70.176.242
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_@WangCai_8 4
+  type: http
+  server: 20.42.108.114
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇪🇸ES_@WangCai_8 2
+  type: http
+  server: 130.195.250.18
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇪🇸ES_@WangCai_8 3
+  type: http
+  server: 130.195.250.34
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇳🇿NZ_@WangCai_8 2
+  type: http
+  server: 116.90.75.226
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇩🇪DE_@WangCai_8 3
+  type: http
+  server: 138.201.56.241
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_@WangCai_8 33
+  type: http
+  server: 192.171.18.154
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 荷兰 - Amsterdam - 1
+  type: http
+  server: 51.159.225.196
+  port: 23856
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇪🇸ES_@WangCai_8
+  type: http
+  server: 82.102.17.178
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇩🇰DK_@WangCai_8
+  type: http
+  server: 185.245.84.50
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_@WangCai_8 9
+  type: http
+  server: 37.120.147.146
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 42
+  type: http
+  server: 193.176.84.20
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇪SE_@WangCai_8 3
+  type: http
+  server: 146.70.242.130
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 54
+  type: http
+  server: 193.176.84.32
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇨🇿CZ_@WangCai_8 2
+  type: http
+  server: 185.216.35.130
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 7
+  type: http
+  server: 193.176.84.17
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇪SE_@WangCai_8 2
+  type: http
+  server: 79.142.77.63
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇪SE_@WangCai_8 4
+  type: http
+  server: 146.70.242.146
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 美国 - Los Angeles - 4
+  type: http
+  server: 138.199.35.212
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 60
+  type: http
+  server: 193.176.84.23
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
+- name: 🇧🇬BG_@WangCai_8
+  type: http
+  server: 185.94.192.210
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_@WangCai_8 21
+  type: http
+  server: 104.244.210.242
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇮🇹IT_@WangCai_8 6
+  type: http
+  server: 178.237.4.200
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 美国 - Los Angeles - 6
+  type: http
+  server: 138.199.35.214
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇷🇸RS_@WangCai_8 2
+  type: http
+  server: 146.70.221.34
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇨🇦CA_@WangCai_8 18
+  type: http
+  server: 206.223.183.21
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_17 @WangCai_8
+  type: http
+  server: 156.146.59.17
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 美国 - New York City - 19
+  type: http
+  server: 156.146.59.21
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
+- name: 德国 - Frankfurt am Main - 1
+  type: http
+  server: 167.172.172.190
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  username: testuser1
+  password: e4b72b531a2d10900519
+- name: 🇺🇸US_40 @WangCai_8
+  type: http
+  server: 156.146.59.40
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 35
+  type: http
+  server: 84.239.49.170
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 9
+  type: http
+  server: 193.176.84.38
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_33 @WangCai_8
+  type: http
+  server: 156.146.59.33
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_50 @WangCai_8
+  type: http
+  server: 156.146.59.50
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 56
+  type: http
+  server: 193.176.84.31
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
+- name: 美国 - New York City - 29
+  type: http
+  server: 156.146.59.10
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 美国 - New York City - 21
+  type: http
+  server: 156.146.59.33
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇬🇧GB_@WangCai_8 16
+  type: http
+  server: 212.102.63.31
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 美国 - Los Angeles - 9
+  type: http
+  server: 138.199.35.197
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 55
+  type: http
+  server: 84.239.14.153
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
+- name: 罗马尼亚 - Bucharest - 18
+  type: http
+  server: 84.239.49.57
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇬🇧GB_@WangCai_8 17
+  type: http
+  server: 212.102.63.61
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 11
+  type: http
+  server: 84.239.49.181
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇭🇺HU_@WangCai_8
+  type: http
+  server: 146.70.203.18
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇬🇧GB_@WangCai_8 10
+  type: http
+  server: 84.17.50.193
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_@WangCai_8 8
+  type: http
+  server: 34.216.155.5
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 50
+  type: http
+  server: 84.239.49.160
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 22
+  type: http
+  server: 84.239.49.50
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇱🇻LV_@WangCai_8
+  type: http
+  server: 109.248.147.66
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 14
+  type: http
+  server: 193.176.84.30
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇬🇧GB_@WangCai_8 15
+  type: http
+  server: 212.102.63.1
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇨🇦CA_@WangCai_8 7
+  type: http
+  server: 181.215.52.11
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_37 @WangCai_8
+  type: http
+  server: 156.146.59.37
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇩🇪DE_@WangCai_8 6
+  type: http
+  server: 149.36.50.1
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇩🇪DE_@WangCai_8 9
+  type: http
+  server: 178.200.186.204
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_45 @WangCai_8
+  type: http
+  server: 156.146.59.45
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 美国 - New York City - 27
+  type: http
+  server: 156.146.59.27
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_38 @WangCai_8
+  type: http
+  server: 156.146.59.38
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇮🇪IE_@WangCai_8 2
+  type: http
+  server: 149.88.96.12
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 10
+  type: http
+  server: 193.176.84.35
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇩🇪DE_@WangCai_8 5
+  type: http
+  server: 141.17.83.78
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 荷兰 - Amsterdam - 10
+  type: http
+  server: 84.17.47.125
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 41
+  type: http
+  server: 84.239.49.175
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 45
+  type: http
+  server: 193.176.84.29
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇮🇪IE_@WangCai_8
+  type: http
+  server: 149.88.96.1
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 12
+  type: http
+  server: 193.176.84.16
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇩🇪DE_@WangCai_8
+  type: http
+  server: 87.249.132.97
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇳🇱NL_@WangCai_8
+  type: http
+  server: 51.158.243.91
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 6
+  type: http
+  server: 84.239.49.244
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇱🇻LV_@WangCai_8 2
+  type: http
+  server: 109.248.149.34
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 33
+  type: http
+  server: 84.239.49.245
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇫🇷FR_@WangCai_8 2
+  type: http
+  server: 149.102.245.65
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇳🇱NL_@WangCai_8 3
+  type: http
+  server: 178.208.78.58
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇭🇷HR_@WangCai_8 2
+  type: http
+  server: 154.47.29.174
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 16
+  type: http
+  server: 84.239.49.40
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 27
+  type: http
+  server: 84.239.49.233
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 4
+  type: http
+  server: 84.239.14.148
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 48
+  type: http
+  server: 84.239.49.154
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 53
+  type: http
+  server: 84.239.49.42
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 15
+  type: http
+  server: 84.239.49.185
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 21
+  type: http
+  server: 84.239.14.147
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 20
+  type: http
+  server: 84.239.49.43
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 47
+  type: http
+  server: 84.239.49.39
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇩🇪DE_@WangCai_8 4
+  type: http
+  server: 141.17.83.73
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 38
+  type: http
+  server: 84.239.49.171
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 52
+  type: http
+  server: 84.239.49.165
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 58
+  type: http
+  server: 84.239.49.187
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 31
+  type: http
+  server: 84.239.49.254
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 25
+  type: http
+  server: 84.239.14.156
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 28
+  type: http
+  server: 84.239.49.231
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 59
+  type: http
+  server: 84.239.14.148
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
+- name: 罗马尼亚 - Bucharest - 8
+  type: http
+  server: 84.239.49.241
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 40
+  type: http
+  server: 193.176.84.25
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇫🇷FR_@WangCai_8
+  type: http
+  server: 141.94.16.4
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 30
+  type: http
+  server: 84.239.49.62
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
+- name: 罗马尼亚 - Bucharest - 5
+  type: http
+  server: 84.239.49.162
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 32
+  type: http
+  server: 84.239.49.58
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  username: 'null'
+  password: 'null'
+- name: 🇦🇹AT_@WangCai_8 2
+  type: http
+  server: 146.70.244.18
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 13
+  type: http
+  server: 193.176.84.33
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 2
+  type: http
+  server: 84.239.49.202
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 49
+  type: http
+  server: 84.239.49.234
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 19
+  type: http
+  server: 84.239.49.235
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
+- name: 罗马尼亚 - Bucharest - 34
+  type: http
+  server: 84.239.49.200
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 17
+  type: http
+  server: 84.239.14.159
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 1
+  type: http
+  server: 84.239.49.154
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
+- name: 🇺🇸US_@WangCai_8 15
+  type: http
+  server: 66.64.100.66
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 44
+  type: http
+  server: 193.176.84.24
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 荷兰 - Amsterdam - 5
+  type: http
+  server: 84.17.47.148
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 23
+  type: http
+  server: 84.239.49.199
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 46
+  type: http
+  server: 84.239.14.154
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 29
+  type: http
+  server: 84.239.49.217
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 荷兰 - Amsterdam - 9
+  type: http
+  server: 84.17.47.146
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 26
+  type: http
+  server: 84.239.49.240
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇵🇹PT_@WangCai_8
+  type: http
+  server: 149.22.86.1
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇬🇧GB_@WangCai_8 13
+  type: http
+  server: 185.235.0.66
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇦🇹AT_@WangCai_8
+  type: http
+  server: 146.70.244.2
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 3
+  type: http
+  server: 84.239.49.168
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇳🇱NL_@WangCai_8 2
+  type: http
+  server: 149.36.51.129
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 57
+  type: http
+  server: 84.239.49.164
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 荷兰 - Amsterdam - 6
+  type: http
+  server: 84.17.47.149
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 36
+  type: http
+  server: 84.239.49.197
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
+- name: 罗马尼亚 - Bucharest - 37
+  type: http
+  server: 84.239.49.157
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
+- name: 🇨🇦CA_@WangCai_8 11
+  type: http
+  server: 181.215.52.40
+  port: 9443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇵🇹PT_@WangCai_8 2
+  type: http
+  server: 149.22.86.14
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 24
+  type: http
+  server: 84.239.49.196
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_18 @WangCai_8
+  type: http
+  server: 156.146.59.18
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 美国 - New York City - 31
+  type: http
+  server: 156.146.59.11
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 美国 - Los Angeles - 2
+  type: http
+  server: 138.199.35.215
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_19 @WangCai_8
+  type: http
+  server: 156.146.59.19
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇵🇱PL_@WangCai_8
+  type: http
+  server: 37.120.156.18
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 51
+  type: http
+  server: 84.239.49.239
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 美国 - New York City - 25
+  type: http
+  server: 156.146.59.8
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_@WangCai_8 28
+  type: http
+  server: 162.217.114.50
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 39
+  type: http
+  server: 84.239.49.194
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
+- name: 🇸🇪SE_@WangCai_8 5
+  type: http
+  server: 149.50.216.65
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇦🇷AR_@WangCai_8
+  type: http
+  server: 190.103.176.146
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇩🇪DE_@WangCai_8 8
+  type: http
+  server: 149.36.50.157
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇭🇷HR_@WangCai_8
+  type: http
+  server: 154.47.29.161
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_35 @WangCai_8
+  type: http
+  server: 156.146.59.35
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 美国 - New York City - 20
+  type: http
+  server: 156.146.59.23
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_4 @WangCai_8
+  type: http
+  server: 156.146.59.4
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇨🇦CA_@WangCai_8 13
+  type: http
+  server: 181.215.52.101
+  port: 9443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_30 @WangCai_8
+  type: http
+  server: 156.146.59.30
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_32 @WangCai_8
+  type: http
+  server: 156.146.59.32
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 美国 - New York City - 23
+  type: http
+  server: 156.146.59.31
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_10 @WangCai_8
+  type: http
+  server: 156.146.59.10
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇩🇪DE_@WangCai_8 2
+  type: http
+  server: 87.249.132.97
+  port: 9443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_34 @WangCai_8
+  type: http
+  server: 156.146.59.34
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_44 @WangCai_8
+  type: http
+  server: 156.146.59.44
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 美国 - New York City - 26
+  type: http
+  server: 156.146.59.15
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇮🇹IT_@WangCai_8 2
+  type: http
+  server: 91.243.118.217
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 荷兰 - Amsterdam - 3
+  type: http
+  server: 84.17.47.147
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇮🇹IT_@WangCai_8 5
+  type: http
+  server: 109.116.41.154
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 34
+  type: http
+  server: 185.250.38.135
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 罗马尼亚 - Bucharest - 43
+  type: http
+  server: 193.176.84.34
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇬🇧GB_@WangCai_8 11
+  type: http
+  server: 185.235.0.2
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 35
+  type: http
+  server: 185.250.38.137
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇬🇪GE_@WangCai_8
+  type: http
+  server: 195.54.178.210
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇬🇧GB_@WangCai_8 3
+  type: http
+  server: 37.120.233.34
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇵🇱PL_@WangCai_8 4
+  type: http
+  server: 151.115.54.133
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇷🇺RU_@WangCai_8
+  type: http
+  server: 194.186.179.62
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇨🇦CA_@WangCai_8 4
+  type: http
+  server: 142.44.210.129
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_@WangCai_8 17
+  type: http
+  server: 68.235.56.51
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇭🇰HK_@WangCai_8
+  type: http
+  server: 84.17.57.113
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇮🇩ID_@WangCai_8
+  type: http
+  server: 103.87.68.50
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 荷兰 - Amsterdam - 8
+  type: http
+  server: 84.17.47.150
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇬🇧GB_@WangCai_8 12
+  type: http
+  server: 185.235.0.34
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇨🇭CH_@WangCai_8
+  type: http
+  server: 31.7.62.50
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇿🇦ZA_@WangCai_8 5
+  type: http
+  server: 197.242.159.23
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇦🇺AU_@WangCai_8 9
+  type: http
+  server: 103.108.95.226
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 美国 - New York City - 18
+  type: http
+  server: 156.146.59.5
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇯🇵JP_@WangCai_8 3
+  type: http
+  server: 37.120.210.146
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_23 @WangCai_8
+  type: http
+  server: 156.146.59.23
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_31 @WangCai_8
+  type: http
+  server: 156.146.59.31
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇮🇩ID_@WangCai_8 2
+  type: http
+  server: 103.87.68.146
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 36
+  type: http
+  server: 194.233.73.140
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇿🇦ZA_@WangCai_8 3
+  type: http
+  server: 197.242.155.133
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇿🇦ZA_@WangCai_8 4
+  type: http
+  server: 197.242.155.197
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 20
+  type: http
+  server: 154.26.138.241
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_29 @WangCai_8
+  type: http
+  server: 156.146.59.29
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 美国 - Los Angeles - 10
+  type: http
+  server: 138.199.35.209
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
+- name: 美国 - New York City - 17
+  type: http
+  server: 156.146.59.4
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 25
+  type: http
+  server: 154.26.138.253
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 美国 - Los Angeles - 13
+  type: http
+  server: 138.199.35.211
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 29
+  type: http
+  server: 154.26.139.24
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 21
+  type: http
+  server: 154.26.138.244
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 27
+  type: http
+  server: 154.26.139.14
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 19
+  type: http
+  server: 154.26.138.240
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_@WangCai_8 14
+  type: http
+  server: 52.55.81.168
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_47 @WangCai_8
+  type: http
+  server: 156.146.59.47
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_48 @WangCai_8
+  type: http
+  server: 156.146.59.48
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇦🇱AL_@WangCai_8 2
+  type: http
+  server: 87.120.103.242
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_13 @WangCai_8
+  type: http
+  server: 156.146.59.13
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 13
+  type: http
+  server: 154.26.138.186
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 31
+  type: http
+  server: 154.26.139.29
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇮🇹IT_@WangCai_8 3
+  type: http
+  server: 93.42.177.250
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 18
+  type: http
+  server: 154.26.138.239
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 17
+  type: http
+  server: 154.26.138.236
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_27 @WangCai_8
+  type: http
+  server: 156.146.59.27
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇦🇺AU_@WangCai_8 7
+  type: http
+  server: 103.77.234.210
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 22
+  type: http
+  server: 154.26.138.246
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_@WangCai_8 2
+  type: http
+  server: 12.221.146.147
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇮🇳IN_@WangCai_8 6
+  type: http
+  server: 165.231.253.242
+  port: 9443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 28
+  type: http
+  server: 154.26.139.23
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 23
+  type: http
+  server: 154.26.138.248
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇦🇺AU_@WangCai_8 12
+  type: http
+  server: 116.206.228.178
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇨🇦CA_@WangCai_8 17
+  type: http
+  server: 206.223.183.16
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 11
+  type: http
+  server: 154.26.138.157
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 30
+  type: http
+  server: 154.26.139.27
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 美国 - New York City - 22
+  type: http
+  server: 156.146.59.9
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 10
+  type: http
+  server: 154.26.138.156
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 16
+  type: http
+  server: 154.26.138.233
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇰🇿KZ_@WangCai_8
+  type: http
+  server: 45.8.98.150
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 24
+  type: http
+  server: 154.26.138.249
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇨🇦CA_@WangCai_8 3
+  type: http
+  server: 69.87.223.151
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 14
+  type: http
+  server: 154.26.138.216
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_@WangCai_8 25
+  type: http
+  server: 149.88.21.129
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_5 @WangCai_8
+  type: http
+  server: 156.146.59.5
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇨🇦CA_@WangCai_8 15
+  type: http
+  server: 206.223.161.47
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇬🇧GB_@WangCai_8 4
+  type: http
+  server: 37.120.233.50
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇨🇦CA_@WangCai_8 16
+  type: http
+  server: 206.223.183.13
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇵🇦PA_@WangCai_8
+  type: http
+  server: 138.186.142.202
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_@WangCai_8 13
+  type: http
+  server: 45.32.133.102
+  port: 8443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_11 @WangCai_8
+  type: http
+  server: 156.146.59.11
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_2 @WangCai_8
+  type: http
+  server: 156.146.59.2
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_24 @WangCai_8
+  type: http
+  server: 156.146.59.24
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_@WangCai_8 10
+  type: http
+  server: 44.198.49.169
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_@WangCai_8 36
+  type: http
+  server: 199.217.104.226
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 26
+  type: http
+  server: 154.26.139.7
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_@WangCai_8 6
+  type: http
+  server: 23.148.146.179
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_15 @WangCai_8
+  type: http
+  server: 156.146.59.15
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇲🇽MX_@WangCai_8
+  type: http
+  server: 149.88.22.33
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇸🇬SG_@WangCai_8 12
+  type: http
+  server: 154.26.138.166
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇮🇹IT_@WangCai_8 4
+  type: http
+  server: 95.229.15.89
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇨🇦CA_@WangCai_8 8
+  type: http
+  server: 181.215.52.11
+  port: 9443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇯🇵JP_@WangCai_8 2
+  type: http
+  server: 37.120.210.66
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 美国 - Los Angeles - 7
+  type: http
+  server: 138.199.35.206
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
+- name: 🇬🇧GB_@WangCai_8 2
+  type: http
+  server: 37.120.233.18
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_46 @WangCai_8
+  type: http
+  server: 156.146.59.46
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_@WangCai_8 27
+  type: http
+  server: 149.102.227.77
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇨🇦CA_@WangCai_8 6
+  type: http
+  server: 181.215.52.6
+  port: 9443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_@WangCai_8 30
+  type: http
+  server: 167.88.60.226
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_@WangCai_8 11
+  type: http
+  server: 44.228.137.206
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_22 @WangCai_8
+  type: http
+  server: 156.146.59.22
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇨🇦CA_@WangCai_8 14
+  type: http
+  server: 181.215.52.122
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇪🇨EC_@WangCai_8
+  type: http
+  server: 38.165.231.71
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_@WangCai_8 26
+  type: http
+  server: 149.88.21.140
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_7 @WangCai_8
+  type: http
+  server: 156.146.59.7
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇵🇱PL_@WangCai_8 2
+  type: http
+  server: 37.120.156.34
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇨🇦CA_@WangCai_8 10
+  type: http
+  server: 181.215.52.40
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_8 @WangCai_8
+  type: http
+  server: 156.146.59.8
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_@WangCai_8 31
+  type: http
+  server: 167.88.60.242
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 美国 - New York City - 30
+  type: http
+  server: 156.146.59.39
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇬🇷GR_@WangCai_8
+  type: http
+  server: 149.22.85.65
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇩🇪DE_@WangCai_8 10
+  type: http
+  server: 185.44.107.166
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 美国 - New York City - 28
+  type: http
+  server: 156.146.59.34
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_@WangCai_8 29
+  type: http
+  server: 162.244.227.36
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_@WangCai_8 7
+  type: http
+  server: 24.225.10.211
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇬🇧GB_@WangCai_8 14
+  type: http
+  server: 185.235.0.98
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_43 @WangCai_8
+  type: http
+  server: 156.146.59.43
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_21 @WangCai_8
+  type: http
+  server: 156.146.59.21
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 荷兰 - Amsterdam - 7
+  type: http
+  server: 84.17.47.125
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
+- name: 🇨🇦CA_@WangCai_8 5
+  type: http
+  server: 181.215.52.6
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸US_@WangCai_8 19
+  type: http
+  server: 71.43.26.234
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+proxy-groups:
+- name: auto
+  type: select
+  proxies:
+  - 🌍 SD-JP-IEPL                                    国际专线，全天候稳定
+  - 🇭🇰HK_@WangCai_8 2
+  - 🇵🇭PH_@WangCai_8
+  - 🇸🇬SG_@WangCai_8 5
+  - 🇸🇬SG_@WangCai_8 7
+  - 🇵🇭PH_@WangCai_8 2
+  - 🇭🇰HK_@WangCai_8 3
+  - 🇸🇬SG_@WangCai_8 4
+  - 🇸🇬SG_@WangCai_8 6
+  - 🇻🇳VN_@WangCai_8 2
+  - 🇻🇳VN_@WangCai_8
+  - 🇮🇳IN_@WangCai_8 2
+  - 🇮🇳IN_@WangCai_8 3
+  - 🇮🇳IN_@WangCai_8
+  - 🇦🇺AU_@WangCai_8 8
+  - 🇦🇺AU_@WangCai_8 11
+  - 🇦🇺AU_@WangCai_8 3
+  - 🇦🇺AU_@WangCai_8 5
+  - 🇮🇳IN_@WangCai_8 4
+  - 🇦🇺AU_@WangCai_8 10
+  - 美国 - Los Angeles - 14
+  - 🇮🇹IT_@WangCai_8 8
+  - 美国 - Los Angeles - 8
+  - 🇮🇹IT_@WangCai_8 7
+  - 🇷🇸RS_@WangCai_8
+  - 🇦🇺AU_@WangCai_8 2
+  - 🇮🇳IN_@WangCai_8 5
+  - 🇦🇺AU_@WangCai_8 4
+  - 美国 - Los Angeles - 12
+  - 美国 - Los Angeles - 11
+  - 美国 - Los Angeles - 5
+  - 美国 - San Jose - 1
+  - 美国 - Los Angeles - 15
+  - 🇨🇿CZ_@WangCai_8
+  - 🇸🇬SG_@WangCai_8 33
+  - 🇩🇰DK_@WangCai_8 2
+  - 美国 - Los Angeles - 3
+  - 🇧🇪BE_@WangCai_8
+  - 🇸🇬SG_@WangCai_8 32
+  - 美国 - Los Angeles - 16
+  - 🇧🇪BE_@WangCai_8 2
+  - 🇺🇸US_@WangCai_8 4
+  - 🇪🇸ES_@WangCai_8 2
+  - 🇪🇸ES_@WangCai_8 3
+  - 🇳🇿NZ_@WangCai_8 2
+  - 🇩🇪DE_@WangCai_8 3
+  - 🇺🇸US_@WangCai_8 33
+  - 荷兰 - Amsterdam - 1
+  - 🇪🇸ES_@WangCai_8
+  - 🇩🇰DK_@WangCai_8
+  - 🇺🇸US_@WangCai_8 9
+  - 罗马尼亚 - Bucharest - 42
+  - 🇸🇪SE_@WangCai_8 3
+  - 罗马尼亚 - Bucharest - 54
+  - 🇨🇿CZ_@WangCai_8 2
+  - 罗马尼亚 - Bucharest - 7
+  - 🇸🇪SE_@WangCai_8 2
+  - 🇸🇪SE_@WangCai_8 4
+  - 美国 - Los Angeles - 4
+  - 罗马尼亚 - Bucharest - 60
+  - 🇧🇬BG_@WangCai_8
+  - 🇺🇸US_@WangCai_8 21
+  - 🇮🇹IT_@WangCai_8 6
+  - 美国 - Los Angeles - 6
+  - 🇷🇸RS_@WangCai_8 2
+  - 🇨🇦CA_@WangCai_8 18
+  - 🇺🇸US_17 @WangCai_8
+  - 美国 - New York City - 19
+  - 德国 - Frankfurt am Main - 1
+  - 🇺🇸US_40 @WangCai_8
+  - 罗马尼亚 - Bucharest - 35
+  - 罗马尼亚 - Bucharest - 9
+  - 🇺🇸US_33 @WangCai_8
+  - 🇺🇸US_50 @WangCai_8
+  - 罗马尼亚 - Bucharest - 56
+  - 美国 - New York City - 29
+  - 美国 - New York City - 21
+  - 🇬🇧GB_@WangCai_8 16
+  - 美国 - Los Angeles - 9
+  - 罗马尼亚 - Bucharest - 55
+  - 罗马尼亚 - Bucharest - 18
+  - 🇬🇧GB_@WangCai_8 17
+  - 罗马尼亚 - Bucharest - 11
+  - 🇭🇺HU_@WangCai_8
+  - 🇬🇧GB_@WangCai_8 10
+  - 🇺🇸US_@WangCai_8 8
+  - 罗马尼亚 - Bucharest - 50
+  - 罗马尼亚 - Bucharest - 22
+  - 🇱🇻LV_@WangCai_8
+  - 罗马尼亚 - Bucharest - 14
+  - 🇬🇧GB_@WangCai_8 15
+  - 🇨🇦CA_@WangCai_8 7
+  - 🇺🇸US_37 @WangCai_8
+  - 🇩🇪DE_@WangCai_8 6
+  - 🇩🇪DE_@WangCai_8 9
+  - 🇺🇸US_45 @WangCai_8
+  - 美国 - New York City - 27
+  - 🇺🇸US_38 @WangCai_8
+  - 🇮🇪IE_@WangCai_8 2
+  - 罗马尼亚 - Bucharest - 10
+  - 🇩🇪DE_@WangCai_8 5
+  - 荷兰 - Amsterdam - 10
+  - 罗马尼亚 - Bucharest - 41
+  - 罗马尼亚 - Bucharest - 45
+  - 🇮🇪IE_@WangCai_8
+  - 罗马尼亚 - Bucharest - 12
+  - 🇩🇪DE_@WangCai_8
+  - 🇳🇱NL_@WangCai_8
+  - 罗马尼亚 - Bucharest - 6
+  - 🇱🇻LV_@WangCai_8 2
+  - 罗马尼亚 - Bucharest - 33
+  - 🇫🇷FR_@WangCai_8 2
+  - 🇳🇱NL_@WangCai_8 3
+  - 🇭🇷HR_@WangCai_8 2
+  - 罗马尼亚 - Bucharest - 16
+  - 罗马尼亚 - Bucharest - 27
+  - 罗马尼亚 - Bucharest - 4
+  - 罗马尼亚 - Bucharest - 48
+  - 罗马尼亚 - Bucharest - 53
+  - 罗马尼亚 - Bucharest - 15
+  - 罗马尼亚 - Bucharest - 21
+  - 罗马尼亚 - Bucharest - 20
+  - 罗马尼亚 - Bucharest - 47
+  - 🇩🇪DE_@WangCai_8 4
+  - 罗马尼亚 - Bucharest - 38
+  - 罗马尼亚 - Bucharest - 52
+  - 罗马尼亚 - Bucharest - 58
+  - 罗马尼亚 - Bucharest - 31
+  - 罗马尼亚 - Bucharest - 25
+  - 罗马尼亚 - Bucharest - 28
+  - 罗马尼亚 - Bucharest - 59
+  - 罗马尼亚 - Bucharest - 8
+  - 罗马尼亚 - Bucharest - 40
+  - 🇫🇷FR_@WangCai_8
+  - 罗马尼亚 - Bucharest - 30
+  - 罗马尼亚 - Bucharest - 5
+  - 罗马尼亚 - Bucharest - 32
+  - 🇦🇹AT_@WangCai_8 2
+  - 罗马尼亚 - Bucharest - 13
+  - 罗马尼亚 - Bucharest - 2
+  - 罗马尼亚 - Bucharest - 49
+  - 罗马尼亚 - Bucharest - 19
+  - 罗马尼亚 - Bucharest - 34
+  - 罗马尼亚 - Bucharest - 17
+  - 罗马尼亚 - Bucharest - 1
+  - 🇺🇸US_@WangCai_8 15
+  - 罗马尼亚 - Bucharest - 44
+  - 荷兰 - Amsterdam - 5
+  - 罗马尼亚 - Bucharest - 23
+  - 罗马尼亚 - Bucharest - 46
+  - 罗马尼亚 - Bucharest - 29
+  - 荷兰 - Amsterdam - 9
+  - 罗马尼亚 - Bucharest - 26
+  - 🇵🇹PT_@WangCai_8
+  - 🇬🇧GB_@WangCai_8 13
+  - 🇦🇹AT_@WangCai_8
+  - 罗马尼亚 - Bucharest - 3
+  - 🇳🇱NL_@WangCai_8 2
+  - 罗马尼亚 - Bucharest - 57
+  - 荷兰 - Amsterdam - 6
+  - 罗马尼亚 - Bucharest - 36
+  - 罗马尼亚 - Bucharest - 37
+  - 🇨🇦CA_@WangCai_8 11
+  - 🇵🇹PT_@WangCai_8 2
+  - 罗马尼亚 - Bucharest - 24
+  - 🇺🇸US_18 @WangCai_8
+  - 美国 - New York City - 31
+  - 美国 - Los Angeles - 2
+  - 🇺🇸US_19 @WangCai_8
+  - 🇵🇱PL_@WangCai_8
+  - 罗马尼亚 - Bucharest - 51
+  - 美国 - New York City - 25
+  - 🇺🇸US_@WangCai_8 28
+  - 罗马尼亚 - Bucharest - 39
+  - 🇸🇪SE_@WangCai_8 5
+  - 🇦🇷AR_@WangCai_8
+  - 🇩🇪DE_@WangCai_8 8
+  - 🇭🇷HR_@WangCai_8
+  - 🇺🇸US_35 @WangCai_8
+  - 美国 - New York City - 20
+  - 🇺🇸US_4 @WangCai_8
+  - 🇨🇦CA_@WangCai_8 13
+  - 🇺🇸US_30 @WangCai_8
+  - 🇺🇸US_32 @WangCai_8
+  - 美国 - New York City - 23
+  - 🇺🇸US_10 @WangCai_8
+  - 🇩🇪DE_@WangCai_8 2
+  - 🇺🇸US_34 @WangCai_8
+  - 🇺🇸US_44 @WangCai_8
+  - 美国 - New York City - 26
+  - 🇮🇹IT_@WangCai_8 2
+  - 荷兰 - Amsterdam - 3
+  - 🇮🇹IT_@WangCai_8 5
+  - 🇸🇬SG_@WangCai_8 34
+  - 罗马尼亚 - Bucharest - 43
+  - 🇬🇧GB_@WangCai_8 11
+  - 🇸🇬SG_@WangCai_8 35
+  - 🇬🇪GE_@WangCai_8
+  - 🇬🇧GB_@WangCai_8 3
+  - 🇵🇱PL_@WangCai_8 4
+  - 🇷🇺RU_@WangCai_8
+  - 🇨🇦CA_@WangCai_8 4
+  - 🇺🇸US_@WangCai_8 17
+  - 🇭🇰HK_@WangCai_8
+  - 🇮🇩ID_@WangCai_8
+  - 荷兰 - Amsterdam - 8
+  - 🇬🇧GB_@WangCai_8 12
+  - 🇨🇭CH_@WangCai_8
+  - 🇿🇦ZA_@WangCai_8 5
+  - 🇦🇺AU_@WangCai_8 9
+  - 美国 - New York City - 18
+  - 🇯🇵JP_@WangCai_8 3
+  - 🇺🇸US_23 @WangCai_8
+  - 🇺🇸US_31 @WangCai_8
+  - 🇮🇩ID_@WangCai_8 2
+  - 🇸🇬SG_@WangCai_8 36
+  - 🇿🇦ZA_@WangCai_8 3
+  - 🇿🇦ZA_@WangCai_8 4
+  - 🇸🇬SG_@WangCai_8 20
+  - 🇺🇸US_29 @WangCai_8
+  - 美国 - Los Angeles - 10
+  - 美国 - New York City - 17
+  - 🇸🇬SG_@WangCai_8 25
+  - 美国 - Los Angeles - 13
+  - 🇸🇬SG_@WangCai_8 29
+  - 🇸🇬SG_@WangCai_8 21
+  - 🇸🇬SG_@WangCai_8 27
+  - 🇸🇬SG_@WangCai_8 19
+  - 🇺🇸US_@WangCai_8 14
+  - 🇺🇸US_47 @WangCai_8
+  - 🇺🇸US_48 @WangCai_8
+  - 🇦🇱AL_@WangCai_8 2
+  - 🇺🇸US_13 @WangCai_8
+  - 🇸🇬SG_@WangCai_8 13
+  - 🇸🇬SG_@WangCai_8 31
+  - 🇮🇹IT_@WangCai_8 3
+  - 🇸🇬SG_@WangCai_8 18
+  - 🇸🇬SG_@WangCai_8 17
+  - 🇺🇸US_27 @WangCai_8
+  - 🇦🇺AU_@WangCai_8 7
+  - 🇸🇬SG_@WangCai_8 22
+  - 🇺🇸US_@WangCai_8 2
+  - 🇮🇳IN_@WangCai_8 6
+  - 🇸🇬SG_@WangCai_8 28
+  - 🇸🇬SG_@WangCai_8 23
+  - 🇦🇺AU_@WangCai_8 12
+  - 🇨🇦CA_@WangCai_8 17
+  - 🇸🇬SG_@WangCai_8 11
+  - 🇸🇬SG_@WangCai_8 30
+  - 美国 - New York City - 22
+  - 🇸🇬SG_@WangCai_8 10
+  - 🇸🇬SG_@WangCai_8 16
+  - 🇰🇿KZ_@WangCai_8
+  - 🇸🇬SG_@WangCai_8 24
+  - 🇨🇦CA_@WangCai_8 3
+  - 🇸🇬SG_@WangCai_8 14
+  - 🇺🇸US_@WangCai_8 25
+  - 🇺🇸US_5 @WangCai_8
+  - 🇨🇦CA_@WangCai_8 15
+  - 🇬🇧GB_@WangCai_8 4
+  - 🇨🇦CA_@WangCai_8 16
+  - 🇵🇦PA_@WangCai_8
+  - 🇺🇸US_@WangCai_8 13
+  - 🇺🇸US_11 @WangCai_8
+  - 🇺🇸US_2 @WangCai_8
+  - 🇺🇸US_24 @WangCai_8
+  - 🇺🇸US_@WangCai_8 10
+  - 🇺🇸US_@WangCai_8 36
+  - 🇸🇬SG_@WangCai_8 26
+  - 🇺🇸US_@WangCai_8 6
+  - 🇺🇸US_15 @WangCai_8
+  - 🇲🇽MX_@WangCai_8
+  - 🇸🇬SG_@WangCai_8 12
+  - 🇮🇹IT_@WangCai_8 4
+  - 🇨🇦CA_@WangCai_8 8
+  - 🇯🇵JP_@WangCai_8 2
+  - 美国 - Los Angeles - 7
+  - 🇬🇧GB_@WangCai_8 2
+  - 🇺🇸US_46 @WangCai_8
+  - 🇺🇸US_@WangCai_8 27
+  - 🇨🇦CA_@WangCai_8 6
+  - 🇺🇸US_@WangCai_8 30
+  - 🇺🇸US_@WangCai_8 11
+  - 🇺🇸US_22 @WangCai_8
+  - 🇨🇦CA_@WangCai_8 14
+  - 🇪🇨EC_@WangCai_8
+  - 🇺🇸US_@WangCai_8 26
+  - 🇺🇸US_7 @WangCai_8
+  - 🇵🇱PL_@WangCai_8 2
+  - 🇨🇦CA_@WangCai_8 10
+  - 🇺🇸US_8 @WangCai_8
+  - 🇺🇸US_@WangCai_8 31
+  - 美国 - New York City - 30
+  - 🇬🇷GR_@WangCai_8
+  - 🇩🇪DE_@WangCai_8 10
+  - 美国 - New York City - 28
+  - 🇺🇸US_@WangCai_8 29
+  - 🇺🇸US_@WangCai_8 7
+  - 🇬🇧GB_@WangCai_8 14
+  - 🇺🇸US_43 @WangCai_8
+  - 🇺🇸US_21 @WangCai_8
+  - 荷兰 - Amsterdam - 7
+  - 🇨🇦CA_@WangCai_8 5
+  - 🇺🇸US_@WangCai_8 19
+rules:
+- MATCH,auto

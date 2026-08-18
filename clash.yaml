@@ -36,14 +36,6 @@ proxies:
   password: 13f0acfa-38c1-4e82-a758-583aa31740df
   sni: malxy.nynet2026.shop
   skip-cert-verify: false
-- name: UN-VLESS-01
-  type: vless
-  server: 193.123.58.85
-  port: 62145
-  udp: true
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  network: tcp
-  tls: false
 - name: UN-SS-01
   type: ss
   server: 129.146.113.99
@@ -72,6 +64,14 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: UN-VLESS-01
+  type: vless
+  server: 193.123.58.85
+  port: 62145
+  udp: true
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  network: tcp
+  tls: false
 - name: UN-SS-03
   type: ss
   server: 134.98.128.132
@@ -101,6 +101,14 @@ proxies:
   uuid: 16bc33b0-49c9-4e61-931e-ec2baf36cefe
   network: tcp
   tls: false
+- name: UN-VLESS-03
+  type: vless
+  server: 2.59.223.72
+  port: 667
+  udp: true
+  uuid: 76fd8cd7-cff8-42fa-9b65-d10532536ae7
+  network: tcp
+  tls: false
 - name: UN-SS-06
   type: ss
   server: 91.107.155.114
@@ -115,14 +123,6 @@ proxies:
   udp: true
   cipher: 2022-blake3-chacha20-poly1305
   password: piv++49uk9UdI6Jo8B/FTMz4ncNmAoBu/mALAqyG/X0=
-- name: UN-VLESS-03
-  type: vless
-  server: 2.59.223.72
-  port: 667
-  udp: true
-  uuid: 76fd8cd7-cff8-42fa-9b65-d10532536ae7
-  network: tcp
-  tls: false
 - name: UN-SS-08
   type: ss
   server: 108.61.223.231
@@ -137,13 +137,6 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-02
-  type: http
-  server: 138.199.35.199
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
 - name: UN-VLESS-04
   type: vless
   server: 201.24.49.62
@@ -152,6 +145,13 @@ proxies:
   uuid: fa4babae-cea3-49b1-9d6f-342495a46ea9
   network: tcp
   tls: false
+- name: US-HTTP-02
+  type: http
+  server: 138.199.35.199
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
 - name: US-HTTP-03
   type: http
   server: 138.199.35.210
@@ -180,6 +180,12 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: US-TROJAN-01
+  type: trojan
+  server: fr2us9.stableq.top
+  port: 24413
+  udp: true
+  password: 458e9445-6e05-4790-b831-6b6b7ab6424e
 - name: US-HTTP-07
   type: http
   server: 138.199.35.212
@@ -187,6 +193,20 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: UN-VLESS-05
+  type: vless
+  server: se.morinsq.su
+  port: 443
+  udp: true
+  uuid: 93fab704-cea7-4ca4-a9ac-5bb46aef263c
+  network: tcp
+  tls: true
+  servername: se.morinsq.su
+  client-fingerprint: chrome
+  host: se.morinsq.su
+  reality-opts:
+    public-key: uag6mQ8Nj62hZYzJhhd4ZZ-0GOGA42khyC6XtRbEnAg
+    short-id: 77ca514a4493ae52
 - name: US-HTTP-08
   type: http
   server: 138.199.35.197
@@ -208,12 +228,6 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-TROJAN-01
-  type: trojan
-  server: fr2us9.stableq.top
-  port: 24413
-  udp: true
-  password: 458e9445-6e05-4790-b831-6b6b7ab6424e
 - name: UN-VMESS-01
   type: vmess
   server: 185.227.252.204
@@ -224,20 +238,6 @@ proxies:
   tls: false
   alterId: 0
   cipher: auto
-- name: UN-VLESS-05
-  type: vless
-  server: se.morinsq.su
-  port: 443
-  udp: true
-  uuid: 93fab704-cea7-4ca4-a9ac-5bb46aef263c
-  network: tcp
-  tls: true
-  servername: se.morinsq.su
-  client-fingerprint: chrome
-  host: se.morinsq.su
-  reality-opts:
-    public-key: uag6mQ8Nj62hZYzJhhd4ZZ-0GOGA42khyC6XtRbEnAg
-    short-id: 77ca514a4493ae52
 - name: US-HTTP-11
   type: http
   server: 138.199.35.208
@@ -292,6 +292,16 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: UN-VMESS-03
+  type: vmess
+  server: 185.227.252.204
+  port: 8080
+  udp: true
+  uuid: a84e8f80-41cf-4cee-8e3d-e700716326cc
+  network: ws
+  tls: false
+  alterId: 0
+  cipher: auto
 - name: UN-SS-10
   type: ss
   server: 129.159.55.129
@@ -327,7 +337,7 @@ proxies:
   udp: true
   cipher: 2022-blake3-chacha20-poly1305
   password: nRZy6ykJ/fn39mZEQVUp0dEfSoQTdszf6wdGbVUYuuE=
-- name: UN-VMESS-03
+- name: UN-VMESS-04
   type: vmess
   server: 43.228.126.187
   port: 47630
@@ -404,6 +414,20 @@ proxies:
   skip-cert-verify: true
   username: testuser1
   password: e4b72b531a2d10900519
+- name: RU-VLESS-01
+  type: vless
+  server: 95.163.232.54
+  port: 8443
+  udp: true
+  uuid: 93fab704-cea7-4ca4-a9ac-5bb46aef263c
+  network: tcp
+  tls: true
+  servername: max.ru
+  client-fingerprint: edge
+  host: max.ru
+  reality-opts:
+    public-key: M_V1dM8_wcpwnmh2VZp-s3LCBjy38ZWCRpxLrBc58Do
+    short-id: a48d397391861a3c
 - name: DE-HTTP-02
   type: http
   server: 138.201.56.241
@@ -560,20 +584,6 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: RU-VLESS-01
-  type: vless
-  server: 95.163.232.54
-  port: 8443
-  udp: true
-  uuid: 93fab704-cea7-4ca4-a9ac-5bb46aef263c
-  network: tcp
-  tls: true
-  servername: max.ru
-  client-fingerprint: edge
-  host: max.ru
-  reality-opts:
-    public-key: M_V1dM8_wcpwnmh2VZp-s3LCBjy38ZWCRpxLrBc58Do
-    short-id: a48d397391861a3c
 - name: US-HTTP-31
   type: http
   server: 71.43.26.234
@@ -883,6 +893,20 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: RU-VLESS-02
+  type: vless
+  server: 95.163.232.54
+  port: 8443
+  udp: true
+  uuid: 93fab704-cea7-4ca4-a9ac-5bb46aef263c
+  network: tcp
+  tls: true
+  servername: max.ru
+  client-fingerprint: ios
+  host: max.ru
+  reality-opts:
+    public-key: M_V1dM8_wcpwnmh2VZp-s3LCBjy38ZWCRpxLrBc58Do
+    short-id: a48d397391861a3c
 - name: UN-HTTP-34
   type: http
   server: 84.239.49.217
@@ -1090,20 +1114,6 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: RU-VLESS-02
-  type: vless
-  server: 95.163.232.54
-  port: 8443
-  udp: true
-  uuid: 93fab704-cea7-4ca4-a9ac-5bb46aef263c
-  network: tcp
-  tls: true
-  servername: max.ru
-  client-fingerprint: ios
-  host: max.ru
-  reality-opts:
-    public-key: M_V1dM8_wcpwnmh2VZp-s3LCBjy38ZWCRpxLrBc58Do
-    short-id: a48d397391861a3c
 - name: US-HTTP-46
   type: http
   server: 156.146.59.7
@@ -1245,16 +1255,6 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: UN-VMESS-04
-  type: vmess
-  server: 185.227.252.204
-  port: 8080
-  udp: true
-  uuid: a84e8f80-41cf-4cee-8e3d-e700716326cc
-  network: ws
-  tls: false
-  alterId: 0
-  cipher: auto
 - name: US-HTTP-57
   type: http
   server: 162.244.227.36
@@ -1713,33 +1713,33 @@ proxy-groups:
   - US-SS-01
   - JP-ANYTLS-01
   - UN-ANYTLS-01
-  - UN-VLESS-01
   - UN-SS-01
   - DE-SS-01
   - UN-SS-02
   - CA-HTTP-01
+  - UN-VLESS-01
   - UN-SS-03
   - UN-SS-04
   - UN-SS-05
   - UN-VLESS-02
+  - UN-VLESS-03
   - UN-SS-06
   - UN-SS-07
-  - UN-VLESS-03
   - UN-SS-08
   - US-HTTP-01
-  - US-HTTP-02
   - UN-VLESS-04
+  - US-HTTP-02
   - US-HTTP-03
   - US-HTTP-04
   - US-HTTP-05
   - US-HTTP-06
+  - US-TROJAN-01
   - US-HTTP-07
+  - UN-VLESS-05
   - US-HTTP-08
   - US-HTTP-09
   - US-HTTP-10
-  - US-TROJAN-01
   - UN-VMESS-01
-  - UN-VLESS-05
   - US-HTTP-11
   - US-HTTP-12
   - US-HTTP-13
@@ -1747,12 +1747,13 @@ proxy-groups:
   - UN-SS-09
   - UN-VMESS-02
   - US-HTTP-15
+  - UN-VMESS-03
   - UN-SS-10
   - UN-SS-11
   - JP-SS-01
   - US-HTTP-16
   - UN-SS-12
-  - UN-VMESS-03
+  - UN-VMESS-04
   - UN-HTTP-01
   - UN-HTTP-02
   - UN-HTTP-03
@@ -1762,6 +1763,7 @@ proxy-groups:
   - UN-HTTP-05
   - US-HTTP-19
   - DE-HTTP-01
+  - RU-VLESS-01
   - DE-HTTP-02
   - NL-HTTP-01
   - NL-HTTP-02
@@ -1783,7 +1785,6 @@ proxy-groups:
   - US-HTTP-28
   - US-HTTP-29
   - US-HTTP-30
-  - RU-VLESS-01
   - US-HTTP-31
   - UN-HTTP-09
   - US-HTTP-32
@@ -1827,6 +1828,7 @@ proxy-groups:
   - UN-HTTP-31
   - UN-HTTP-32
   - UN-HTTP-33
+  - RU-VLESS-02
   - UN-HTTP-34
   - UN-HTTP-35
   - UN-HTTP-36
@@ -1856,7 +1858,6 @@ proxy-groups:
   - US-HTTP-45
   - UN-HTTP-57
   - UN-HTTP-58
-  - RU-VLESS-02
   - US-HTTP-46
   - US-HTTP-47
   - US-HTTP-48
@@ -1877,7 +1878,6 @@ proxy-groups:
   - UN-HTTP-60
   - US-HTTP-55
   - US-HTTP-56
-  - UN-VMESS-04
   - US-HTTP-57
   - US-HTTP-58
   - CA-HTTP-08

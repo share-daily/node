@@ -1,10 +1,12 @@
-# 🌐 免费可用节点每日更新
+# 🌐 免费节点 / Free Proxy Nodes
 
-本项目持续收集、检测并整理互联网上公开的免费代理节点。
+每日更新 Clash、V2Ray、VLESS、VMess、Trojan、Hysteria2、Shadowrocket 免费可用代理节点。
 
-**所有发布节点均经过可用性检测，发布时确认可正常使用。**
+✅ 所有发布节点均经过可用性检测
+🔄 每天不定时更新
+📡 Telegram 频道实时同步
 
-节点每天不定时更新，尽量为大家提供最新、可用的免费节点。
+👉 Telegram 频道：https://t.me/node_pool
 
 > ⭐ 建议 Star 本项目，方便随时查看最新节点。
 

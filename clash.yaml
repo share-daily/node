@@ -942,12 +942,19 @@ proxies:
   skip-cert-verify: true
 - name: UN-HTTP-83
   type: http
-  server: 84.239.14.151
+  server: 84.239.49.38
   port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
 - name: UN-HTTP-84
+  type: http
+  server: 84.239.14.151
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: UN-HTTP-85
   type: http
   server: 84.239.49.154
   port: 9002
@@ -962,7 +969,14 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: UN-HTTP-85
+- name: UN-HTTP-86
+  type: http
+  server: 84.239.49.206
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: UN-HTTP-87
   type: http
   server: 84.239.49.252
   port: 9002
@@ -993,7 +1007,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: UN-HTTP-86
+- name: UN-HTTP-88
   type: http
   server: 84.239.14.157
   port: 9002
@@ -1145,12 +1159,14 @@ proxy-groups:
   - UN-HTTP-82
   - UN-HTTP-83
   - UN-HTTP-84
-  - US-HTTP-30
   - UN-HTTP-85
+  - US-HTTP-30
+  - UN-HTTP-86
+  - UN-HTTP-87
   - CA-HTTP-01
   - DE-HTTP-01
   - US-HTTP-31
-  - UN-HTTP-86
+  - UN-HTTP-88
   - CA-HTTP-02
 rules:
 - MATCH,auto

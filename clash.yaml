@@ -1036,13 +1036,6 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: JP-SS-01
-  type: ss
-  server: 103.236.66.4
-  port: 40002
-  udp: true
-  cipher: aes-256-gcm
-  password: Butterfly123@qwe9527
 - name: SG-HTTP-11
   type: http
   server: 154.26.138.229
@@ -1064,13 +1057,6 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: JP-SS-02
-  type: ss
-  server: 103.236.66.4
-  port: 40001
-  udp: true
-  cipher: aes-256-gcm
-  password: Butterfly123@qwe9527
 - name: UN-SS-09
   type: ss
   server: 15.222.248.181
@@ -1085,13 +1071,6 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-SS-01
-  type: ss
-  server: 103.236.66.4
-  port: 50003
-  udp: true
-  cipher: aes-256-gcm
-  password: Butterfly123@qwe9527
 - name: SG-HTTP-15
   type: http
   server: 154.26.139.27
@@ -1113,13 +1092,6 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-SS-02
-  type: ss
-  server: 103.236.66.4
-  port: 50001
-  udp: true
-  cipher: aes-256-gcm
-  password: Butterfly123@qwe9527
 - name: SG-HTTP-17
   type: http
   server: 194.233.73.140
@@ -1134,13 +1106,6 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: HK-SS-01
-  type: ss
-  server: 103.236.66.4
-  port: 10001
-  udp: true
-  cipher: aes-256-gcm
-  password: Butterfly123@qwe9527
 - name: SG-HTTP-19
   type: http
   server: 154.26.138.156
@@ -1353,21 +1318,16 @@ proxy-groups:
   - SG-HTTP-09
   - CA-HTTP-09
   - SG-HTTP-10
-  - JP-SS-01
   - SG-HTTP-11
   - SG-HTTP-12
   - SG-HTTP-13
-  - JP-SS-02
   - UN-SS-09
   - SG-HTTP-14
-  - US-SS-01
   - SG-HTTP-15
   - SG-HTTP-16
   - CA-HTTP-10
-  - US-SS-02
   - SG-HTTP-17
   - SG-HTTP-18
-  - HK-SS-01
   - SG-HTTP-19
   - SG-HTTP-20
   - SG-HTTP-21

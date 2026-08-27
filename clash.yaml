@@ -1,20 +1,4 @@
 proxies:
-- name: TW-ANYTLS-01
-  type: anytls
-  server: tw74.cybergalaxy.me
-  port: 443
-  udp: true
-  password: 29204996-a723-4291-8c70-30843b592d40
-  sni: tw74.cybergalaxy.me
-  skip-cert-verify: true
-- name: TW-ANYTLS-02
-  type: anytls
-  server: tw77.cybergalaxy.me
-  port: 443
-  udp: true
-  password: 29204996-a723-4291-8c70-30843b592d40
-  sni: tw77.cybergalaxy.me
-  skip-cert-verify: true
 - name: UN-VLESS-01
   type: vless
   server: 14.137.238.136
@@ -23,115 +7,85 @@ proxies:
   uuid: 6f361c37-bc54-43dd-8c8b-0f59354745a5
   network: tcp
   tls: false
+- name: HK-ANYTLS-01
+  type: anytls
+  server: a16.toppp.cc
+  port: 42316
+  udp: true
+  password: cba96915-8098-41a7-9997-efb01ccc598a
+  client-fingerprint: chrome
+  sni: osxapps.itunes.apple.com
+  skip-cert-verify: true
 - name: UN-SS-01
-  type: ss
-  server: 18.170.37.90
-  port: 443
-  udp: true
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: UN-ANYTLS-01
-  type: anytls
-  server: test01.y1static-content-distribution.shop
-  port: 14855
-  udp: true
-  password: 29204996-a723-4291-8c70-30843b592d40
-  sni: yz238.y1static-content-distribution.shop
-  skip-cert-verify: true
-- name: UN-SS-02
-  type: ss
-  server: 3.250.223.202
-  port: 443
-  udp: true
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: UN-SS-03
-  type: ss
-  server: 54.247.216.201
-  port: 443
-  udp: true
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: UN-SS-04
-  type: ss
-  server: 34.244.150.119
-  port: 443
-  udp: true
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: UN-SS-05
-  type: ss
-  server: 141.144.202.86
-  port: 45819
-  udp: true
-  cipher: 2022-blake3-chacha20-poly1305
-  password: n2b755tqUl7YwN5XeZ44G0vWeNgms2MfRu8YAVE1as8=
-- name: JP-ANYTLS-01
-  type: anytls
-  server: jpglobal-identity-federation-auth.younai-ytl.shop
-  port: 12791
-  udp: true
-  password: 29204996-a723-4291-8c70-30843b592d40
-  sni: jp10.pulsarcore.site
-  skip-cert-verify: true
-- name: UN-SS-06
-  type: ss
-  server: 92.5.231.219
-  port: 45819
-  udp: true
-  cipher: 2022-blake3-chacha20-poly1305
-  password: PWlFaofVgOxIzdG8E5m2Urd1Ktm+kdOpOEkWnNtws9U=
-- name: FR-SS-01
-  type: ss
-  server: 95.170.13.47
-  port: 65443
-  udp: true
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: JP-ANYTLS-02
-  type: anytls
-  server: test01.y1static-content-distribution.shop
-  port: 47096
-  udp: true
-  password: 29204996-a723-4291-8c70-30843b592d40
-  sni: xjp33.pulsarcore.site
-  skip-cert-verify: true
-- name: UN-SS-07
-  type: ss
-  server: 95.170.13.47
-  port: 65443
-  udp: true
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: UN-SS-08
-  type: ss
-  server: 166.88.130.218
-  port: 20119
-  udp: true
-  cipher: aes-256-gcm
-  password: fbcec76953a2d173
-- name: UN-SS-09
   type: ss
   server: 3.250.80.208
   port: 443
   udp: true
   cipher: aes-256-cfb
   password: amazonskr05
-- name: TW-ANYTLS-03
-  type: anytls
-  server: yazhouany02.downapptwo.cc
-  port: 41453
-  udp: true
-  password: 29204996-a723-4291-8c70-30843b592d40
-  sni: yz236.y1static-content-distribution.shop
-  skip-cert-verify: true
-- name: UN-SS-10
+- name: UN-SS-02
   type: ss
-  server: 118.107.222.231
+  server: 34.244.150.119
+  port: 443
+  udp: true
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: UN-SS-03
+  type: ss
+  server: 141.144.202.86
+  port: 45819
+  udp: true
+  cipher: 2022-blake3-chacha20-poly1305
+  password: n2b755tqUl7YwN5XeZ44G0vWeNgms2MfRu8YAVE1as8=
+- name: UN-SS-04
+  type: ss
+  server: 92.5.231.219
+  port: 45819
+  udp: true
+  cipher: 2022-blake3-chacha20-poly1305
+  password: PWlFaofVgOxIzdG8E5m2Urd1Ktm+kdOpOEkWnNtws9U=
+- name: UN-SS-05
+  type: ss
+  server: 54.216.107.30
+  port: 443
+  udp: true
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: UN-SS-06
+  type: ss
+  server: 18.170.37.90
+  port: 443
+  udp: true
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: UN-SS-07
+  type: ss
+  server: 54.247.216.201
+  port: 443
+  udp: true
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: UN-SS-08
+  type: ss
+  server: 3.250.223.202
+  port: 443
+  udp: true
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: UN-SS-09
+  type: ss
+  server: 95.170.13.47
   port: 65443
   udp: true
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
+- name: UN-SS-10
+  type: ss
+  server: 166.88.130.218
+  port: 20119
+  udp: true
+  cipher: aes-256-gcm
+  password: fbcec76953a2d173
 - name: UN-SS-11
   type: ss
   server: 103.169.67.34
@@ -139,37 +93,6 @@ proxies:
   udp: true
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
-- name: NL-HTTP-01
-  type: http
-  server: 84.17.47.148
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  password: None
-- name: UN-SS-12
-  type: ss
-  server: 212.192.15.178
-  port: 10889
-  udp: true
-  cipher: aes-256-gcm
-  password: 72553320ae6bcc8f
-- name: US-HTTP-01
-  type: http
-  server: 45.32.133.102
-  port: 8443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-HTTP-02
-  type: http
-  server: 138.199.35.216
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  username: 'null'
-  password: 'null'
 - name: DE-HTTP-01
   type: http
   server: 138.201.56.241
@@ -177,45 +100,87 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: NL-HTTP-02
-  type: http
-  server: 51.158.243.91
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NL-HTTP-03
-  type: http
-  server: 84.17.47.148
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NL-HTTP-04
+- name: NL-HTTP-01
   type: http
   server: 84.17.47.150
   port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
-- name: FR-HTTP-01
+- name: US-HTTP-01
   type: http
-  server: 141.94.16.4
+  server: 37.120.147.146
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
-- name: JP-ANYTLS-03
-  type: anytls
-  server: jpglobal-identity-federation-auth.younai-ytl.shop
-  port: 28219
+- name: NL-HTTP-02
+  type: http
+  server: 84.17.47.148
+  port: 9002
   udp: true
-  password: 29204996-a723-4291-8c70-30843b592d40
-  sni: us05.pulsarcore.site
+  tls: true
   skip-cert-verify: true
-- name: NL-HTTP-05
+- name: NL-HTTP-03
   type: http
   server: 84.17.47.146
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: NL-HTTP-04
+  type: http
+  server: 84.17.47.148
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
+- name: FR-SS-01
+  type: ss
+  server: 95.170.13.47
+  port: 65443
+  udp: true
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: NL-HTTP-05
+  type: http
+  server: 84.17.47.149
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: US-HTTP-02
+  type: http
+  server: 45.32.133.102
+  port: 8443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: UN-HTTP-01
+  type: http
+  server: 193.176.84.32
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: UN-SS-12
+  type: ss
+  server: 212.192.15.178
+  port: 10889
+  udp: true
+  cipher: aes-256-gcm
+  password: 72553320ae6bcc8f
+- name: NL-HTTP-06
+  type: http
+  server: 51.158.243.91
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: NL-HTTP-07
+  type: http
+  server: 84.17.47.125
   port: 9002
   udp: true
   tls: true
@@ -227,21 +192,6 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: UN-HTTP-01
-  type: http
-  server: 193.176.84.23
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  password: None
-- name: UN-SS-13
-  type: ss
-  server: 54.216.107.30
-  port: 443
-  udp: true
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: UN-HTTP-02
   type: http
   server: 193.176.84.30
@@ -251,14 +201,44 @@ proxies:
   skip-cert-verify: true
 - name: US-HTTP-04
   type: http
+  server: 138.199.35.216
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  username: 'null'
+  password: 'null'
+- name: CA-HTTP-01
+  type: http
+  server: 31.7.62.50
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: GB-HTTP-01
+  type: http
+  server: 35.179.47.184
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: UN-SS-13
+  type: ss
+  server: 137.131.187.253
+  port: 59319
+  udp: true
+  cipher: 2022-blake3-chacha20-poly1305
+  password: syoHUErIIXqk/xwYXjB/fHaW3puNw529eq5eIqtjpq0=
+- name: US-HTTP-05
+  type: http
   server: 38.28.193.188
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-05
+- name: GB-HTTP-02
   type: http
-  server: 192.171.18.154
+  server: 37.120.233.18
   port: 443
   udp: true
   tls: true
@@ -270,9 +250,44 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: CA-HTTP-01
+- name: CA-HTTP-02
+  type: http
+  server: 185.245.84.50
+  port: 9443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: CA-HTTP-03
+  type: http
+  server: 185.245.84.50
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: FR-HTTP-01
+  type: http
+  server: 141.94.16.4
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: CA-HTTP-04
   type: http
   server: 151.115.54.133
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: CA-HTTP-05
+  type: http
+  server: 69.87.223.151
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: CA-HTTP-06
+  type: http
+  server: 87.120.103.242
   port: 443
   udp: true
   tls: true
@@ -284,72 +299,30 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: NL-HTTP-06
-  type: http
-  server: 84.17.47.149
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NL-HTTP-07
-  type: http
-  server: 84.17.47.125
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
 - name: US-HTTP-07
   type: http
-  server: 44.228.137.206
+  server: 162.244.227.36
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
 - name: US-HTTP-08
   type: http
-  server: 34.216.155.5
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: CA-HTTP-02
-  type: http
-  server: 69.87.223.151
+  server: 192.171.18.154
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
 - name: US-HTTP-09
   type: http
-  server: 20.42.108.114
+  server: 44.198.49.169
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
-- name: CA-HTTP-03
+- name: US-HTTP-10
   type: http
-  server: 103.137.14.34
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: CA-HTTP-04
-  type: http
-  server: 178.237.4.200
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: UN-HTTP-03
-  type: http
-  server: 193.176.84.32
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: CA-HTTP-05
-  type: http
-  server: 95.229.15.89
+  server: 52.55.81.168
   port: 443
   udp: true
   tls: true
@@ -361,41 +334,42 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: UN-HTTP-04
-  type: http
-  server: 193.176.84.27
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-HTTP-10
-  type: http
-  server: 24.225.10.211
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: UN-HTTP-05
+- name: UN-HTTP-03
   type: http
   server: 193.176.84.35
   port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
+- name: UN-HTTP-04
+  type: http
+  server: 193.176.84.23
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
 - name: US-HTTP-11
   type: http
-  server: 44.198.49.169
+  server: 20.42.108.114
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
-- name: UN-SS-14
-  type: ss
-  server: 176.34.158.52
+- name: CA-HTTP-07
+  type: http
+  server: 95.229.15.89
   port: 443
   udp: true
-  cipher: aes-256-cfb
-  password: amazonskr05
+  tls: true
+  skip-cert-verify: true
+- name: UN-HTTP-05
+  type: http
+  server: 193.176.84.24
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
 - name: US-HTTP-12
   type: http
   server: 71.43.26.234
@@ -403,72 +377,138 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: NL-VLESS-01
+  type: vless
+  server: wsnl7.wba-pn.ru
+  port: 443
+  udp: true
+  uuid: 053440e6-fc8d-48d9-bb4f-2675e367f64f
+  network: ws
+  tls: true
+  servername: wsnl7.wba-pn.ru
+  host: wsnl7.wba-pn.ru
 - name: US-HTTP-13
   type: http
-  server: 66.64.100.66
+  server: 34.216.155.5
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: CA-HTTP-08
+  type: http
+  server: 91.243.118.217
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
 - name: US-HTTP-14
   type: http
-  server: 52.55.81.168
+  server: 24.225.10.211
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
-- name: UN-HTTP-06
+- name: CA-HTTP-09
   type: http
-  server: 193.176.84.24
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: GB-HTTP-01
-  type: http
-  server: 51.11.47.210
+  server: 178.237.4.200
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
-- name: CA-HTTP-06
+- name: CA-HTTP-10
   type: http
-  server: 142.44.210.129
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-HTTP-15
-  type: http
-  server: 44.239.226.15
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: GB-HTTP-02
-  type: http
-  server: 51.11.47.202
+  server: 93.42.177.250
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
 - name: GB-HTTP-03
   type: http
-  server: 51.11.47.216
+  server: 212.102.63.31
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
-- name: SG-HTTP-01
+- name: US-HTTP-15
   type: http
-  server: 185.250.38.137
+  server: 66.64.100.66
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
 - name: GB-HTTP-04
   type: http
-  server: 35.179.47.184
+  server: 51.11.47.202
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: US-HTTP-16
+  type: http
+  server: 44.239.226.15
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: CA-HTTP-11
+  type: http
+  server: 149.22.86.1
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: GB-HTTP-05
+  type: http
+  server: 51.11.47.216
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: UN-HTTP-06
+  type: http
+  server: 193.176.84.27
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: GB-HTTP-06
+  type: http
+  server: 51.11.47.210
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: CA-HTTP-12
+  type: http
+  server: 142.44.210.129
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: CA-HTTP-13
+  type: http
+  server: 193.35.104.196
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: US-HTTP-17
+  type: http
+  server: 44.228.137.206
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-01
+  type: http
+  server: 185.250.38.135
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-02
+  type: http
+  server: 185.250.38.137
   port: 443
   udp: true
   tls: true
@@ -476,20 +516,6 @@ proxies:
 - name: DE-HTTP-03
   type: http
   server: 141.17.83.78
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-02
-  type: http
-  server: 51.79.173.71
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-HTTP-16
-  type: http
-  server: 162.244.227.36
   port: 443
   udp: true
   tls: true
@@ -502,13 +528,8 @@ proxies:
   uuid: 54a9c202-cfe9-4bb8-826c-653a52a96c6d
   network: tcp
   tls: true
-- name: SG-HTTP-03
-  type: http
-  server: 185.250.38.135
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
+  servername: 8.sahanwickramasinghe.me
+  host: 8.sahanwickramasinghe.me
 - name: KR-VLESS-02
   type: vless
   server: 8.sahanwickramasinghe.me
@@ -517,197 +538,6 @@ proxies:
   uuid: 54a9c202-cfe9-4bb8-826c-653a52a96c6d
   network: tcp
   tls: true
-  servername: 8.sahanwickramasinghe.me
-  host: 8.sahanwickramasinghe.me
-- name: CA-HTTP-07
-  type: http
-  server: 93.42.177.250
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: CA-HTTP-08
-  type: http
-  server: 193.35.104.196
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-04
-  type: http
-  server: 154.26.138.229
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: CA-HTTP-09
-  type: http
-  server: 116.90.72.242
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-05
-  type: http
-  server: 154.26.138.240
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: CA-HTTP-10
-  type: http
-  server: 103.77.232.74
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-06
-  type: http
-  server: 154.26.139.23
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-07
-  type: http
-  server: 154.26.139.14
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: CA-HTTP-11
-  type: http
-  server: 194.186.179.62
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-08
-  type: http
-  server: 154.26.138.253
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-09
-  type: http
-  server: 154.26.138.249
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-10
-  type: http
-  server: 154.26.138.186
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-11
-  type: http
-  server: 154.26.139.29
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-12
-  type: http
-  server: 154.26.138.248
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-13
-  type: http
-  server: 154.26.138.239
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-14
-  type: http
-  server: 154.26.139.27
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-15
-  type: http
-  server: 154.26.139.7
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-16
-  type: http
-  server: 154.26.138.236
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-17
-  type: http
-  server: 154.26.138.166
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-18
-  type: http
-  server: 154.26.138.241
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NL-HTTP-09
-  type: http
-  server: 185.53.129.141
-  port: 9090
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-19
-  type: http
-  server: 154.26.138.244
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-20
-  type: http
-  server: 154.26.138.156
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-21
-  type: http
-  server: 154.26.138.157
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-22
-  type: http
-  server: 154.26.138.246
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-23
-  type: http
-  server: 154.26.138.233
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-24
-  type: http
-  server: 194.233.73.140
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
 - name: DE-HTTP-04
   type: http
   server: 141.17.83.73
@@ -715,128 +545,296 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: SG-HTTP-25
+- name: SG-HTTP-03
   type: http
-  server: 154.26.138.216
+  server: 154.26.139.14
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
-- name: HK-ANYTLS-01
-  type: anytls
-  server: a16.toppp.cc
-  port: 42316
-  udp: true
-  password: cba96915-8098-41a7-9997-efb01ccc598a
-  client-fingerprint: chrome
-  sni: osxapps.itunes.apple.com
-  skip-cert-verify: true
-- name: CA-HTTP-12
+- name: SG-HTTP-04
   type: http
-  server: 91.243.118.217
+  server: 154.26.138.249
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
-- name: SG-HTTP-26
+- name: SG-HTTP-05
   type: http
-  server: 154.26.139.24
+  server: 154.26.138.229
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
-- name: CA-HTTP-13
+- name: SG-HTTP-06
+  type: http
+  server: 154.26.138.156
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: UN-SS-14
+  type: ss
+  server: 176.34.158.52
+  port: 443
+  udp: true
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: CA-HTTP-14
+  type: http
+  server: 194.186.179.62
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-07
+  type: http
+  server: 154.26.138.246
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-08
+  type: http
+  server: 154.26.138.236
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-09
+  type: http
+  server: 154.26.138.186
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-10
+  type: http
+  server: 154.26.138.241
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-11
+  type: http
+  server: 154.26.138.253
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-12
+  type: http
+  server: 154.26.138.166
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-13
+  type: http
+  server: 154.26.139.7
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-14
+  type: http
+  server: 154.26.138.239
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: CA-HTTP-15
   type: http
   server: 109.116.41.154
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
+- name: SG-HTTP-15
+  type: http
+  server: 154.26.138.248
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-16
+  type: http
+  server: 154.26.139.29
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-17
+  type: http
+  server: 154.26.138.78
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-18
+  type: http
+  server: 194.233.73.140
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-19
+  type: http
+  server: 154.26.138.233
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-20
+  type: http
+  server: 154.26.139.27
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-21
+  type: http
+  server: 154.26.138.240
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-22
+  type: http
+  server: 154.26.138.244
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-23
+  type: http
+  server: 154.26.138.216
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-24
+  type: http
+  server: 154.26.138.157
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-25
+  type: http
+  server: 154.26.139.24
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-26
+  type: http
+  server: 154.26.139.23
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-27
+  type: http
+  server: 154.26.137.244
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: UN-SS-15
+  type: ss
+  server: 118.107.222.231
+  port: 65443
+  udp: true
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
 proxy-groups:
 - name: auto
   type: select
   proxies:
-  - TW-ANYTLS-01
-  - TW-ANYTLS-02
   - UN-VLESS-01
+  - HK-ANYTLS-01
   - UN-SS-01
-  - UN-ANYTLS-01
   - UN-SS-02
   - UN-SS-03
   - UN-SS-04
   - UN-SS-05
-  - JP-ANYTLS-01
   - UN-SS-06
-  - FR-SS-01
-  - JP-ANYTLS-02
   - UN-SS-07
   - UN-SS-08
   - UN-SS-09
-  - TW-ANYTLS-03
   - UN-SS-10
   - UN-SS-11
-  - NL-HTTP-01
-  - UN-SS-12
-  - US-HTTP-01
-  - US-HTTP-02
   - DE-HTTP-01
+  - NL-HTTP-01
+  - US-HTTP-01
   - NL-HTTP-02
   - NL-HTTP-03
   - NL-HTTP-04
-  - FR-HTTP-01
-  - JP-ANYTLS-03
+  - FR-SS-01
   - NL-HTTP-05
-  - US-HTTP-03
+  - US-HTTP-02
   - UN-HTTP-01
-  - UN-SS-13
-  - UN-HTTP-02
-  - US-HTTP-04
-  - US-HTTP-05
-  - DE-HTTP-02
-  - CA-HTTP-01
-  - US-HTTP-06
+  - UN-SS-12
   - NL-HTTP-06
   - NL-HTTP-07
+  - US-HTTP-03
+  - UN-HTTP-02
+  - US-HTTP-04
+  - CA-HTTP-01
+  - GB-HTTP-01
+  - UN-SS-13
+  - US-HTTP-05
+  - GB-HTTP-02
+  - DE-HTTP-02
+  - CA-HTTP-02
+  - CA-HTTP-03
+  - FR-HTTP-01
+  - CA-HTTP-04
+  - CA-HTTP-05
+  - CA-HTTP-06
+  - US-HTTP-06
   - US-HTTP-07
   - US-HTTP-08
-  - CA-HTTP-02
   - US-HTTP-09
-  - CA-HTTP-03
-  - CA-HTTP-04
-  - UN-HTTP-03
-  - CA-HTTP-05
-  - NL-HTTP-08
-  - UN-HTTP-04
   - US-HTTP-10
-  - UN-HTTP-05
+  - NL-HTTP-08
+  - UN-HTTP-03
+  - UN-HTTP-04
   - US-HTTP-11
-  - UN-SS-14
-  - US-HTTP-12
-  - US-HTTP-13
-  - US-HTTP-14
-  - UN-HTTP-06
-  - GB-HTTP-01
-  - CA-HTTP-06
-  - US-HTTP-15
-  - GB-HTTP-02
-  - GB-HTTP-03
-  - SG-HTTP-01
-  - GB-HTTP-04
-  - DE-HTTP-03
-  - SG-HTTP-02
-  - US-HTTP-16
-  - KR-VLESS-01
-  - SG-HTTP-03
-  - KR-VLESS-02
   - CA-HTTP-07
+  - UN-HTTP-05
+  - US-HTTP-12
+  - NL-VLESS-01
+  - US-HTTP-13
   - CA-HTTP-08
-  - SG-HTTP-04
+  - US-HTTP-14
   - CA-HTTP-09
-  - SG-HTTP-05
   - CA-HTTP-10
-  - SG-HTTP-06
-  - SG-HTTP-07
+  - GB-HTTP-03
+  - US-HTTP-15
+  - GB-HTTP-04
+  - US-HTTP-16
   - CA-HTTP-11
+  - GB-HTTP-05
+  - UN-HTTP-06
+  - GB-HTTP-06
+  - CA-HTTP-12
+  - CA-HTTP-13
+  - US-HTTP-17
+  - SG-HTTP-01
+  - SG-HTTP-02
+  - DE-HTTP-03
+  - KR-VLESS-01
+  - KR-VLESS-02
+  - DE-HTTP-04
+  - SG-HTTP-03
+  - SG-HTTP-04
+  - SG-HTTP-05
+  - SG-HTTP-06
+  - UN-SS-14
+  - CA-HTTP-14
+  - SG-HTTP-07
   - SG-HTTP-08
   - SG-HTTP-09
   - SG-HTTP-10
@@ -844,22 +842,20 @@ proxy-groups:
   - SG-HTTP-12
   - SG-HTTP-13
   - SG-HTTP-14
+  - CA-HTTP-15
   - SG-HTTP-15
   - SG-HTTP-16
   - SG-HTTP-17
   - SG-HTTP-18
-  - NL-HTTP-09
   - SG-HTTP-19
   - SG-HTTP-20
   - SG-HTTP-21
   - SG-HTTP-22
   - SG-HTTP-23
   - SG-HTTP-24
-  - DE-HTTP-04
   - SG-HTTP-25
-  - HK-ANYTLS-01
-  - CA-HTTP-12
   - SG-HTTP-26
-  - CA-HTTP-13
+  - SG-HTTP-27
+  - UN-SS-15
 rules:
 - MATCH,auto

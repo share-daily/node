@@ -6,13 +6,6 @@ proxies:
   udp: true
   cipher: aes-256-cfb
   password: amazonskr05
-- name: UN-SS-02
-  type: ss
-  server: 95.170.13.47
-  port: 65443
-  udp: true
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
 - name: FR-SS-01
   type: ss
   server: 95.170.13.47
@@ -20,27 +13,56 @@ proxies:
   udp: true
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
+- name: UN-SS-02
+  type: ss
+  server: 92.5.185.32
+  port: 59924
+  udp: true
+  cipher: 2022-blake3-chacha20-poly1305
+  password: zEoIXTFhh/Z+Mf6dR5l7gdbRVuB0tFFEFUqKxi8hOt8=
 - name: UN-SS-03
+  type: ss
+  server: 84.235.172.207
+  port: 45819
+  udp: true
+  cipher: 2022-blake3-chacha20-poly1305
+  password: gpgaPaPD/9AU6TgWL6Y2wqB6/8LyckOfyN3ZMBjtfaI=
+- name: UN-SS-04
   type: ss
   server: 129.146.60.204
   port: 50356
   udp: true
   cipher: 2022-blake3-chacha20-poly1305
   password: vHbqRfuElW7yjgJWjFBaGRF3W73U7jIvXX8XdsLth2s=
-- name: UN-SS-04
+- name: UN-SS-05
   type: ss
   server: 141.148.237.64
   port: 45819
   udp: true
   cipher: 2022-blake3-chacha20-poly1305
   password: IVBe/v0PRzoIAxF7OKUA6rHMM+f8VFYJThG6KvBXNcY=
-- name: UN-SS-05
+- name: UN-VLESS-01
+  type: vless
+  server: 158.178.150.159
+  port: 62145
+  udp: true
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  network: tcp
+  tls: false
+- name: UN-SS-06
   type: ss
   server: 129.146.61.140
   port: 50356
   udp: true
   cipher: 2022-blake3-chacha20-poly1305
   password: f5CmnDIA52E1QLRS/gZrLIA4iZqcdgh9kyvkCzaPjVs=
+- name: UN-SS-07
+  type: ss
+  server: 46.17.40.234
+  port: 10051
+  udp: true
+  cipher: aes-256-gcm
+  password: bdb313adf74c2ede
 - name: NL-HTTP-01
   type: http
   server: 84.17.47.149
@@ -48,7 +70,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: UN-VLESS-01
+- name: UN-VLESS-02
   type: vless
   server: 149.130.182.110
   port: 62145
@@ -130,6 +152,20 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: UN-VLESS-03
+  type: vless
+  server: hinet1.2yly.com
+  port: 24215
+  udp: true
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  network: tcp
+  tls: true
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+  host: addons.mozilla.org
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+    short-id: ''
 - name: UN-HTTP-02
   type: http
   server: 193.176.84.30
@@ -193,13 +229,16 @@ proxy-groups:
   type: select
   proxies:
   - UN-SS-01
-  - UN-SS-02
   - FR-SS-01
+  - UN-SS-02
   - UN-SS-03
   - UN-SS-04
   - UN-SS-05
-  - NL-HTTP-01
   - UN-VLESS-01
+  - UN-SS-06
+  - UN-SS-07
+  - NL-HTTP-01
+  - UN-VLESS-02
   - US-HTTP-01
   - US-HTTP-02
   - UN-HTTP-01
@@ -210,6 +249,7 @@ proxy-groups:
   - NL-HTTP-03
   - NL-HTTP-04
   - NL-HTTP-05
+  - UN-VLESS-03
   - UN-HTTP-02
   - NL-HTTP-06
   - UN-HTTP-03

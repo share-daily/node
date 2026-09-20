@@ -44,6 +44,14 @@ proxies:
   skip-cert-verify: true
 - name: US-HTTP-02
   type: http
+  server: 138.199.35.195
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
+- name: US-HTTP-03
+  type: http
   server: voteshirleysew.club
   port: 443
   udp: true
@@ -64,7 +72,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-03
+- name: US-HTTP-04
   type: http
   server: 149.50.212.206
   port: 443
@@ -85,7 +93,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-04
+- name: US-HTTP-05
   type: http
   server: purposebydesig.club
   port: 443
@@ -107,7 +115,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-05
+- name: US-HTTP-06
   type: http
   server: 138.199.35.196
   port: 9002
@@ -115,7 +123,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   password: None
-- name: US-HTTP-06
+- name: US-HTTP-07
   type: http
   server: 138.199.35.216
   port: 9002
@@ -138,7 +146,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-07
+- name: US-HTTP-08
   type: http
   server: 138.199.35.198
   port: 9002
@@ -152,7 +160,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-08
+- name: US-HTTP-09
   type: http
   server: 149.22.88.65
   port: 443
@@ -225,7 +233,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-09
+- name: US-HTTP-10
   type: http
   server: 38.28.193.188
   port: 443
@@ -239,7 +247,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-10
+- name: US-HTTP-11
   type: http
   server: fan.365747.xyz
   port: 443
@@ -260,14 +268,14 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-11
+- name: US-HTTP-12
   type: http
   server: 38.28.193.188
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-12
+- name: US-HTTP-13
   type: http
   server: 44.198.49.169
   port: 443
@@ -309,7 +317,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-13
+- name: US-HTTP-14
   type: http
   server: 192.171.18.154
   port: 443
@@ -354,21 +362,21 @@ proxies:
   tls: true
   skip-cert-verify: true
   password: None
-- name: US-HTTP-14
+- name: US-HTTP-15
   type: http
   server: 162.244.227.36
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-15
+- name: US-HTTP-16
   type: http
   server: 66.64.100.66
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-16
+- name: US-HTTP-17
   type: http
   server: 149.88.21.140
   port: 443
@@ -475,21 +483,22 @@ proxy-groups:
   - SG-HTTP-01
   - US-HTTP-01
   - US-HTTP-02
+  - US-HTTP-03
   - NL-HTTP-01
   - NL-HTTP-02
-  - US-HTTP-03
+  - US-HTTP-04
   - NL-HTTP-03
   - RO-HTTP-01
-  - US-HTTP-04
+  - US-HTTP-05
   - RO-HTTP-02
   - NL-HTTP-04
-  - US-HTTP-05
   - US-HTTP-06
+  - US-HTTP-07
   - NL-HTTP-05
   - NL-HTTP-06
-  - US-HTTP-07
-  - LV-HTTP-01
   - US-HTTP-08
+  - LV-HTTP-01
+  - US-HTTP-09
   - NL-HTTP-07
   - RO-HTTP-03
   - NL-HTTP-08
@@ -499,27 +508,27 @@ proxy-groups:
   - RO-HTTP-06
   - BE-HTTP-01
   - NL-HTTP-09
-  - US-HTTP-09
-  - PL-HTTP-01
   - US-HTTP-10
+  - PL-HTTP-01
+  - US-HTTP-11
   - NL-HTTP-10
   - NL-HTTP-11
-  - US-HTTP-11
   - US-HTTP-12
+  - US-HTTP-13
   - RO-HTTP-07
   - RO-HTTP-08
   - CA-HTTP-01
   - RO-HTTP-09
   - RO-HTTP-10
-  - US-HTTP-13
+  - US-HTTP-14
   - RO-HTTP-11
   - RO-HTTP-12
   - RO-HTTP-13
   - RO-HTTP-14
   - RO-HTTP-15
-  - US-HTTP-14
   - US-HTTP-15
   - US-HTTP-16
+  - US-HTTP-17
   - ES-HTTP-01
   - US-VLESS-01
   - US-VLESS-02

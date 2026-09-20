@@ -1,4 +1,18 @@
 proxies:
+- name: JP-HTTP-01
+  type: http
+  server: 37.120.210.66
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: JP-HTTP-02
+  type: http
+  server: 37.120.210.146
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
 - name: UN-SS-01
   type: ss
   server: 15.237.190.132
@@ -6,6 +20,13 @@ proxies:
   udp: true
   cipher: aes-256-cfb
   password: amazonskr05
+- name: UN-SS-02
+  type: ss
+  server: 92.5.205.98
+  port: 45819
+  udp: true
+  cipher: 2022-blake3-chacha20-poly1305
+  password: CY6yzdXMv0dk3DReTOh+bj0cmSdf9VtjLLyGmB9S8Rc=
 - name: NL-HTTP-01
   type: http
   server: 149.36.51.129
@@ -16,6 +37,13 @@ proxies:
 - name: SG-HTTP-01
   type: http
   server: 156.146.56.110
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-02
+  type: http
+  server: 156.146.56.97
   port: 443
   udp: true
   tls: true
@@ -34,7 +62,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: UN-SS-02
+- name: UN-SS-03
   type: ss
   server: 89.125.244.241
   port: 10011
@@ -62,6 +90,28 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: BE-HTTP-01
+  type: http
+  server: 146.70.176.242
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: DE-HTTP-02
+  type: http
+  server: 87.249.132.97
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: US-HTTP-02
+  type: http
+  server: 138.199.35.195
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
 - name: NL-HTTP-02
   type: http
   server: 84.17.47.146
@@ -88,7 +138,7 @@ proxies:
   alterId: 0
   cipher: auto
   host: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
-- name: US-HTTP-02
+- name: US-HTTP-03
   type: http
   server: 45.32.133.102
   port: 8443
@@ -109,7 +159,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-03
+- name: US-HTTP-04
   type: http
   server: 138.199.35.216
   port: 9002
@@ -118,14 +168,14 @@ proxies:
   skip-cert-verify: true
   username: 'null'
   password: 'null'
-- name: US-HTTP-04
+- name: US-HTTP-05
   type: http
   server: 138.199.35.203
   port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-05
+- name: US-HTTP-06
   type: http
   server: 138.199.35.196
   port: 9002
@@ -140,14 +190,14 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-06
+- name: US-HTTP-07
   type: http
   server: 138.199.35.198
   port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-07
+- name: US-HTTP-08
   type: http
   server: 138.199.35.216
   port: 9002
@@ -156,7 +206,7 @@ proxies:
   skip-cert-verify: true
   username: 'null'
   password: 'null'
-- name: US-HTTP-08
+- name: US-HTTP-09
   type: http
   server: 34.216.155.5
   port: 443
@@ -170,7 +220,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: UN-SS-03
+- name: UN-SS-04
   type: ss
   server: sth.free-outline.giize.com
   port: 1081
@@ -213,14 +263,14 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-09
+- name: US-HTTP-10
   type: http
   server: 149.22.88.65
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-10
+- name: US-HTTP-11
   type: http
   server: 138.199.35.214
   port: 9002
@@ -287,7 +337,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-11
+- name: US-HTTP-12
   type: http
   server: 38.28.193.188
   port: 443
@@ -322,14 +372,14 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: BE-HTTP-01
+- name: BE-HTTP-02
   type: http
   server: 146.70.123.98
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-12
+- name: US-HTTP-13
   type: http
   server: 44.198.49.169
   port: 443
@@ -357,7 +407,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-13
+- name: US-HTTP-14
   type: http
   server: 149.88.21.129
   port: 443
@@ -400,14 +450,14 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-14
+- name: US-HTTP-15
   type: http
   server: 167.88.60.226
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-15
+- name: US-HTTP-16
   type: http
   server: 12.202.180.10
   port: 443
@@ -421,21 +471,21 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-16
+- name: US-HTTP-17
   type: http
   server: 192.171.18.154
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-17
+- name: US-HTTP-18
   type: http
   server: 162.244.227.36
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-18
+- name: US-HTTP-19
   type: http
   server: 149.88.21.140
   port: 443
@@ -456,7 +506,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-19
+- name: US-HTTP-20
   type: http
   server: 104.244.210.242
   port: 443
@@ -470,7 +520,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-20
+- name: US-HTTP-21
   type: http
   server: 24.225.10.211
   port: 443
@@ -575,7 +625,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-21
+- name: US-HTTP-22
   type: http
   server: 66.64.100.66
   port: 443
@@ -610,7 +660,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: DE-HTTP-02
+- name: DE-HTTP-03
   type: http
   server: 141.17.83.78
   port: 443
@@ -630,7 +680,7 @@ proxies:
   reality-opts:
     public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
     short-id: b62a4da6cd1c4dd6
-- name: SG-HTTP-02
+- name: SG-HTTP-03
   type: http
   server: 103.107.198.242
   port: 443
@@ -672,7 +722,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: SG-HTTP-03
+- name: SG-HTTP-04
   type: http
   server: 185.250.38.135
   port: 443
@@ -708,7 +758,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: SG-HTTP-04
+- name: SG-HTTP-05
   type: http
   server: 154.26.138.244
   port: 443
@@ -722,28 +772,28 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: SG-HTTP-05
+- name: SG-HTTP-06
   type: http
   server: 154.26.138.248
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
-- name: SG-HTTP-06
+- name: SG-HTTP-07
   type: http
   server: 154.26.139.23
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
-- name: SG-HTTP-07
+- name: SG-HTTP-08
   type: http
   server: 154.26.138.216
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
-- name: SG-HTTP-08
+- name: SG-HTTP-09
   type: http
   server: 154.26.138.236
   port: 443
@@ -757,7 +807,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: SG-HTTP-09
+- name: SG-HTTP-10
   type: http
   server: 154.26.139.29
   port: 443
@@ -778,7 +828,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: SG-HTTP-10
+- name: SG-HTTP-11
   type: http
   server: 154.26.138.239
   port: 443
@@ -792,7 +842,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: UN-SS-04
+- name: UN-SS-05
   type: ss
   server: 168.107.93.50
   port: 56927
@@ -803,37 +853,44 @@ proxy-groups:
 - name: auto
   type: select
   proxies:
+  - JP-HTTP-01
+  - JP-HTTP-02
   - UN-SS-01
+  - UN-SS-02
   - NL-HTTP-01
   - SG-HTTP-01
+  - SG-HTTP-02
   - GB-HTTP-01
   - US-HTTP-01
-  - UN-SS-02
+  - UN-SS-03
   - GB-HTTP-02
   - DE-HTTP-01
   - GB-HTTP-03
+  - BE-HTTP-01
+  - DE-HTTP-02
+  - US-HTTP-02
   - NL-HTTP-02
   - AT-HTTP-01
   - CN-VMESS-01
-  - US-HTTP-02
+  - US-HTTP-03
   - PL-HTTP-01
   - NL-HTTP-03
-  - US-HTTP-03
   - US-HTTP-04
   - US-HTTP-05
-  - IT-HTTP-01
   - US-HTTP-06
+  - IT-HTTP-01
   - US-HTTP-07
   - US-HTTP-08
+  - US-HTTP-09
   - RO-HTTP-01
-  - UN-SS-03
+  - UN-SS-04
   - RO-HTTP-02
   - NL-HTTP-04
   - NL-HTTP-05
   - DK-HTTP-01
   - NL-HTTP-06
-  - US-HTTP-09
   - US-HTTP-10
+  - US-HTTP-11
   - ES-HTTP-01
   - NL-HTTP-07
   - NL-HTTP-08
@@ -842,33 +899,33 @@ proxy-groups:
   - SE-HTTP-01
   - NL-HTTP-09
   - HK-HTTP-01
-  - US-HTTP-11
+  - US-HTTP-12
   - NL-HTTP-10
   - RO-HTTP-04
   - GB-HTTP-05
   - NL-HTTP-11
-  - BE-HTTP-01
-  - US-HTTP-12
+  - BE-HTTP-02
+  - US-HTTP-13
   - RS-HTTP-01
   - PH-HTTP-01
   - RO-HTTP-05
-  - US-HTTP-13
+  - US-HTTP-14
   - CH-HTTP-01
   - HK-HTTP-02
   - CA-HTTP-01
   - RO-HTTP-06
   - HK-HTTP-03
-  - US-HTTP-14
   - US-HTTP-15
-  - CA-HTTP-02
   - US-HTTP-16
+  - CA-HTTP-02
   - US-HTTP-17
   - US-HTTP-18
+  - US-HTTP-19
   - FR-HTTP-01
   - RO-HTTP-07
-  - US-HTTP-19
-  - RO-HTTP-08
   - US-HTTP-20
+  - RO-HTTP-08
+  - US-HTTP-21
   - GB-HTTP-06
   - IT-HTTP-02
   - RO-HTTP-09
@@ -882,36 +939,36 @@ proxy-groups:
   - US-VLESS-01
   - GB-HTTP-07
   - PT-HTTP-01
-  - US-HTTP-21
+  - US-HTTP-22
   - PT-HTTP-02
   - RO-HTTP-13
   - RO-HTTP-14
   - RO-HTTP-15
-  - DE-HTTP-02
+  - DE-HTTP-03
   - US-VLESS-02
-  - SG-HTTP-02
+  - SG-HTTP-03
   - BR-HTTP-01
   - VN-HTTP-02
   - PE-HTTP-01
   - RO-HTTP-16
   - IN-HTTP-01
-  - SG-HTTP-03
+  - SG-HTTP-04
   - RO-HTTP-17
   - UN-HTTP-02
   - ID-HTTP-01
   - AU-HTTP-01
-  - SG-HTTP-04
-  - IT-HTTP-03
   - SG-HTTP-05
+  - IT-HTTP-03
   - SG-HTTP-06
   - SG-HTTP-07
   - SG-HTTP-08
-  - ZA-HTTP-01
   - SG-HTTP-09
+  - ZA-HTTP-01
+  - SG-HTTP-10
   - CA-HTTP-03
   - UN-HTTP-03
-  - SG-HTTP-10
+  - SG-HTTP-11
   - ZA-HTTP-02
-  - UN-SS-04
+  - UN-SS-05
 rules:
 - MATCH,auto

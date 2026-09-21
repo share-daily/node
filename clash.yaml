@@ -13,6 +13,20 @@ proxies:
   udp: true
   cipher: 2022-blake3-chacha20-poly1305
   password: DLaeVdYGgntYTzUUrtolrkLBS+n4O+pKXCoW5w9S1EE=
+- name: DE-HTTP-01
+  type: http
+  server: 87.249.132.97
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: UN-SS-02
+  type: ss
+  server: 130.61.119.116
+  port: 59924
+  udp: true
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8ilYOpgiXMq8BCHWqfd1G6/MWatxTQ0jVfSgvE18hqA=
 - name: BE-HTTP-01
   type: http
   server: 146.70.123.98
@@ -20,16 +34,37 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: DE-HTTP-02
+  type: http
+  server: 87.249.132.97
+  port: 9443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: BE-HTTP-02
+  type: http
+  server: 146.70.176.242
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
 - name: GB-HTTP-01
   type: http
-  server: 37.120.233.18
+  server: 37.120.233.50
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
 - name: GB-HTTP-02
   type: http
-  server: 37.120.233.50
+  server: 185.235.0.98
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: RS-HTTP-01
+  type: http
+  server: 146.70.221.18
   port: 443
   udp: true
   tls: true
@@ -41,7 +76,28 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: DE-HTTP-03
+  type: http
+  server: 149.36.50.157
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: DE-HTTP-04
+  type: http
+  server: 149.36.50.1
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
 - name: GB-HTTP-03
+  type: http
+  server: 37.120.233.18
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: GB-HTTP-04
   type: http
   server: 37.120.233.34
   port: 443
@@ -91,13 +147,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   password: None
-- name: DE-HTTP-01
-  type: http
-  server: 149.36.50.1
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
 - name: NL-HTTP-05
   type: http
   server: 84.17.47.150
@@ -137,13 +186,6 @@ proxies:
 - name: US-HTTP-03
   type: http
   server: 149.50.212.206
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: RS-HTTP-01
-  type: http
-  server: 146.70.221.18
   port: 443
   udp: true
   tls: true
@@ -220,21 +262,21 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: GB-HTTP-04
+- name: GB-HTTP-05
   type: http
   server: 185.235.0.66
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
-- name: GB-HTTP-05
+- name: GB-HTTP-06
   type: http
   server: 185.235.0.34
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
-- name: GB-HTTP-06
+- name: GB-HTTP-07
   type: http
   server: 185.235.0.2
   port: 443
@@ -265,13 +307,6 @@ proxies:
 - name: JP-HTTP-02
   type: http
   server: 37.120.210.146
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: GB-HTTP-07
-  type: http
-  server: 185.235.0.98
   port: 443
   udp: true
   tls: true
@@ -695,7 +730,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: DE-HTTP-02
+- name: DE-HTTP-05
   type: http
   server: 141.17.83.73
   port: 443
@@ -765,7 +800,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: DE-HTTP-03
+- name: DE-HTTP-06
   type: http
   server: 141.17.83.78
   port: 443
@@ -932,25 +967,31 @@ proxy-groups:
   proxies:
   - JP-HTTP-01
   - UN-SS-01
+  - DE-HTTP-01
+  - UN-SS-02
   - BE-HTTP-01
+  - DE-HTTP-02
+  - BE-HTTP-02
   - GB-HTTP-01
   - GB-HTTP-02
+  - RS-HTTP-01
   - NL-HTTP-01
+  - DE-HTTP-03
+  - DE-HTTP-04
   - GB-HTTP-03
+  - GB-HTTP-04
   - US-HTTP-01
   - NL-HTTP-02
   - NL-HTTP-03
   - AT-HTTP-01
   - IE-HTTP-01
   - NL-HTTP-04
-  - DE-HTTP-01
   - NL-HTTP-05
   - NL-HTTP-06
   - RO-HTTP-01
   - US-HTTP-02
   - NL-HTTP-07
   - US-HTTP-03
-  - RS-HTTP-01
   - US-HTTP-04
   - AT-HTTP-02
   - US-HTTP-05
@@ -961,14 +1002,13 @@ proxy-groups:
   - US-HTTP-06
   - US-HTTP-07
   - IT-HTTP-01
-  - GB-HTTP-04
   - GB-HTTP-05
   - GB-HTTP-06
+  - GB-HTTP-07
   - US-HTTP-08
   - DK-HTTP-01
   - US-HTTP-09
   - JP-HTTP-02
-  - GB-HTTP-07
   - BG-HTTP-01
   - US-HTTP-10
   - PL-HTTP-02
@@ -1027,7 +1067,7 @@ proxy-groups:
   - AU-HTTP-05
   - HK-HTTP-02
   - BR-HTTP-01
-  - DE-HTTP-02
+  - DE-HTTP-05
   - AR-HTTP-01
   - IN-HTTP-01
   - SG-HTTP-02
@@ -1037,7 +1077,7 @@ proxy-groups:
   - IT-HTTP-03
   - GR-HTTP-01
   - SG-HTTP-04
-  - DE-HTTP-03
+  - DE-HTTP-06
   - CA-HTTP-06
   - SG-HTTP-05
   - IT-HTTP-04

@@ -1,5 +1,26 @@
 proxies:
+- name: JP-HTTP-01
+  type: http
+  server: 37.120.210.146
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
 - name: UN-VLESS-01
+  type: vless
+  server: 34.96.146.210
+  port: 443
+  udp: true
+  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
+  network: tcp
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  host: www.cloudflare.com
+  reality-opts:
+    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
+    short-id: 56d4e7ae4f86fa39
+- name: UN-VLESS-02
   type: vless
   server: 34.15.176.240
   port: 443
@@ -20,7 +41,7 @@ proxies:
   udp: true
   cipher: 2022-blake3-chacha20-poly1305
   password: EG7gd6f1FSkm+x/OoWRHzsRT1Jl/tSx0EWxkprEGZSo=
-- name: UN-VLESS-02
+- name: UN-VLESS-03
   type: vless
   server: 193.123.35.190
   port: 62145
@@ -49,20 +70,6 @@ proxies:
   udp: true
   cipher: 2022-blake3-chacha20-poly1305
   password: hsuAtTyIs0Gl65/0moSA/jcDwzE2LUfpWINEzRhWxG0=
-- name: UN-VLESS-03
-  type: vless
-  server: 34.96.146.210
-  port: 443
-  udp: true
-  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
-  network: tcp
-  tls: true
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  host: www.cloudflare.com
-  reality-opts:
-    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
-    short-id: 56d4e7ae4f86fa39
 - name: UN-VLESS-04
   type: vless
   server: 34.81.223.1
@@ -615,13 +622,14 @@ proxy-groups:
 - name: auto
   type: select
   proxies:
+  - JP-HTTP-01
   - UN-VLESS-01
-  - UN-SS-01
   - UN-VLESS-02
+  - UN-SS-01
+  - UN-VLESS-03
   - HK-HTTP-01
   - UN-SS-02
   - UN-SS-03
-  - UN-VLESS-03
   - UN-VLESS-04
   - DE-HTTP-01
   - NL-HTTP-01

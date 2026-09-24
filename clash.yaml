@@ -85,6 +85,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: AT-HTTP-01
+  type: http
+  server: 146.70.244.18
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
 - name: GB-HTTP-01
   type: http
   server: 185.235.0.98
@@ -387,6 +394,7 @@ proxy-groups:
   - US-HTTP-01
   - NL-HTTP-03
   - FR-HTTP-01
+  - AT-HTTP-01
   - GB-HTTP-01
   - NL-HTTP-04
   - GB-HTTP-02

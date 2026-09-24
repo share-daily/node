@@ -1,4 +1,11 @@
 proxies:
+- name: AT-HTTP-01
+  type: http
+  server: 146.70.244.18
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
 - name: US-HTTP-01
   type: http
   server: fan.365747.xyz
@@ -173,7 +180,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: AT-HTTP-01
+- name: AT-HTTP-02
   type: http
   server: 146.70.244.2
   port: 443
@@ -369,6 +376,7 @@ proxy-groups:
 - name: auto
   type: select
   proxies:
+  - AT-HTTP-01
   - US-HTTP-01
   - US-HTTP-02
   - BE-HTTP-01
@@ -393,7 +401,7 @@ proxy-groups:
   - NL-HTTP-09
   - PL-HTTP-01
   - US-HTTP-08
-  - AT-HTTP-01
+  - AT-HTTP-02
   - CA-HTTP-01
   - RO-HTTP-03
   - NL-HTTP-10

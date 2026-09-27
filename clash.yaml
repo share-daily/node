@@ -119,6 +119,14 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: RO-HTTP-05
+  type: http
+  server: 193.176.84.31
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
 - name: US-HTTP-02
   type: http
   server: 167.88.60.226
@@ -161,7 +169,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: RO-HTTP-05
+- name: RO-HTTP-06
   type: http
   server: 193.176.84.23
   port: 9002
@@ -323,6 +331,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: RO-HTTP-07
+  type: http
+  server: 193.176.84.39
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
 - name: SG-HTTP-03
   type: http
   server: 154.26.138.233
@@ -435,13 +450,14 @@ proxy-groups:
   - NL-HTTP-04
   - RO-HTTP-04
   - GR-HTTP-01
+  - RO-HTTP-05
   - US-HTTP-02
   - NL-HTTP-05
   - US-HTTP-03
   - US-HTTP-04
   - US-HTTP-05
   - CA-HTTP-01
-  - RO-HTTP-05
+  - RO-HTTP-06
   - NL-HTTP-06
   - GB-HTTP-02
   - US-HTTP-06
@@ -464,6 +480,7 @@ proxy-groups:
   - IN-HTTP-01
   - AU-HTTP-05
   - CA-HTTP-03
+  - RO-HTTP-07
   - SG-HTTP-03
   - SG-HTTP-04
   - SG-HTTP-05

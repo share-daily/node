@@ -12,6 +12,13 @@ proxies:
   reality-opts:
     public-key: PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0
     short-id: 32f66f37df3f58d2
+- name: JP-HTTP-01
+  type: http
+  server: 37.120.210.66
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
 - name: UN-VLESS-01
   type: vless
   server: 136.244.85.41
@@ -897,6 +904,7 @@ proxy-groups:
   type: select
   proxies:
   - TW-VLESS-01
+  - JP-HTTP-01
   - UN-VLESS-01
   - SE-SS-01
   - SE-SS-02

@@ -33,20 +33,6 @@ proxies:
   udp: true
   cipher: aes-256-cfb
   password: amazonskr05
-- name: SE-SS-01
-  type: ss
-  server: 51.20.72.15
-  port: 443
-  udp: true
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: SE-SS-02
-  type: ss
-  server: 51.20.122.188
-  port: 443
-  udp: true
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: UN-SS-02
   type: ss
   server: 130.61.43.139
@@ -139,13 +125,6 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: SE-SS-03
-  type: ss
-  server: 13.62.228.76
-  port: 443
-  udp: true
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: RO-HTTP-02
   type: http
   server: 193.176.84.20
@@ -983,6 +962,13 @@ proxies:
   tls: true
   skip-cert-verify: true
   password: None
+- name: SE-SS-01
+  type: ss
+  server: 13.60.213.145
+  port: 443
+  udp: true
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: RO-HTTP-35
   type: http
   server: 193.176.84.25
@@ -1181,13 +1167,6 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-SS-01
-  type: ss
-  server: 54.90.169.61
-  port: 443
-  udp: true
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: US-HTTP-23
   type: http
   server: 149.22.88.65
@@ -1432,8 +1411,6 @@ proxy-groups:
   - TW-VLESS-01
   - UN-VLESS-01
   - UN-SS-01
-  - SE-SS-01
-  - SE-SS-02
   - UN-SS-02
   - BE-VLESS-01
   - DE-HTTP-01
@@ -1446,7 +1423,6 @@ proxy-groups:
   - NL-HTTP-03
   - NL-HTTP-04
   - RO-HTTP-01
-  - SE-SS-03
   - RO-HTTP-02
   - US-HTTP-02
   - NL-HTTP-05
@@ -1556,6 +1532,7 @@ proxy-groups:
   - US-VLESS-02
   - US-HTTP-18
   - RO-HTTP-34
+  - SE-SS-01
   - RO-HTTP-35
   - US-HTTP-19
   - RO-HTTP-36
@@ -1582,7 +1559,6 @@ proxy-groups:
   - BR-HTTP-01
   - NL-HTTP-33
   - CA-HTTP-03
-  - US-SS-01
   - US-HTTP-23
   - UN-HTTP-02
   - SG-HTTP-02

@@ -38,23 +38,9 @@ proxies:
   password: 26e8b893-7739-40cd-bbbb-a3260ab95e3a
   sni: tw2.jueduibupao.top
   skip-cert-verify: true
-- name: SE-SS-01
-  type: ss
-  server: 51.20.122.188
-  port: 443
-  udp: true
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: UN-SS-01
   type: ss
   server: 51.20.96.231
-  port: 443
-  udp: true
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: SE-SS-02
-  type: ss
-  server: 13.60.213.145
   port: 443
   udp: true
   cipher: aes-256-cfb
@@ -1204,6 +1190,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: SE-SS-01
+  type: ss
+  server: 51.20.122.188
+  port: 443
+  udp: true
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: UN-HTTP-02
   type: http
   server: 87.120.103.242
@@ -1253,6 +1246,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: UN-SS-07
+  type: ss
+  server: 130.61.228.41
+  port: 59924
+  udp: true
+  cipher: 2022-blake3-chacha20-poly1305
+  password: PAijPIjA3tTKiNb0oRJyZrveMENhEwhO8Dk8/gp/ztM=
 - name: SE-HTTP-01
   type: http
   server: 79.142.77.63
@@ -1486,9 +1486,7 @@ proxy-groups:
   - UN-VMESS-02
   - CN-ANYTLS-01
   - TW-ANYTLS-01
-  - SE-SS-01
   - UN-SS-01
-  - SE-SS-02
   - UN-SS-02
   - UN-SS-03
   - UN-SS-04
@@ -1645,6 +1643,7 @@ proxy-groups:
   - US-HTTP-25
   - IN-HTTP-01
   - IT-HTTP-02
+  - SE-SS-01
   - UN-HTTP-02
   - PH-HTTP-01
   - IN-HTTP-02
@@ -1652,6 +1651,7 @@ proxy-groups:
   - AU-HTTP-02
   - NZ-HTTP-01
   - SG-HTTP-04
+  - UN-SS-07
   - SE-HTTP-01
   - SG-HTTP-05
   - NL-HTTP-33

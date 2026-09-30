@@ -18,6 +18,41 @@ proxies:
   password: 26e8b893-7739-40cd-bbbb-a3260ab95e3a
   sni: tw2.jueduibupao.top
   skip-cert-verify: true
+- name: UN-SS-01
+  type: ss
+  server: 195.58.48.137
+  port: 20999
+  udp: true
+  cipher: aes-256-gcm
+  password: 8ad9d72a5571df86
+- name: UN-SS-02
+  type: ss
+  server: 130.61.228.41
+  port: 59924
+  udp: true
+  cipher: 2022-blake3-chacha20-poly1305
+  password: PAijPIjA3tTKiNb0oRJyZrveMENhEwhO8Dk8/gp/ztM=
+- name: UN-SS-03
+  type: ss
+  server: 129.146.164.199
+  port: 50356
+  udp: true
+  cipher: 2022-blake3-chacha20-poly1305
+  password: oPlv4+8UGEF0KZ5f4kDFxpvV5SsW+3veVs23YwxFmBk=
+- name: UN-SS-04
+  type: ss
+  server: 98.89.22.134
+  port: 443
+  udp: true
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: SE-SS-01
+  type: ss
+  server: 13.62.228.76
+  port: 443
+  udp: true
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: US-HTTP-01
   type: http
   server: voteshirleysew.club
@@ -55,6 +90,13 @@ proxies:
   tls: true
   skip-cert-verify: true
   password: None
+- name: UN-SS-05
+  type: ss
+  server: 185.141.219.33
+  port: 8388
+  udp: true
+  cipher: aes-256-gcm
+  password: AIe2aNsA6KVQ6Ok0
 - name: US-HTTP-03
   type: http
   server: voteshirleysew.club
@@ -300,6 +342,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: UN-SS-06
+  type: ss
+  server: 212.192.13.143
+  port: 20999
+  udp: true
+  cipher: aes-256-gcm
+  password: 72553320ae6bcc8f
 - name: RO-HTTP-21
   type: http
   server: 193.176.84.25
@@ -493,6 +542,16 @@ proxies:
   reality-opts:
     public-key: 2jUsxVyWXcNXhksgk-MuwLHt4VUCoeqZQj0fDEvFuR8
     short-id: 19afd0ac7f6310
+- name: UN-VMESS-01
+  type: vmess
+  server: 31.77.8.97
+  port: 110
+  udp: true
+  uuid: d2d8601b-c14b-42c6-b8ea-33889bce152a
+  network: tcp
+  tls: false
+  alterId: 0
+  cipher: auto
 - name: RO-HTTP-25
   type: http
   server: 193.176.84.27
@@ -671,6 +730,16 @@ proxies:
   tls: true
   skip-cert-verify: true
   password: None
+- name: UN-VMESS-02
+  type: vmess
+  server: 31.77.8.97
+  port: 110
+  udp: true
+  uuid: d2d8601b-c14b-42c6-b8ea-33889bce152a
+  network: raw
+  tls: false
+  alterId: 0
+  cipher: auto
 - name: UN-HTTP-01
   type: http
   server: 154.47.29.161
@@ -868,6 +937,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: UN-SS-07
+  type: ss
+  server: 212.192.12.24
+  port: 8388
+  udp: true
+  cipher: aes-256-gcm
+  password: RpMtrTbA7wdK0Pia
 - name: RO-HTTP-45
   type: http
   server: 193.176.84.31
@@ -946,17 +1022,30 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: UN-TROJAN-01
+  type: trojan
+  server: th1.zestapp778.com
+  port: 443
+  udp: true
+  password: Trojan@82164024
+  sni: th1.zestapp778.com
 proxy-groups:
 - name: auto
   type: select
   proxies:
   - CN-ANYTLS-01
   - TW-ANYTLS-01
+  - UN-SS-01
+  - UN-SS-02
+  - UN-SS-03
+  - UN-SS-04
+  - SE-SS-01
   - US-HTTP-01
   - US-HTTP-02
   - NL-HTTP-01
   - NL-HTTP-02
   - NL-HTTP-03
+  - UN-SS-05
   - US-HTTP-03
   - DE-HTTP-01
   - NL-HTTP-04
@@ -991,6 +1080,7 @@ proxy-groups:
   - NL-HTTP-12
   - NL-HTTP-13
   - RO-HTTP-20
+  - UN-SS-06
   - RO-HTTP-21
   - US-HTTP-05
   - NL-HTTP-14
@@ -1017,6 +1107,7 @@ proxy-groups:
   - NL-HTTP-22
   - US-HTTP-10
   - UN-VLESS-01
+  - UN-VMESS-01
   - RO-HTTP-25
   - RO-HTTP-26
   - GB-HTTP-02
@@ -1042,6 +1133,7 @@ proxy-groups:
   - US-HTTP-15
   - RO-HTTP-37
   - NL-HTTP-24
+  - UN-VMESS-02
   - UN-HTTP-01
   - RO-HTTP-38
   - CA-HTTP-04
@@ -1070,6 +1162,7 @@ proxy-groups:
   - SG-HTTP-01
   - AU-HTTP-04
   - LV-HTTP-01
+  - UN-SS-07
   - RO-HTTP-45
   - SG-HTTP-02
   - SG-HTTP-03
@@ -1081,5 +1174,6 @@ proxy-groups:
   - HK-HTTP-01
   - RO-HTTP-46
   - US-HTTP-19
+  - UN-TROJAN-01
 rules:
 - MATCH,auto

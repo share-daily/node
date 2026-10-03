@@ -375,6 +375,14 @@ proxies:
   skip-cert-verify: true
 - name: RO-HTTP-10
   type: http
+  server: 193.176.84.31
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
+- name: RO-HTTP-11
+  type: http
   server: 193.176.84.33
   port: 9002
   udp: true
@@ -457,28 +465,28 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: RO-HTTP-11
+- name: RO-HTTP-12
   type: http
   server: 193.176.84.32
   port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
-- name: RO-HTTP-12
+- name: RO-HTTP-13
   type: http
   server: 193.176.84.30
   port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
-- name: RO-HTTP-13
+- name: RO-HTTP-14
   type: http
   server: 193.176.84.24
   port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
-- name: RO-HTTP-14
+- name: RO-HTTP-15
   type: http
   server: 193.176.84.25
   port: 9002
@@ -499,7 +507,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: RO-HTTP-15
+- name: RO-HTTP-16
   type: http
   server: 193.176.84.25
   port: 9002
@@ -513,7 +521,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: RO-HTTP-16
+- name: RO-HTTP-17
   type: http
   server: 193.176.84.27
   port: 9002
@@ -527,7 +535,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: RO-HTTP-17
+- name: RO-HTTP-18
   type: http
   server: 193.176.84.39
   port: 9002
@@ -576,7 +584,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: RO-HTTP-18
+- name: RO-HTTP-19
   type: http
   server: 193.176.84.31
   port: 9002
@@ -740,6 +748,7 @@ proxy-groups:
   - RO-HTTP-08
   - RO-HTTP-09
   - RO-HTTP-10
+  - RO-HTTP-11
   - US-HTTP-13
   - HK-HTTP-01
   - NL-HTTP-13
@@ -751,24 +760,24 @@ proxy-groups:
   - US-HTTP-15
   - GR-HTTP-01
   - CA-HTTP-03
-  - RO-HTTP-11
   - RO-HTTP-12
   - RO-HTTP-13
   - RO-HTTP-14
+  - RO-HTTP-15
   - US-HTTP-16
   - UN-HTTP-01
-  - RO-HTTP-15
-  - NL-HTTP-14
   - RO-HTTP-16
-  - SG-HTTP-02
+  - NL-HTTP-14
   - RO-HTTP-17
+  - SG-HTTP-02
+  - RO-HTTP-18
   - BR-HTTP-01
   - IN-HTTP-01
   - US-HTTP-17
   - AU-HTTP-01
   - NL-HTTP-15
   - FR-HTTP-01
-  - RO-HTTP-18
+  - RO-HTTP-19
   - LK-VLESS-01
   - VN-HTTP-01
   - SG-HTTP-03

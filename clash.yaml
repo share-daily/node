@@ -65,16 +65,6 @@ proxies:
   reality-opts:
     public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
     short-id: 56d4e7ae4f86fa39
-- name: UN-VMESS-02
-  type: vmess
-  server: sbgfgov.vip7.wogacnmnagfwgov.com
-  port: 11207
-  udp: true
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  network: tcp
-  tls: false
-  alterId: 2
-  cipher: auto
 - name: UN-VLESS-04
   type: vless
   server: 34.80.248.240
@@ -89,6 +79,16 @@ proxies:
   reality-opts:
     public-key: qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg
     short-id: d74a6321deec9f31
+- name: UN-VMESS-02
+  type: vmess
+  server: sbgfgov.vip7.wogacnmnagfwgov.com
+  port: 11207
+  udp: true
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  network: tcp
+  tls: false
+  alterId: 2
+  cipher: auto
 - name: FR-SS-01
   type: ss
   server: 15.237.255.137
@@ -1361,8 +1361,8 @@ proxy-groups:
   - UN-VMESS-01
   - UN-VLESS-02
   - UN-VLESS-03
-  - UN-VMESS-02
   - UN-VLESS-04
+  - UN-VMESS-02
   - FR-SS-01
   - UN-TROJAN-03
   - UN-TROJAN-04

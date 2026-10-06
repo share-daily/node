@@ -45,7 +45,48 @@ proxies:
   tls: true
   sni: fan.571589.xyz
   skip-cert-verify: false
+- name: UN-SS-01
+  type: ss
+  server: 13.124.41.194
+  port: 8443
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
 - name: UN-VMESS-03
+  type: vmess
+  server: ushsfs1.povrak.ir
+  port: 37387
+  udp: true
+  uuid: ce0bcb75-baa7-41a7-833e-eb54a8f6a08e
+  network: tcp
+  tls: false
+  alterId: 0
+  cipher: auto
+- name: UN-VMESS-04
+  type: vmess
+  server: 5.161.155.50
+  port: 37387
+  udp: true
+  uuid: ce0bcb75-baa7-41a7-833e-eb54a8f6a08e
+  network: tcp
+  tls: false
+  alterId: 0
+  cipher: auto
+- name: UN-SS-02
+  type: ss
+  server: gw.lydwan.com
+  port: 35601
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: 4c8fced0-8987-4504-b8cf-15aca9cbb82e
+- name: UN-SS-03
+  type: ss
+  server: 194.87.196.13
+  port: 10771
+  udp: true
+  cipher: aes-256-gcm
+  password: 4938e975724d0ed1
+- name: UN-VMESS-05
   type: vmess
   server: silversbgfgov.vip38.wogbcnmnagfwgov.com
   port: 11238
@@ -63,6 +104,16 @@ proxies:
   tls: true
   sni: fan.587475.xyz
   skip-cert-verify: false
+- name: UN-VMESS-06
+  type: vmess
+  server: netork.povrak.ir
+  port: 37523
+  udp: true
+  uuid: ce0bcb75-baa7-41a7-833e-eb54a8f6a08e
+  network: tcp
+  tls: false
+  alterId: 0
+  cipher: auto
 - name: NL-HTTP-01
   type: http
   server: 149.36.51.129
@@ -142,6 +193,16 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: UN-VMESS-07
+  type: vmess
+  server: sbgfgov.vip22.wogacnmnagfwgov.com
+  port: 11222
+  udp: true
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  network: tcp
+  tls: false
+  alterId: 2
+  cipher: auto
 - name: NL-HTTP-05
   type: http
   server: 84.17.47.146
@@ -163,7 +224,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: UN-VMESS-04
+- name: UN-VMESS-08
   type: vmess
   server: goldcnmltyljgfwgov.vip68.wogcnmnnagfwgov.com
   port: 11268
@@ -543,20 +604,6 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: UN-VLESS-01
-  type: vless
-  server: eu86.vaultberry.cloud
-  port: 443
-  udp: true
-  uuid: cfcb4c51-5c89-4132-a86d-bbbb757b56fb
-  network: tcp
-  tls: true
-  servername: eu86.vaultberry.cloud
-  client-fingerprint: firefox
-  host: eu86.vaultberry.cloud
-  reality-opts:
-    public-key: zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M
-    short-id: 1ed136481e0ede74
 - name: US-HTTP-15
   type: http
   server: 138.199.35.216
@@ -664,6 +711,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: UN-SS-04
+  type: ss
+  server: 45.144.172.123
+  port: 10771
+  udp: true
+  cipher: aes-256-gcm
+  password: 78235e7dc55e9ad1
 - name: NL-HTTP-25
   type: http
   server: 84.17.47.125
@@ -841,7 +895,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: UN-VMESS-05
+- name: UN-VMESS-09
   type: vmess
   server: sbgfgov.vip21.wogacnmnagfwgov.com
   port: 11221
@@ -1168,7 +1222,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: UN-VMESS-06
+- name: UN-VMESS-10
   type: vmess
   server: sbgfgov.vip18.wogacnmnagfwgov.com
   port: 11218
@@ -1228,16 +1282,6 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: UN-VMESS-07
-  type: vmess
-  server: sbgfgov.vip22.wogacnmnagfwgov.com
-  port: 11222
-  udp: true
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  network: tcp
-  tls: false
-  alterId: 2
-  cipher: auto
 - name: AR-HTTP-01
   type: http
   server: 190.103.176.146
@@ -1328,7 +1372,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: UN-VMESS-08
+- name: UN-VMESS-11
   type: vmess
   server: goldcnmltyljgfwgov.vip60.wogcnmnnagfwgov.com
   port: 11260
@@ -1411,6 +1455,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: UN-SS-05
+  type: ss
+  server: 212.192.221.129
+  port: 10771
+  udp: true
+  cipher: aes-256-gcm
+  password: 9cfaa78d51ac366f
 - name: SG-HTTP-07
   type: http
   server: 154.26.138.248
@@ -1427,8 +1478,14 @@ proxy-groups:
   - TW-ANYTLS-01
   - JP-HTTP-01
   - JP-HTTP-02
+  - UN-SS-01
   - UN-VMESS-03
+  - UN-VMESS-04
+  - UN-SS-02
+  - UN-SS-03
+  - UN-VMESS-05
   - JP-HTTP-03
+  - UN-VMESS-06
   - NL-HTTP-01
   - NL-HTTP-02
   - US-HTTP-01
@@ -1440,10 +1497,11 @@ proxy-groups:
   - US-HTTP-04
   - US-HTTP-05
   - RO-HTTP-01
+  - UN-VMESS-07
   - NL-HTTP-05
   - US-HTTP-06
   - RO-HTTP-02
-  - UN-VMESS-04
+  - UN-VMESS-08
   - PL-HTTP-01
   - US-HTTP-07
   - RO-HTTP-03
@@ -1494,7 +1552,6 @@ proxy-groups:
   - RO-HTTP-30
   - NL-HTTP-15
   - NL-HTTP-16
-  - UN-VLESS-01
   - US-HTTP-15
   - NL-HTTP-17
   - NL-HTTP-18
@@ -1509,6 +1566,7 @@ proxy-groups:
   - NL-HTTP-23
   - NL-HTTP-24
   - LV-HTTP-01
+  - UN-SS-04
   - NL-HTTP-25
   - ES-HTTP-01
   - US-HTTP-18
@@ -1533,7 +1591,7 @@ proxy-groups:
   - RO-HTTP-38
   - RO-HTTP-39
   - RO-HTTP-40
-  - UN-VMESS-05
+  - UN-VMESS-09
   - RO-HTTP-41
   - IT-HTTP-01
   - RO-HTTP-42
@@ -1578,7 +1636,7 @@ proxy-groups:
   - CA-HTTP-07
   - US-HTTP-29
   - SE-HTTP-01
-  - UN-VMESS-06
+  - UN-VMESS-10
   - SE-HTTP-02
   - RO-HTTP-61
   - GB-HTTP-04
@@ -1586,7 +1644,6 @@ proxy-groups:
   - RO-HTTP-63
   - UN-HTTP-02
   - AU-HTTP-01
-  - UN-VMESS-07
   - AR-HTTP-01
   - FR-HTTP-01
   - DE-HTTP-02
@@ -1599,7 +1656,7 @@ proxy-groups:
   - NL-HTTP-34
   - AU-HTTP-02
   - UN-HTTP-03
-  - UN-VMESS-08
+  - UN-VMESS-11
   - SG-HTTP-03
   - ZA-HTTP-01
   - SG-HTTP-04
@@ -1610,6 +1667,7 @@ proxy-groups:
   - AU-HTTP-03
   - SG-HTTP-06
   - PT-HTTP-01
+  - UN-SS-05
   - SG-HTTP-07
 rules:
 - MATCH,auto

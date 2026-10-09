@@ -1,4 +1,11 @@
 proxies:
+- name: UN-TROJAN-01
+  type: trojan
+  server: fond-mammoth.rooster465.autos
+  port: 443
+  udp: true
+  password: UX82473651
+  sni: fond-mammoth.rooster465.autos
 - name: SG-ANYTLS-01
   type: anytls
   server: sg.miaolianyunapp.com
@@ -71,6 +78,20 @@ proxies:
   password: 0e880e30-6286-4e7d-8dd0-eae1ecc49836
   sni: gtnnhndvssfchjfg05.com
   skip-cert-verify: true
+- name: UN-VLESS-01
+  type: vless
+  server: 34.92.19.135
+  port: 443
+  udp: true
+  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
+  network: tcp
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  host: www.cloudflare.com
+  reality-opts:
+    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
+    short-id: 56d4e7ae4f86fa39
 - name: HK-ANYTLS-05
   type: anytls
   server: hk.miaolianyunapp.com
@@ -120,6 +141,16 @@ proxies:
   sni: gtnnhndvssfchjfg05.com
   skip-cert-verify: true
 - name: UN-VMESS-01
+  type: vmess
+  server: silversbgfgov.vip30.wogbcnmnagfwgov.com
+  port: 11230
+  udp: true
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  network: tcp
+  tls: false
+  alterId: 2
+  cipher: auto
+- name: UN-VMESS-02
   type: vmess
   server: silversbgfgov.vip40.wogbcnmnagfwgov.com
   port: 11240
@@ -185,7 +216,7 @@ proxies:
   password: 0e880e30-6286-4e7d-8dd0-eae1ecc49836
   sni: gtnnhndvssfchjfg05.com
   skip-cert-verify: true
-- name: UN-VMESS-02
+- name: UN-VMESS-03
   type: vmess
   server: sbgfgov.vip23.wogacnmnagfwgov.com
   port: 11223
@@ -203,6 +234,20 @@ proxies:
   password: 0e880e30-6286-4e7d-8dd0-eae1ecc49836
   sni: gtnnhndvssfchjfg05.com
   skip-cert-verify: true
+- name: UN-VLESS-02
+  type: vless
+  server: 193.233.74.6
+  port: 8444
+  udp: true
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  network: grpc
+  tls: true
+  servername: github.com
+  client-fingerprint: chrome
+  host: github.com
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+    short-id: 457fab2ac885dbe0
 - name: US-ANYTLS-01
   type: anytls
   server: 67.230.190.246
@@ -243,7 +288,60 @@ proxies:
   password: 0e880e30-6286-4e7d-8dd0-eae1ecc49836
   sni: gtnnhndvssfchjfg05.com
   skip-cert-verify: true
-- name: UN-VLESS-01
+- name: US-ANYTLS-06
+  type: anytls
+  server: us.miaolianyunapp.com
+  port: 51234
+  udp: true
+  password: 0e880e30-6286-4e7d-8dd0-eae1ecc49836
+  sni: gtnnhndvssfchjfg05.com
+  skip-cert-verify: true
+- name: UN-VMESS-04
+  type: vmess
+  server: silversbgfgov.vip41.wogbcnmnagfwgov.com
+  port: 11241
+  udp: true
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  network: tcp
+  tls: false
+  alterId: 2
+  cipher: auto
+- name: DE-SS-01
+  type: ss
+  server: 47.85.168.157
+  port: 443
+  udp: true
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
+- name: BE-HTTP-01
+  type: http
+  server: 146.70.176.242
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: UN-VLESS-03
+  type: vless
+  server: 185.200.199.75
+  port: 8444
+  udp: true
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  network: grpc
+  tls: true
+  servername: github.com
+  client-fingerprint: firefox
+  host: github.com
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+    short-id: ''
+- name: US-HTTP-01
+  type: http
+  server: fan.365747.xyz
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: UN-VLESS-04
   type: vless
   server: 185.200.199.75
   port: 8444
@@ -257,38 +355,6 @@ proxies:
   reality-opts:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
     short-id: ''
-- name: US-ANYTLS-06
-  type: anytls
-  server: us.miaolianyunapp.com
-  port: 51234
-  udp: true
-  password: 0e880e30-6286-4e7d-8dd0-eae1ecc49836
-  sni: gtnnhndvssfchjfg05.com
-  skip-cert-verify: true
-- name: UN-VMESS-03
-  type: vmess
-  server: silversbgfgov.vip41.wogbcnmnagfwgov.com
-  port: 11241
-  udp: true
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  network: tcp
-  tls: false
-  alterId: 2
-  cipher: auto
-- name: BE-HTTP-01
-  type: http
-  server: 146.70.176.242
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-HTTP-01
-  type: http
-  server: fan.365747.xyz
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
 - name: US-HTTP-02
   type: http
   server: fan.365747.xyz
@@ -366,6 +432,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: UN-TROJAN-02
+  type: trojan
+  server: musical-mouse.rooster465.autos
+  port: 443
+  udp: true
+  password: UX82473651
+  sni: musical-mouse.rooster465.autos
 - name: US-HTTP-10
   type: http
   server: mmgr.club
@@ -513,6 +586,20 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: UN-VLESS-05
+  type: vless
+  server: 136.107.170.196
+  port: 443
+  udp: true
+  uuid: d6d58f01-b5ce-4d47-bce0-b8a806155852
+  network: tcp
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  host: www.cloudflare.com
+  reality-opts:
+    public-key: L1S0DpFtHPBeyENZUvJPcrFZIct6kcHUPxuzNaGXIFY
+    short-id: 4c69c4b51c580d60
 - name: NL-HTTP-07
   type: http
   server: 84.17.47.148
@@ -1569,7 +1656,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: UN-VMESS-04
+- name: UN-VMESS-05
   type: vmess
   server: v6.hdacd.com
   port: 30806
@@ -1695,6 +1782,7 @@ proxy-groups:
 - name: auto
   type: select
   proxies:
+  - UN-TROJAN-01
   - SG-ANYTLS-01
   - HK-ANYTLS-01
   - HK-ANYTLS-02
@@ -1704,6 +1792,7 @@ proxy-groups:
   - JP-ANYTLS-02
   - JP-HTTP-01
   - JP-ANYTLS-03
+  - UN-VLESS-01
   - HK-ANYTLS-05
   - HK-ANYTLS-06
   - HK-ANYTLS-07
@@ -1711,6 +1800,7 @@ proxy-groups:
   - JP-ANYTLS-04
   - JP-ANYTLS-05
   - UN-VMESS-01
+  - UN-VMESS-02
   - HK-ANYTLS-09
   - SG-ANYTLS-02
   - SG-ANYTLS-03
@@ -1718,18 +1808,21 @@ proxy-groups:
   - HK-ANYTLS-10
   - SG-ANYTLS-04
   - SG-ANYTLS-05
-  - UN-VMESS-02
+  - UN-VMESS-03
   - TW-ANYTLS-02
+  - UN-VLESS-02
   - US-ANYTLS-01
   - US-ANYTLS-02
   - US-ANYTLS-03
   - US-ANYTLS-04
   - US-ANYTLS-05
-  - UN-VLESS-01
   - US-ANYTLS-06
-  - UN-VMESS-03
+  - UN-VMESS-04
+  - DE-SS-01
   - BE-HTTP-01
+  - UN-VLESS-03
   - US-HTTP-01
+  - UN-VLESS-04
   - US-HTTP-02
   - US-HTTP-03
   - US-HTTP-04
@@ -1740,6 +1833,7 @@ proxy-groups:
   - US-HTTP-08
   - US-HTTP-09
   - GB-HTTP-01
+  - UN-TROJAN-02
   - US-HTTP-10
   - US-HTTP-11
   - US-HTTP-12
@@ -1759,6 +1853,7 @@ proxy-groups:
   - US-HTTP-21
   - GB-HTTP-02
   - DK-HTTP-01
+  - UN-VLESS-05
   - NL-HTTP-07
   - NL-HTTP-08
   - RO-HTTP-01
@@ -1905,7 +2000,7 @@ proxy-groups:
   - SG-HTTP-04
   - AU-HTTP-04
   - SG-HTTP-05
-  - UN-VMESS-04
+  - UN-VMESS-05
   - SG-HTTP-06
   - PE-HTTP-01
   - SG-HTTP-07

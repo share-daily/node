@@ -366,7 +366,7 @@ proxies:
   reality-opts:
     public-key: 7RyQhh-unO6BjkHRVycWKlFyQgJ3vi5_bAI3Mc8CGCA
     short-id: c6887d3b76ef73c9
-- name: CA-SS-01
+- name: UN-SS-05
   type: ss
   server: 15.223.201.180
   port: 443
@@ -458,7 +458,7 @@ proxies:
   reality-opts:
     public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
     short-id: 2f34703f16523c80
-- name: PL-SS-02
+- name: UN-SS-06
   type: ss
   server: 54.36.174.140
   port: 443
@@ -770,7 +770,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: CA-SS-02
+- name: CA-SS-01
   type: ss
   server: 174.88.155.213
   port: 35443
@@ -1835,7 +1835,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: GB-SS-02
+- name: UN-SS-07
   type: ss
   server: 16.60.8.87
   port: 443
@@ -3496,7 +3496,7 @@ proxy-groups:
   - HK-VLESS-07
   - UN-VMESS-03
   - SG-VLESS-06
-  - CA-SS-01
+  - UN-SS-05
   - HK-VLESS-08
   - PL-SS-01
   - SG-VLESS-07
@@ -3504,7 +3504,7 @@ proxy-groups:
   - HK-VLESS-09
   - HK-VLESS-10
   - HK-VLESS-11
-  - PL-SS-02
+  - UN-SS-06
   - US-VLESS-01
   - US-VLESS-02
   - HK-VLESS-12
@@ -3544,7 +3544,7 @@ proxy-groups:
   - US-HTTP-10
   - US-HTTP-11
   - US-HTTP-12
-  - CA-SS-02
+  - CA-SS-01
   - LV-HTTP-01
   - US-HTTP-13
   - US-HTTP-14
@@ -3687,7 +3687,7 @@ proxy-groups:
   - RO-HTTP-47
   - GB-HTTP-03
   - IT-HTTP-03
-  - GB-SS-02
+  - UN-SS-07
   - NL-HTTP-42
   - PL-HTTP-02
   - US-HTTP-46

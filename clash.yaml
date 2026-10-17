@@ -6,6 +6,13 @@ proxies:
   udp: true
   cipher: chacha20-ietf-poly1305
   password: gWXhRbGoI53aSRV8fv9alMwr
+- name: NL-HTTP-01
+  type: http
+  server: 149.36.51.129
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
 - name: GB-HTTP-01
   type: http
   server: 37.120.233.50
@@ -21,7 +28,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   password: None
-- name: NL-HTTP-01
+- name: NL-HTTP-02
   type: http
   server: 84.17.47.148
   port: 9002
@@ -46,7 +53,7 @@ proxies:
   skip-cert-verify: true
   username: 'null'
   password: 'null'
-- name: NL-HTTP-02
+- name: NL-HTTP-03
   type: http
   server: 84.17.47.150
   port: 9002
@@ -74,7 +81,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: NL-HTTP-03
+- name: NL-HTTP-04
   type: http
   server: 84.17.47.125
   port: 9002
@@ -88,14 +95,14 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: NL-HTTP-04
+- name: NL-HTTP-05
   type: http
   server: 84.17.47.125
   port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
-- name: NL-HTTP-05
+- name: NL-HTTP-06
   type: http
   server: 84.17.47.148
   port: 9002
@@ -146,7 +153,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: NL-HTTP-06
+- name: NL-HTTP-07
   type: http
   server: 84.17.47.148
   port: 9002
@@ -162,7 +169,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   password: None
-- name: NL-HTTP-07
+- name: NL-HTTP-08
   type: http
   server: 84.17.47.148
   port: 9002
@@ -177,7 +184,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: NL-HTTP-08
+- name: NL-HTTP-09
   type: http
   server: 84.17.47.148
   port: 9002
@@ -199,7 +206,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: NL-HTTP-09
+- name: NL-HTTP-10
   type: http
   server: 84.17.47.146
   port: 9002
@@ -256,7 +263,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   password: None
-- name: NL-HTTP-10
+- name: NL-HTTP-11
   type: http
   server: 84.17.47.150
   port: 9002
@@ -328,7 +335,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: NL-HTTP-11
+- name: NL-HTTP-12
   type: http
   server: 185.53.129.141
   port: 9090
@@ -449,7 +456,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: NL-HTTP-12
+- name: NL-HTTP-13
   type: http
   server: 84.17.47.146
   port: 9002
@@ -470,7 +477,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: NL-HTTP-13
+- name: NL-HTTP-14
   type: http
   server: 84.17.47.125
   port: 9002
@@ -650,33 +657,34 @@ proxy-groups:
   type: select
   proxies:
   - US-SS-01
+  - NL-HTTP-01
   - GB-HTTP-01
   - US-HTTP-01
-  - NL-HTTP-01
+  - NL-HTTP-02
   - US-HTTP-02
   - US-HTTP-03
-  - NL-HTTP-02
+  - NL-HTTP-03
   - RO-HTTP-01
   - RO-HTTP-02
   - US-HTTP-04
-  - NL-HTTP-03
-  - IT-HTTP-01
   - NL-HTTP-04
+  - IT-HTTP-01
   - NL-HTTP-05
+  - NL-HTTP-06
   - RO-HTTP-03
   - RO-HTTP-04
   - SE-HTTP-01
   - RO-HTTP-05
   - RO-HTTP-06
   - RO-HTTP-07
-  - NL-HTTP-06
-  - RO-HTTP-08
   - NL-HTTP-07
-  - RO-HTTP-09
+  - RO-HTTP-08
   - NL-HTTP-08
+  - RO-HTTP-09
+  - NL-HTTP-09
   - BE-HTTP-01
   - PL-HTTP-01
-  - NL-HTTP-09
+  - NL-HTTP-10
   - PL-HTTP-02
   - SG-HTTP-01
   - RS-HTTP-01
@@ -684,7 +692,7 @@ proxy-groups:
   - RO-HTTP-10
   - US-HTTP-06
   - RO-HTTP-11
-  - NL-HTTP-10
+  - NL-HTTP-11
   - RO-HTTP-12
   - RO-HTTP-13
   - RO-HTTP-14
@@ -694,7 +702,7 @@ proxy-groups:
   - RO-HTTP-17
   - US-HTTP-07
   - RO-HTTP-18
-  - NL-HTTP-11
+  - NL-HTTP-12
   - UN-HTTP-01
   - IT-HTTP-02
   - GB-HTTP-02
@@ -711,10 +719,10 @@ proxy-groups:
   - RO-HTTP-21
   - US-HTTP-10
   - SG-HTTP-02
-  - NL-HTTP-12
+  - NL-HTTP-13
   - SG-HTTP-03
   - US-HTTP-11
-  - NL-HTTP-13
+  - NL-HTTP-14
   - SG-HTTP-04
   - SG-HTTP-05
   - GB-HTTP-04

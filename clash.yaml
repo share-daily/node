@@ -1,15 +1,17 @@
 proxies:
-- name: UN-ANYTLS-01
-  type: anytls
-  server: 684616s4.df6h451rh.xin
+- name: UN-VMESS-01
+  type: vmess
+  server: 9641684.sdf65h4.top
   port: 443
   udp: true
-  password: 0324fbc29561
-  client-fingerprint: chrome
-  sni: px.ads.linkedin.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
+  uuid: 250c015d-bab0-4ed3-b638-b4eda48f5840
+  network: ws
+  tls: true
+  servername: 9641684.sdf65h4.top
+  alterId: 0
+  cipher: auto
+  path: /
+  host: 9641684.sdf65h4.top
 - name: JP-HTTP-01
   type: http
   server: 37.120.210.66
@@ -146,6 +148,17 @@ proxies:
   port: 9002
   udp: true
   tls: true
+  skip-cert-verify: true
+- name: UN-ANYTLS-01
+  type: anytls
+  server: 684616s4.df6h451rh.xin
+  port: 443
+  udp: true
+  password: 0324fbc29561
+  client-fingerprint: chrome
+  sni: px.ads.linkedin.com
+  alpn:
+  - http/1.1
   skip-cert-verify: true
 - name: NL-HTTP-10
   type: http
@@ -474,6 +487,16 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: US-VMESS-01
+  type: vmess
+  server: v24.hdacd.com
+  port: 30824
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  network: tcp
+  tls: false
+  alterId: 2
+  cipher: auto
 - name: NL-HTTP-26
   type: http
   server: 84.17.47.148
@@ -859,14 +882,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   password: None
-- name: TW-ANYTLS-01
-  type: anytls
-  server: er8u54dh.df6h451rh.xin
-  port: 443
-  udp: true
-  password: 0324fbc29561
-  sni: px.ads.linkedin.com
-  skip-cert-verify: true
 - name: RO-HTTP-39
   type: http
   server: 193.176.84.27
@@ -1194,6 +1209,14 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: TW-ANYTLS-01
+  type: anytls
+  server: er8u54dh.df6h451rh.xin
+  port: 443
+  udp: true
+  password: 0324fbc29561
+  sni: px.ads.linkedin.com
+  skip-cert-verify: true
 - name: SG-HTTP-04
   type: http
   server: 154.26.138.248
@@ -1208,7 +1231,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: UN-VMESS-01
+- name: UN-VMESS-02
   type: vmess
   server: v6.hdacd.com
   port: 30806
@@ -1351,11 +1374,18 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: IT-SS-01
+  type: ss
+  server: 202.50.253.72
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 proxy-groups:
 - name: auto
   type: select
   proxies:
-  - UN-ANYTLS-01
+  - UN-VMESS-01
   - JP-HTTP-01
   - DE-HTTP-01
   - GB-HTTP-01
@@ -1375,6 +1405,7 @@ proxy-groups:
   - NL-HTTP-07
   - NL-HTTP-08
   - NL-HTTP-09
+  - UN-ANYTLS-01
   - NL-HTTP-10
   - RO-HTTP-01
   - RO-HTTP-02
@@ -1420,6 +1451,7 @@ proxy-groups:
   - NL-HTTP-25
   - RO-HTTP-20
   - RO-HTTP-21
+  - US-VMESS-01
   - NL-HTTP-26
   - NL-HTTP-27
   - RO-HTTP-22
@@ -1473,7 +1505,6 @@ proxy-groups:
   - RO-HTTP-36
   - RO-HTTP-37
   - RO-HTTP-38
-  - TW-ANYTLS-01
   - RO-HTTP-39
   - CA-HTTP-01
   - RO-HTTP-40
@@ -1520,9 +1551,10 @@ proxy-groups:
   - BR-HTTP-02
   - US-HTTP-25
   - SG-HTTP-03
+  - TW-ANYTLS-01
   - SG-HTTP-04
   - AR-HTTP-01
-  - UN-VMESS-01
+  - UN-VMESS-02
   - RU-HTTP-01
   - SG-HTTP-05
   - CA-HTTP-03
@@ -1542,5 +1574,6 @@ proxy-groups:
   - SG-HTTP-14
   - SG-HTTP-15
   - IT-HTTP-04
+  - IT-SS-01
 rules:
 - MATCH,auto

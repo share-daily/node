@@ -1986,6 +1986,16 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: US-VMESS-01
+  type: vmess
+  server: v24.hdacd.com
+  port: 30824
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  network: tcp
+  tls: false
+  alterId: 2
+  cipher: auto
 - name: US-HTTP-39
   type: http
   server: 138.199.35.216
@@ -2070,6 +2080,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: IT-SS-01
+  type: ss
+  server: 202.50.253.45
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: ZA-HTTP-03
   type: http
   server: 197.242.155.133
@@ -2133,7 +2150,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-VMESS-01
+- name: US-VMESS-02
   type: vmess
   server: v24.hdacd.com
   port: 30824
@@ -2432,6 +2449,7 @@ proxy-groups:
   - SG-HTTP-32
   - RU-HTTP-01
   - AU-HTTP-07
+  - US-VMESS-01
   - US-HTTP-39
   - US-HTTP-40
   - ID-HTTP-01
@@ -2443,6 +2461,7 @@ proxy-groups:
   - IT-HTTP-05
   - JP-VMESS-01
   - US-HTTP-42
+  - IT-SS-01
   - ZA-HTTP-03
   - AU-HTTP-09
   - UN-HTTP-06
@@ -2452,7 +2471,7 @@ proxy-groups:
   - NZ-HTTP-02
   - SG-HTTP-34
   - AU-HTTP-11
-  - US-VMESS-01
+  - US-VMESS-02
   - AU-HTTP-12
 rules:
 - MATCH,auto

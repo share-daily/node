@@ -1,11 +1,4 @@
 proxies:
-- name: UN-SS-01
-  type: ss
-  server: 82.38.31.169
-  port: 443
-  udp: true
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
 - name: JP-HTTP-01
   type: http
   server: 37.120.210.146
@@ -13,9 +6,45 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: UN-SS-01
+  type: ss
+  server: 82.38.31.169
+  port: 443
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: BE-HTTP-01
+  type: http
+  server: 146.70.176.242
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: IT-SS-01
+  type: ss
+  server: 202.50.253.27
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: UN-VLESS-01
+  type: vless
+  server: 45.138.100.248
+  port: 10443
+  udp: true
+  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
+  network: tcp
+  tls: false
 - name: NL-HTTP-01
   type: http
   server: 149.36.51.129
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: DE-HTTP-01
+  type: http
+  server: 149.36.50.1
   port: 443
   udp: true
   tls: true
@@ -28,6 +57,20 @@ proxies:
   tls: true
   skip-cert-verify: true
   password: None
+- name: BE-HTTP-02
+  type: http
+  server: 146.70.123.98
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: PL-HTTP-01
+  type: http
+  server: 37.120.156.34
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
 - name: US-HTTP-01
   type: http
   server: berniesbodybla.fun
@@ -50,7 +93,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: DE-HTTP-01
+- name: DE-HTTP-02
   type: http
   server: 149.36.50.129
   port: 443
@@ -72,6 +115,13 @@ proxies:
   tls: true
   skip-cert-verify: true
   password: None
+- name: UN-SS-03
+  type: ss
+  server: 202.50.253.36
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: JP-VMESS-01
   type: vmess
   server: v6.hdacd.com
@@ -110,7 +160,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: UN-SS-03
+- name: UN-SS-04
   type: ss
   server: 202.50.253.72
   port: 19999
@@ -140,14 +190,14 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: UN-SS-04
+- name: UN-SS-05
   type: ss
   server: 202.50.253.27
   port: 19999
   udp: true
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: PL-HTTP-01
+- name: PL-HTTP-02
   type: http
   server: 37.120.156.18
   port: 443
@@ -265,13 +315,6 @@ proxies:
   skip-cert-verify: true
   username: 'null'
   password: 'null'
-- name: UN-SS-05
-  type: ss
-  server: 202.50.253.36
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: RO-HTTP-15
   type: http
   server: 193.176.84.31
@@ -294,7 +337,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-01
+- name: IT-SS-02
   type: ss
   server: 202.50.253.45
   port: 19999
@@ -379,13 +422,6 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-02
-  type: ss
-  server: 202.50.253.27
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: NL-HTTP-16
   type: http
   server: 84.17.47.146
@@ -510,13 +546,6 @@ proxies:
 - name: US-HTTP-10
   type: http
   server: 149.40.56.130
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: BE-HTTP-01
-  type: http
-  server: 146.70.123.98
   port: 443
   udp: true
   tls: true
@@ -663,13 +692,6 @@ proxies:
 - name: GR-HTTP-01
   type: http
   server: 149.22.85.65
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: DE-HTTP-02
-  type: http
-  server: 149.36.50.1
   port: 443
   udp: true
   tls: true
@@ -828,13 +850,6 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: BE-HTTP-02
-  type: http
-  server: 146.70.176.242
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
 - name: US-VMESS-04
   type: vmess
   server: v4.hdacd.com
@@ -983,13 +998,6 @@ proxies:
 - name: SG-HTTP-04
   type: http
   server: 103.107.198.242
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: PL-HTTP-02
-  type: http
-  server: 37.120.156.34
   port: 443
   udp: true
   tls: true
@@ -1168,27 +1176,34 @@ proxy-groups:
 - name: auto
   type: select
   proxies:
-  - UN-SS-01
   - JP-HTTP-01
+  - UN-SS-01
+  - BE-HTTP-01
+  - IT-SS-01
+  - UN-VLESS-01
   - NL-HTTP-01
+  - DE-HTTP-01
   - NL-HTTP-02
+  - BE-HTTP-02
+  - PL-HTTP-01
   - US-HTTP-01
   - UN-SS-02
   - RO-HTTP-01
-  - DE-HTTP-01
+  - DE-HTTP-02
   - NL-HTTP-03
   - NL-HTTP-04
+  - UN-SS-03
   - JP-VMESS-01
   - RO-HTTP-02
   - NL-HTTP-05
   - RS-HTTP-01
   - US-HTTP-02
-  - UN-SS-03
+  - UN-SS-04
   - NL-HTTP-06
   - RO-HTTP-03
   - NL-HTTP-07
-  - UN-SS-04
-  - PL-HTTP-01
+  - UN-SS-05
+  - PL-HTTP-02
   - RO-HTTP-04
   - NL-HTTP-08
   - RO-HTTP-05
@@ -1204,11 +1219,10 @@ proxy-groups:
   - US-HTTP-04
   - RO-HTTP-13
   - RO-HTTP-14
-  - UN-SS-05
   - RO-HTTP-15
   - NL-HTTP-10
   - NL-HTTP-11
-  - IT-SS-01
+  - IT-SS-02
   - RO-HTTP-16
   - RO-HTTP-17
   - RO-HTTP-18
@@ -1220,7 +1234,6 @@ proxy-groups:
   - IT-HTTP-01
   - RO-HTTP-19
   - NL-HTTP-15
-  - IT-SS-02
   - NL-HTTP-16
   - RO-HTTP-20
   - SG-HTTP-01
@@ -1238,7 +1251,6 @@ proxy-groups:
   - US-HTTP-08
   - US-HTTP-09
   - US-HTTP-10
-  - BE-HTTP-01
   - RS-HTTP-02
   - GB-HTTP-01
   - US-HTTP-11
@@ -1258,7 +1270,6 @@ proxy-groups:
   - RO-HTTP-23
   - GB-HTTP-02
   - GR-HTTP-01
-  - DE-HTTP-02
   - RO-HTTP-24
   - RO-HTTP-25
   - RO-HTTP-26
@@ -1281,7 +1292,6 @@ proxy-groups:
   - CA-HTTP-02
   - ES-HTTP-01
   - GB-HTTP-04
-  - BE-HTTP-02
   - US-VMESS-04
   - GB-HTTP-05
   - AU-HTTP-01
@@ -1303,7 +1313,6 @@ proxy-groups:
   - BR-HTTP-01
   - US-HTTP-23
   - SG-HTTP-04
-  - PL-HTTP-02
   - HK-HTTP-02
   - AU-HTTP-02
   - AU-HTTP-03

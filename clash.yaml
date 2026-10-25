@@ -31,13 +31,6 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: PL-HTTP-01
-  type: http
-  server: 37.120.156.34
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
 - name: NL-HTTP-01
   type: http
   server: 84.17.47.148
@@ -67,9 +60,9 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: GB-HTTP-01
+- name: HK-HTTP-01
   type: http
-  server: 37.120.233.18
+  server: 146.70.9.242
   port: 443
   udp: true
   tls: true
@@ -81,10 +74,24 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: DE-HTTP-02
+  type: http
+  server: 87.249.132.97
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
 - name: NL-HTTP-05
   type: http
   server: 84.17.47.125
   port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: HU-HTTP-01
+  type: http
+  server: 146.70.203.18
+  port: 443
   udp: true
   tls: true
   skip-cert-verify: true
@@ -102,6 +109,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: PL-HTTP-01
+  type: http
+  server: 37.120.156.18
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
 - name: IT-SS-01
   type: ss
   server: 202.50.253.45
@@ -116,6 +130,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: GB-HTTP-01
+  type: http
+  server: 37.120.233.18
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
 - name: RO-HTTP-03
   type: http
   server: 193.176.84.31
@@ -124,9 +145,9 @@ proxies:
   tls: true
   skip-cert-verify: true
   password: None
-- name: DE-HTTP-02
+- name: PL-HTTP-02
   type: http
-  server: 87.249.132.97
+  server: 37.120.156.34
   port: 443
   udp: true
   tls: true
@@ -343,13 +364,6 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: HU-HTTP-01
-  type: http
-  server: 146.70.203.18
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
 - name: NL-HTTP-11
   type: http
   server: 84.17.47.150
@@ -403,13 +417,6 @@ proxies:
 - name: US-HTTP-08
   type: http
   server: 149.40.56.130
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: PL-HTTP-02
-  type: http
-  server: 37.120.156.18
   port: 443
   udp: true
   tls: true
@@ -471,16 +478,9 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: HK-HTTP-01
-  type: http
-  server: 146.70.9.226
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
 - name: HK-HTTP-02
   type: http
-  server: 146.70.9.242
+  server: 146.70.9.226
   port: 443
   udp: true
   tls: true
@@ -1095,20 +1095,23 @@ proxy-groups:
   - JP-HTTP-01
   - HK-ANYTLS-01
   - US-HTTP-01
-  - PL-HTTP-01
   - NL-HTTP-01
   - NL-HTTP-02
   - DE-HTTP-01
   - NL-HTTP-03
-  - GB-HTTP-01
+  - HK-HTTP-01
   - NL-HTTP-04
+  - DE-HTTP-02
   - NL-HTTP-05
+  - HU-HTTP-01
   - CZ-HTTP-01
   - RO-HTTP-01
+  - PL-HTTP-01
   - IT-SS-01
   - RO-HTTP-02
+  - GB-HTTP-01
   - RO-HTTP-03
-  - DE-HTTP-02
+  - PL-HTTP-02
   - RO-HTTP-04
   - RO-HTTP-05
   - RO-HTTP-06
@@ -1138,7 +1141,6 @@ proxy-groups:
   - ES-HTTP-01
   - US-HTTP-06
   - RO-HTTP-18
-  - HU-HTTP-01
   - NL-HTTP-11
   - US-HTTP-07
   - IT-HTTP-01
@@ -1147,7 +1149,6 @@ proxy-groups:
   - CZ-HTTP-02
   - RO-HTTP-19
   - US-HTTP-08
-  - PL-HTTP-02
   - IT-SS-02
   - US-HTTP-09
   - NL-HTTP-13
@@ -1156,7 +1157,6 @@ proxy-groups:
   - PH-HTTP-01
   - RO-HTTP-20
   - PH-HTTP-02
-  - HK-HTTP-01
   - HK-HTTP-02
   - NL-HTTP-15
   - US-HTTP-10

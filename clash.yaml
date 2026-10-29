@@ -206,7 +206,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: UN-SS-02
+- name: IT-SS-01
   type: ss
   server: 202.50.253.99
   port: 19999
@@ -311,7 +311,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-01
+- name: IT-SS-02
   type: ss
   server: 202.50.253.54
   port: 19999
@@ -1090,7 +1090,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: UN-SS-03
+- name: IT-SS-03
   type: ss
   server: 202.50.253.54
   port: 19999
@@ -1520,7 +1520,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: UN-SS-04
+- name: IT-SS-04
   type: ss
   server: 202.50.253.90
   port: 19999
@@ -1573,7 +1573,7 @@ proxy-groups:
   - HU-HTTP-01
   - NL-HTTP-07
   - GB-HTTP-02
-  - UN-SS-02
+  - IT-SS-01
   - UN-VLESS-03
   - UN-VLESS-04
   - PL-HTTP-02
@@ -1587,7 +1587,7 @@ proxy-groups:
   - SE-HTTP-01
   - NL-HTTP-11
   - SE-HTTP-02
-  - IT-SS-01
+  - IT-SS-02
   - NL-HTTP-12
   - NL-HTTP-13
   - US-HTTP-04
@@ -1697,7 +1697,7 @@ proxy-groups:
   - GB-HTTP-07
   - SG-HTTP-07
   - SG-HTTP-08
-  - UN-SS-03
+  - IT-SS-03
   - SG-HTTP-09
   - VN-HTTP-01
   - SG-HTTP-10
@@ -1758,7 +1758,7 @@ proxy-groups:
   - CZ-HTTP-03
   - UN-VLESS-06
   - ZA-HTTP-05
-  - UN-SS-04
+  - IT-SS-04
   - UN-VLESS-07
 rules:
 - MATCH,auto

@@ -26,16 +26,6 @@ proxies:
   tls: false
   alterId: 0
   cipher: auto
-- name: UN-VMESS-01
-  type: vmess
-  server: 129.154.61.196
-  port: 800
-  udp: true
-  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
-  network: tcp
-  tls: false
-  alterId: 0
-  cipher: auto
 - name: SG-VMESS-02
   type: vmess
   server: select-sg.ddnskunlun.com
@@ -195,7 +185,7 @@ proxies:
   client-fingerprint: chrome
   sni: 654968169.df6h451rh.xin
   skip-cert-verify: true
-- name: UN-VMESS-02
+- name: UN-VMESS-01
   type: vmess
   server: board-02.ddnskunlun.com
   port: 11974
@@ -205,7 +195,7 @@ proxies:
   tls: false
   alterId: 0
   cipher: auto
-- name: UN-VMESS-03
+- name: UN-VMESS-02
   type: vmess
   server: board-01.ddnskunlun.com
   port: 11930
@@ -215,6 +205,20 @@ proxies:
   tls: false
   alterId: 0
   cipher: auto
+- name: IT-SS-01
+  type: ss
+  server: 202.50.253.99
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: IT-SS-02
+  type: ss
+  server: 202.50.253.27
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: BD-VMESS-01
   type: vmess
   server: board-01.ddnskunlun.com
@@ -225,6 +229,13 @@ proxies:
   tls: false
   alterId: 0
   cipher: auto
+- name: UN-SS-01
+  type: ss
+  server: 202.50.253.90
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: BE-VMESS-01
   type: vmess
   server: board-01.ddnskunlun.com
@@ -319,6 +330,16 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: UN-VMESS-03
+  type: vmess
+  server: free.ertebatgoostar.ir
+  port: 443
+  udp: true
+  uuid: 118b0abc-c8f6-476a-9777-bc73f6e2548b
+  network: tcp
+  tls: false
+  alterId: 0
+  cipher: auto
 - name: AT-VMESS-01
   type: vmess
   server: board-02.ddnskunlun.com
@@ -350,6 +371,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: UN-TROJAN-01
+  type: trojan
+  server: 208.69.78.19
+  port: 443
+  udp: true
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: www.yourultimateprofessionalcareerhub.com
 - name: NL-HTTP-06
   type: http
   server: 84.17.47.125
@@ -409,6 +437,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: IT-SS-03
+  type: ss
+  server: 202.50.253.36
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: BG-VMESS-02
   type: vmess
   server: board-02.ddnskunlun.com
@@ -419,6 +454,13 @@ proxies:
   tls: false
   alterId: 0
   cipher: auto
+- name: UN-SS-02
+  type: ss
+  server: 202.50.253.18
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: US-HTTP-03
   type: http
   server: berniesbodybla.fun
@@ -427,6 +469,13 @@ proxies:
   tls: true
   skip-cert-verify: true
   password: None
+- name: IT-SS-04
+  type: ss
+  server: 202.50.253.54
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: NL-HTTP-10
   type: http
   server: 84.17.47.146
@@ -442,6 +491,13 @@ proxies:
   tls: true
   skip-cert-verify: true
   password: None
+- name: IT-SS-05
+  type: ss
+  server: 202.50.253.90
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: NL-HTTP-12
   type: http
   server: 84.17.47.125
@@ -547,7 +603,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: UN-TROJAN-01
+- name: UN-TROJAN-02
   type: trojan
   server: 216.152.147.79
   port: 443
@@ -1123,6 +1179,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: UN-SS-03
+  type: ss
+  server: 202.50.253.45
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: RO-VMESS-01
   type: vmess
   server: board-02.ddnskunlun.com
@@ -1532,7 +1595,6 @@ proxy-groups:
   - JP-HTTP-01
   - PH-VMESS-01
   - SG-VMESS-01
-  - UN-VMESS-01
   - SG-VMESS-02
   - SG-VMESS-03
   - SG-VMESS-04
@@ -1549,9 +1611,12 @@ proxy-groups:
   - IN-VMESS-02
   - PH-VMESS-04
   - HK-ANYTLS-01
+  - UN-VMESS-01
   - UN-VMESS-02
-  - UN-VMESS-03
+  - IT-SS-01
+  - IT-SS-02
   - BD-VMESS-01
+  - UN-SS-01
   - BE-VMESS-01
   - NL-HTTP-01
   - CZ-VMESS-01
@@ -1563,10 +1628,12 @@ proxy-groups:
   - US-HTTP-02
   - BE-VMESS-02
   - RS-HTTP-01
+  - UN-VMESS-03
   - AT-VMESS-01
   - GB-HTTP-01
   - NL-HTTP-04
   - NL-HTTP-05
+  - UN-TROJAN-01
   - NL-HTTP-06
   - AT-VMESS-02
   - FR-VMESS-01
@@ -1574,10 +1641,14 @@ proxy-groups:
   - NL-HTTP-08
   - BG-VMESS-01
   - NL-HTTP-09
+  - IT-SS-03
   - BG-VMESS-02
+  - UN-SS-02
   - US-HTTP-03
+  - IT-SS-04
   - NL-HTTP-10
   - NL-HTTP-11
+  - IT-SS-05
   - NL-HTTP-12
   - FR-VMESS-02
   - LT-VMESS-01
@@ -1590,7 +1661,7 @@ proxy-groups:
   - NL-HTTP-15
   - LT-VMESS-02
   - LV-HTTP-01
-  - UN-TROJAN-01
+  - UN-TROJAN-02
   - NL-HTTP-16
   - US-HTTP-05
   - US-HTTP-06
@@ -1663,6 +1734,7 @@ proxy-groups:
   - RS-HTTP-02
   - CL-VMESS-01
   - MX-HTTP-01
+  - UN-SS-03
   - RO-VMESS-01
   - PL-HTTP-01
   - NL-HTTP-39

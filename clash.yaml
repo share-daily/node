@@ -1,4 +1,11 @@
 proxies:
+- name: DE-HTTP-01
+  type: http
+  server: 149.36.50.129
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
 - name: NL-HTTP-01
   type: http
   server: 149.36.51.129
@@ -13,7 +20,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: DE-HTTP-01
+- name: DE-HTTP-02
   type: http
   server: 149.36.50.1
   port: 443
@@ -570,7 +577,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: DE-HTTP-02
+- name: DE-HTTP-03
   type: http
   server: 185.44.107.166
   port: 443
@@ -1645,9 +1652,10 @@ proxy-groups:
 - name: auto
   type: select
   proxies:
+  - DE-HTTP-01
   - NL-HTTP-01
   - PL-HTTP-01
-  - DE-HTTP-01
+  - DE-HTTP-02
   - US-HTTP-01
   - NL-HTTP-02
   - US-HTTP-02
@@ -1723,7 +1731,7 @@ proxy-groups:
   - US-HTTP-12
   - ES-HTTP-01
   - GB-HTTP-02
-  - DE-HTTP-02
+  - DE-HTTP-03
   - NL-HTTP-31
   - NL-HTTP-32
   - UN-SS-01

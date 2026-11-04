@@ -1711,7 +1711,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-06
+- name: UN-SS-01
   type: ss
   server: 202.50.253.72
   port: 19999
@@ -1883,7 +1883,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-07
+- name: IT-SS-06
   type: ss
   server: 202.50.253.45
   port: 19999
@@ -2024,7 +2024,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-08
+- name: UN-SS-02
   type: ss
   server: 202.50.253.54
   port: 19999
@@ -2080,7 +2080,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-09
+- name: UN-SS-03
   type: ss
   server: 202.50.253.90
   port: 19999
@@ -2166,7 +2166,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-10
+- name: IT-SS-07
   type: ss
   server: 202.50.253.36
   port: 19999
@@ -2279,14 +2279,14 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-11
+- name: UN-SS-04
   type: ss
   server: 202.50.253.27
   port: 19999
   udp: true
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: IT-SS-12
+- name: IT-SS-08
   type: ss
   server: 202.50.253.54
   port: 19999
@@ -2308,7 +2308,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-13
+- name: IT-SS-09
   type: ss
   server: 202.50.253.63
   port: 19999
@@ -2364,7 +2364,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-14
+- name: UN-SS-05
   type: ss
   server: 202.50.253.63
   port: 19999
@@ -2612,7 +2612,7 @@ proxy-groups:
   - CA-HTTP-09
   - SG-HTTP-13
   - CA-HTTP-10
-  - IT-SS-06
+  - UN-SS-01
   - SG-HTTP-14
   - SG-HTTP-15
   - US-HTTP-29
@@ -2636,7 +2636,7 @@ proxy-groups:
   - AU-HTTP-05
   - RO-HTTP-71
   - RO-HTTP-72
-  - IT-SS-07
+  - IT-SS-06
   - RO-HTTP-73
   - SG-HTTP-21
   - AU-HTTP-06
@@ -2656,7 +2656,7 @@ proxy-groups:
   - RO-HTTP-74
   - SG-HTTP-22
   - CA-HTTP-12
-  - IT-SS-08
+  - UN-SS-02
   - SG-HTTP-23
   - SG-HTTP-24
   - SG-HTTP-25
@@ -2664,7 +2664,7 @@ proxy-groups:
   - RO-HTTP-76
   - SG-HTTP-26
   - AU-HTTP-10
-  - IT-SS-09
+  - UN-SS-03
   - SG-HTTP-27
   - RO-HTTP-77
   - US-ANYTLS-01
@@ -2676,7 +2676,7 @@ proxy-groups:
   - RO-HTTP-78
   - SG-HTTP-29
   - US-HTTP-35
-  - IT-SS-10
+  - IT-SS-07
   - ZA-HTTP-01
   - IT-HTTP-05
   - FR-HTTP-02
@@ -2692,11 +2692,11 @@ proxy-groups:
   - US-HTTP-38
   - CA-HTTP-14
   - SG-HTTP-30
-  - IT-SS-11
-  - IT-SS-12
+  - UN-SS-04
+  - IT-SS-08
   - TW-ANYTLS-04
   - ZA-HTTP-04
-  - IT-SS-13
+  - IT-SS-09
   - US-HTTP-39
   - ID-HTTP-01
   - AU-HTTP-11
@@ -2704,6 +2704,6 @@ proxy-groups:
   - SG-HTTP-31
   - CA-HTTP-15
   - SG-HTTP-32
-  - IT-SS-14
+  - UN-SS-05
 rules:
 - MATCH,auto

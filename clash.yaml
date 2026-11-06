@@ -298,7 +298,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-06
+- name: UN-SS-01
   type: ss
   server: 202.50.253.54
   port: 19999
@@ -326,6 +326,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: UN-TROJAN-01
+  type: trojan
+  server: kr002.zestapp778.com
+  port: 48851
+  udp: true
+  password: 5t6i121em5lkmsmk
+  sni: kr002.zestapp778.com
 - name: US-HTTP-12
   type: http
   server: 138.199.35.198
@@ -333,13 +340,6 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: KR-TROJAN-01
-  type: trojan
-  server: kr002.zestapp778.com
-  port: 48851
-  udp: true
-  password: 5t6i121em5lkmsmk
-  sni: kr002.zestapp778.com
 - name: US-TROJAN-01
   type: trojan
   server: 216.106.186.46
@@ -370,7 +370,7 @@ proxies:
   skip-cert-verify: true
   username: 'null'
   password: 'null'
-- name: IT-SS-07
+- name: IT-SS-06
   type: ss
   server: 202.50.253.54
   port: 19999
@@ -812,7 +812,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-08
+- name: UN-SS-02
   type: ss
   server: 202.50.253.72
   port: 19999
@@ -1682,7 +1682,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-09
+- name: IT-SS-07
   type: ss
   server: 202.50.253.99
   port: 19999
@@ -1893,7 +1893,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-10
+- name: IT-SS-08
   type: ss
   server: 202.50.253.81
   port: 19999
@@ -2076,7 +2076,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-11
+- name: UN-SS-03
   type: ss
   server: 202.50.253.27
   port: 19999
@@ -2251,7 +2251,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-12
+- name: UN-SS-04
   type: ss
   server: 202.50.253.63
   port: 19999
@@ -2338,17 +2338,17 @@ proxy-groups:
   - AT-HTTP-01
   - US-HTTP-11
   - DE-HTTP-03
-  - IT-SS-06
+  - UN-SS-01
   - NL-HTTP-07
   - NL-HTTP-08
   - RS-HTTP-02
+  - UN-TROJAN-01
   - US-HTTP-12
-  - KR-TROJAN-01
   - US-TROJAN-01
   - US-HTTP-13
   - DK-HTTP-01
   - US-HTTP-14
-  - IT-SS-07
+  - IT-SS-06
   - RO-HTTP-01
   - US-HTTP-15
   - NL-HTTP-09
@@ -2408,7 +2408,7 @@ proxy-groups:
   - RO-HTTP-30
   - US-HTTP-23
   - NL-HTTP-23
-  - IT-SS-08
+  - UN-SS-02
   - NL-HTTP-24
   - SE-HTTP-01
   - NL-HTTP-25
@@ -2530,7 +2530,7 @@ proxy-groups:
   - PT-HTTP-02
   - RO-HTTP-59
   - RO-HTTP-60
-  - IT-SS-09
+  - IT-SS-07
   - CA-HTTP-07
   - US-HTTP-39
   - CA-HTTP-08
@@ -2560,7 +2560,7 @@ proxy-groups:
   - SG-HTTP-21
   - US-HTTP-43
   - FR-HTTP-02
-  - IT-SS-10
+  - IT-SS-08
   - RO-HTTP-62
   - RO-HTTP-63
   - SG-HTTP-22
@@ -2586,7 +2586,7 @@ proxy-groups:
   - SG-HTTP-30
   - BR-HTTP-02
   - US-HTTP-46
-  - IT-SS-11
+  - UN-SS-03
   - AU-HTTP-07
   - SG-HTTP-31
   - SG-HTTP-32
@@ -2611,7 +2611,7 @@ proxy-groups:
   - ZA-HTTP-05
   - RU-HTTP-01
   - IT-HTTP-05
-  - IT-SS-12
+  - UN-SS-04
   - HK-TROJAN-01
   - US-HTTP-47
   - NL-HTTP-44

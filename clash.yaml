@@ -128,6 +128,13 @@ proxies:
   skip-cert-verify: true
   username: 'null'
   password: 'null'
+- name: UN-SS-01
+  type: ss
+  server: 202.50.253.63
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: DE-HTTP-01
   type: http
   server: 87.249.132.97
@@ -195,6 +202,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: UN-SS-02
+  type: ss
+  server: 202.50.253.54
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: NL-HTTP-11
   type: http
   server: 84.17.47.148
@@ -244,6 +258,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: IT-SS-01
+  type: ss
+  server: 202.50.253.72
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: RO-HTTP-07
   type: http
   server: 193.176.84.31
@@ -330,6 +351,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: IT-SS-02
+  type: ss
+  server: 202.50.253.36
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: RO-HTTP-12
   type: http
   server: 193.176.84.23
@@ -466,6 +494,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: IT-SS-03
+  type: ss
+  server: 202.50.253.54
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: US-HTTP-15
   type: http
   server: 149.50.212.206
@@ -480,6 +515,20 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: IT-SS-04
+  type: ss
+  server: 202.50.253.63
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: IT-SS-05
+  type: ss
+  server: 202.50.253.18
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: US-HTTP-16
   type: http
   server: voteshirleysew.club
@@ -531,6 +580,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: UN-SS-03
+  type: ss
+  server: 202.50.253.27
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: NL-HTTP-26
   type: http
   server: 84.17.47.149
@@ -1064,6 +1120,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: UN-SS-04
+  type: ss
+  server: 202.50.253.72
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: RO-HTTP-54
   type: http
   server: 193.176.84.30
@@ -1092,6 +1155,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: IT-SS-06
+  type: ss
+  server: 202.50.253.99
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: RO-HTTP-55
   type: http
   server: 193.176.84.30
@@ -1121,6 +1191,13 @@ proxies:
   tls: true
   skip-cert-verify: true
   password: None
+- name: UN-SS-05
+  type: ss
+  server: 202.50.253.90
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: CA-HTTP-05
   type: http
   server: 206.223.183.16
@@ -1219,6 +1296,7 @@ proxy-groups:
   - NL-HTTP-10
   - US-HTTP-06
   - US-HTTP-07
+  - UN-SS-01
   - DE-HTTP-01
   - RO-HTTP-01
   - RO-HTTP-02
@@ -1228,6 +1306,7 @@ proxy-groups:
   - US-HTTP-10
   - RO-HTTP-03
   - US-HTTP-11
+  - UN-SS-02
   - NL-HTTP-11
   - NL-HTTP-12
   - RO-HTTP-04
@@ -1235,6 +1314,7 @@ proxy-groups:
   - NL-HTTP-13
   - RO-HTTP-06
   - RS-HTTP-01
+  - IT-SS-01
   - RO-HTTP-07
   - NL-HTTP-14
   - RO-HTTP-08
@@ -1247,6 +1327,7 @@ proxy-groups:
   - LV-HTTP-01
   - NL-HTTP-18
   - RO-HTTP-11
+  - IT-SS-02
   - RO-HTTP-12
   - US-HTTP-12
   - RO-HTTP-13
@@ -1266,8 +1347,11 @@ proxy-groups:
   - NL-HTTP-22
   - BE-HTTP-01
   - RO-HTTP-21
+  - IT-SS-03
   - US-HTTP-15
   - PL-HTTP-02
+  - IT-SS-04
+  - IT-SS-05
   - US-HTTP-16
   - IT-HTTP-01
   - NL-HTTP-23
@@ -1275,6 +1359,7 @@ proxy-groups:
   - RS-HTTP-02
   - NL-HTTP-24
   - NL-HTTP-25
+  - UN-SS-03
   - NL-HTTP-26
   - RO-HTTP-22
   - RO-HTTP-23
@@ -1350,14 +1435,17 @@ proxy-groups:
   - AU-HTTP-07
   - SG-HTTP-06
   - RO-HTTP-53
+  - UN-SS-04
   - RO-HTTP-54
   - IT-HTTP-03
   - UN-HTTP-02
   - AU-HTTP-08
+  - IT-SS-06
   - RO-HTTP-55
   - ID-HTTP-01
   - RO-HTTP-56
   - RO-HTTP-57
+  - UN-SS-05
   - CA-HTTP-05
   - ZA-HTTP-01
   - US-HTTP-26

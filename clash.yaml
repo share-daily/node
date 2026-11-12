@@ -62,6 +62,13 @@ proxies:
   udp: true
   cipher: aes-256-cfb
   password: amazonskr05
+- name: UN-SS-01
+  type: ss
+  server: 202.50.253.90
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: NL-HTTP-04
   type: http
   server: 84.17.47.148
@@ -69,13 +76,6 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-05
-  type: ss
-  server: 202.50.253.90
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: NL-HTTP-05
   type: http
   server: 84.17.47.125
@@ -83,7 +83,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-06
+- name: IT-SS-05
   type: ss
   server: 202.50.253.63
   port: 19999
@@ -248,7 +248,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-07
+- name: IT-SS-06
   type: ss
   server: 202.50.253.54
   port: 19999
@@ -806,7 +806,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-08
+- name: UN-SS-02
   type: ss
   server: 202.50.253.72
   port: 19999
@@ -1237,7 +1237,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   password: None
-- name: IT-SS-09
+- name: IT-SS-07
   type: ss
   server: 202.50.253.81
   port: 19999
@@ -1258,7 +1258,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-10
+- name: UN-SS-03
   type: ss
   server: 202.50.253.63
   port: 19999
@@ -1675,7 +1675,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-11
+- name: IT-SS-08
   type: ss
   server: 202.50.253.36
   port: 19999
@@ -1794,7 +1794,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-12
+- name: IT-SS-09
   type: ss
   server: 202.50.253.18
   port: 19999
@@ -1815,7 +1815,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-13
+- name: IT-SS-10
   type: ss
   server: 202.50.253.99
   port: 19999
@@ -1829,7 +1829,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-14
+- name: IT-SS-11
   type: ss
   server: 202.50.253.27
   port: 19999
@@ -1849,10 +1849,10 @@ proxy-groups:
   - NL-HTTP-03
   - IT-SS-04
   - US-SS-01
+  - UN-SS-01
   - NL-HTTP-04
-  - IT-SS-05
   - NL-HTTP-05
-  - IT-SS-06
+  - IT-SS-05
   - US-HTTP-02
   - NL-HTTP-06
   - NL-HTTP-07
@@ -1874,7 +1874,7 @@ proxy-groups:
   - NL-HTTP-17
   - NL-HTTP-18
   - RO-HTTP-02
-  - IT-SS-07
+  - IT-SS-06
   - RO-HTTP-03
   - RO-HTTP-04
   - US-HTTP-08
@@ -1950,7 +1950,7 @@ proxy-groups:
   - RO-HTTP-40
   - RO-HTTP-41
   - NL-HTTP-38
-  - IT-SS-08
+  - UN-SS-02
   - US-HTTP-23
   - US-HTTP-24
   - US-HTTP-25
@@ -2009,10 +2009,10 @@ proxy-groups:
   - RO-HTTP-69
   - RO-HTTP-70
   - RO-HTTP-71
-  - IT-SS-09
+  - IT-SS-07
   - RO-HTTP-72
   - RO-HTTP-73
-  - IT-SS-10
+  - UN-SS-03
   - RO-HTTP-74
   - RO-HTTP-75
   - RO-HTTP-76
@@ -2070,7 +2070,7 @@ proxy-groups:
   - SG-HTTP-10
   - SG-HTTP-11
   - SG-HTTP-12
-  - IT-SS-11
+  - IT-SS-08
   - SG-HTTP-13
   - SG-HTTP-14
   - SG-HTTP-15
@@ -2087,11 +2087,11 @@ proxy-groups:
   - SG-HTTP-26
   - SG-HTTP-27
   - IT-HTTP-02
-  - IT-SS-12
+  - IT-SS-09
   - SG-HTTP-28
   - SG-HTTP-29
-  - IT-SS-13
+  - IT-SS-10
   - IT-HTTP-03
-  - IT-SS-14
+  - IT-SS-11
 rules:
 - MATCH,auto

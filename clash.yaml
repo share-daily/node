@@ -1,3 +1,4 @@
+mode: rule
 proxies:
 - name: DE-HTTP-01
   type: http
@@ -1052,4 +1053,6 @@ proxy-groups:
   - CZ-HTTP-01
   - SG-HTTP-19
 rules:
+- DOMAIN-SUFFIX,cn,DIRECT
+- GEOIP,CN,DIRECT
 - MATCH,auto

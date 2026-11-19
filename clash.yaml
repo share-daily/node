@@ -379,7 +379,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-04
+- name: UN-SS-01
   type: ss
   server: 202.50.253.72
   port: 19999
@@ -421,14 +421,14 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-05
+- name: IT-SS-04
   type: ss
   server: 202.50.253.72
   port: 19999
   udp: true
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: IT-SS-06
+- name: IT-SS-05
   type: ss
   server: 202.50.253.18
   port: 19999
@@ -457,7 +457,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-07
+- name: IT-SS-06
   type: ss
   server: 202.50.253.18
   port: 19999
@@ -513,21 +513,21 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-08
+- name: IT-SS-07
   type: ss
   server: 202.50.253.27
   port: 19999
   udp: true
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: IT-SS-09
+- name: IT-SS-08
   type: ss
   server: 202.50.253.63
   port: 19999
   udp: true
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: IT-SS-10
+- name: UN-SS-02
   type: ss
   server: 202.50.253.27
   port: 19999
@@ -599,7 +599,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-11
+- name: UN-SS-03
   type: ss
   server: 202.50.253.90
   port: 19999
@@ -613,7 +613,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-12
+- name: IT-SS-09
   type: ss
   server: 202.50.253.81
   port: 19999
@@ -627,7 +627,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-13
+- name: IT-SS-10
   type: ss
   server: 202.50.253.99
   port: 19999
@@ -1058,7 +1058,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-14
+- name: IT-SS-11
   type: ss
   server: 202.50.253.90
   port: 19999
@@ -1248,7 +1248,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-15
+- name: IT-SS-12
   type: ss
   server: 202.50.253.99
   port: 19999
@@ -1325,18 +1325,18 @@ proxy-groups:
   - NL-HTTP-37
   - US-HTTP-01
   - ES-HTTP-01
-  - IT-SS-04
+  - UN-SS-01
   - NL-HTTP-38
   - NL-HTTP-39
   - NL-HTTP-40
   - NL-HTTP-41
   - NL-HTTP-42
+  - IT-SS-04
   - IT-SS-05
-  - IT-SS-06
   - NL-HTTP-43
   - DE-HTTP-04
   - NL-HTTP-44
-  - IT-SS-07
+  - IT-SS-06
   - NL-HTTP-45
   - NL-HTTP-46
   - DE-HTTP-05
@@ -1344,9 +1344,9 @@ proxy-groups:
   - DE-HTTP-06
   - NL-HTTP-47
   - NL-HTTP-48
+  - IT-SS-07
   - IT-SS-08
-  - IT-SS-09
-  - IT-SS-10
+  - UN-SS-02
   - NL-HTTP-49
   - PH-HTTP-01
   - NL-HTTP-50
@@ -1356,11 +1356,11 @@ proxy-groups:
   - PL-HTTP-02
   - US-HTTP-02
   - US-HTTP-03
-  - IT-SS-11
+  - UN-SS-03
   - US-HTTP-04
-  - IT-SS-12
+  - IT-SS-09
   - CA-HTTP-01
-  - IT-SS-13
+  - IT-SS-10
   - NL-HTTP-53
   - UN-HTTP-01
   - CA-HTTP-02
@@ -1420,7 +1420,7 @@ proxy-groups:
   - SG-HTTP-10
   - SG-HTTP-11
   - IT-HTTP-02
-  - IT-SS-14
+  - IT-SS-11
   - SG-HTTP-12
   - US-HTTP-16
   - SG-HTTP-13
@@ -1447,7 +1447,7 @@ proxy-groups:
   - SG-HTTP-25
   - SG-HTTP-26
   - SG-HTTP-27
-  - IT-SS-15
+  - IT-SS-12
   - US-HTTP-19
   - CA-HTTP-09
 rules:

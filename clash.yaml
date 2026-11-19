@@ -649,6 +649,13 @@ proxies:
   tls: false
   alterId: 0
   cipher: auto
+- name: UN-SS-01
+  type: ss
+  server: 202.50.253.54
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: UA-VMESS-02
   type: vmess
   server: board-02.ddnskunlun.com
@@ -659,14 +666,14 @@ proxies:
   tls: false
   alterId: 0
   cipher: auto
-- name: IT-SS-05
+- name: UN-SS-02
   type: ss
-  server: 202.50.253.54
+  server: 202.50.253.27
   port: 19999
   udp: true
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: IT-SS-06
+- name: IT-SS-05
   type: ss
   server: 202.50.253.27
   port: 19999
@@ -683,13 +690,6 @@ proxies:
   tls: false
   alterId: 0
   cipher: auto
-- name: IT-SS-07
-  type: ss
-  server: 202.50.253.27
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: PT-VMESS-01
   type: vmess
   server: board-01.ddnskunlun.com
@@ -710,7 +710,7 @@ proxies:
   tls: false
   alterId: 0
   cipher: auto
-- name: IT-SS-08
+- name: IT-SS-06
   type: ss
   server: 202.50.253.81
   port: 19999
@@ -873,7 +873,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   password: None
-- name: IT-SS-09
+- name: IT-SS-07
   type: ss
   server: 202.50.253.72
   port: 19999
@@ -904,7 +904,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-10
+- name: UN-SS-03
   type: ss
   server: 202.50.253.72
   port: 19999
@@ -942,7 +942,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   password: None
-- name: IT-SS-11
+- name: IT-SS-08
   type: ss
   server: 202.50.253.90
   port: 19999
@@ -978,7 +978,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-12
+- name: IT-SS-09
   type: ss
   server: 202.50.253.18
   port: 19999
@@ -1009,14 +1009,14 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-13
+- name: UN-SS-04
   type: ss
   server: 202.50.253.90
   port: 19999
   udp: true
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: IT-SS-14
+- name: IT-SS-10
   type: ss
   server: 202.50.253.99
   port: 19999
@@ -1084,7 +1084,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-15
+- name: IT-SS-11
   type: ss
   server: 202.50.253.81
   port: 19999
@@ -1142,7 +1142,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-16
+- name: IT-SS-12
   type: ss
   server: 202.50.253.45
   port: 19999
@@ -1810,7 +1810,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-17
+- name: UN-SS-05
   type: ss
   server: 202.50.253.63
   port: 19999
@@ -1831,7 +1831,7 @@ proxies:
   reality-opts:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
     short-id: a7c92e4b10d6f835
-- name: IT-SS-18
+- name: IT-SS-13
   type: ss
   server: 202.50.253.63
   port: 19999
@@ -1928,14 +1928,14 @@ proxy-groups:
   - NL-HTTP-17
   - UN-VMESS-03
   - NO-VMESS-01
+  - UN-SS-01
   - UA-VMESS-02
+  - UN-SS-02
   - IT-SS-05
-  - IT-SS-06
   - FR-VMESS-02
-  - IT-SS-07
   - PT-VMESS-01
   - PT-VMESS-02
-  - IT-SS-08
+  - IT-SS-06
   - TR-VMESS-02
   - LT-VMESS-01
   - NO-VMESS-02
@@ -1953,26 +1953,26 @@ proxy-groups:
   - SE-VMESS-02
   - IN-VMESS-04
   - NL-HTTP-24
-  - IT-SS-09
+  - IT-SS-07
   - LV-VMESS-01
   - NL-HTTP-25
   - NL-HTTP-26
-  - IT-SS-10
+  - UN-SS-03
   - FR-HTTP-01
   - GB-ANYTLS-01
   - NL-HTTP-27
   - NL-HTTP-28
-  - IT-SS-11
+  - IT-SS-08
   - NL-HTTP-29
   - NL-HTTP-30
   - NL-HTTP-31
   - NL-HTTP-32
-  - IT-SS-12
+  - IT-SS-09
   - LV-VMESS-02
   - NL-HTTP-33
   - NL-HTTP-34
-  - IT-SS-13
-  - IT-SS-14
+  - UN-SS-04
+  - IT-SS-10
   - NL-HTTP-35
   - NL-HTTP-36
   - NL-HTTP-37
@@ -1981,7 +1981,7 @@ proxy-groups:
   - NL-HTTP-40
   - LT-VMESS-02
   - NL-HTTP-41
-  - IT-SS-15
+  - IT-SS-11
   - NL-HTTP-42
   - US-HTTP-03
   - NL-HTTP-43
@@ -1989,7 +1989,7 @@ proxy-groups:
   - NL-HTTP-45
   - NL-HTTP-46
   - NL-HTTP-47
-  - IT-SS-16
+  - IT-SS-12
   - NL-HTTP-48
   - NL-HTTP-49
   - US-HTTP-04
@@ -2073,9 +2073,9 @@ proxy-groups:
   - US-HTTP-15
   - US-HTTP-16
   - US-HTTP-17
-  - IT-SS-17
+  - UN-SS-05
   - SE-VLESS-02
-  - IT-SS-18
+  - IT-SS-13
   - NL-HTTP-62
   - SG-HTTP-23
 rules:

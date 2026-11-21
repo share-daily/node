@@ -741,14 +741,14 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-05
+- name: UN-SS-01
   type: ss
   server: 202.50.253.63
   port: 19999
   udp: true
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: IT-SS-06
+- name: IT-SS-05
   type: ss
   server: 202.50.253.63
   port: 19999
@@ -797,7 +797,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-07
+- name: IT-SS-06
   type: ss
   server: 202.50.253.45
   port: 19999
@@ -846,7 +846,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-08
+- name: UN-SS-02
   type: ss
   server: 202.50.253.27
   port: 19999
@@ -897,7 +897,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-09
+- name: IT-SS-07
   type: ss
   server: 202.50.253.54
   port: 19999
@@ -947,7 +947,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   password: None
-- name: IT-SS-10
+- name: IT-SS-08
   type: ss
   server: 202.50.253.81
   port: 19999
@@ -961,14 +961,14 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-11
+- name: IT-SS-09
   type: ss
   server: 202.50.253.36
   port: 19999
   udp: true
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: IT-SS-12
+- name: IT-SS-10
   type: ss
   server: 202.50.253.99
   port: 19999
@@ -996,14 +996,14 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-13
+- name: IT-SS-11
   type: ss
   server: 202.50.253.72
   port: 19999
   udp: true
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: IT-SS-14
+- name: UN-SS-03
   type: ss
   server: 202.50.253.54
   port: 19999
@@ -1121,44 +1121,44 @@ proxy-groups:
   - RO-HTTP-16
   - US-HTTP-15
   - SG-HTTP-05
+  - UN-SS-01
   - IT-SS-05
-  - IT-SS-06
   - SG-HTTP-06
   - SG-HTTP-07
   - SG-HTTP-08
   - RO-HTTP-17
   - SG-HTTP-09
   - SG-HTTP-10
-  - IT-SS-07
+  - IT-SS-06
   - SG-HTTP-11
   - NL-HTTP-52
   - SG-HTTP-12
   - SG-HTTP-13
   - SG-HTTP-14
   - NL-HTTP-53
-  - IT-SS-08
+  - UN-SS-02
   - SG-HTTP-15
   - US-HTTP-16
   - DE-ANYTLS-01
   - US-HTTP-17
   - FR-HTTP-01
   - RO-HTTP-18
-  - IT-SS-09
+  - IT-SS-07
   - CZ-HTTP-01
   - DE-HTTP-01
   - SG-HTTP-16
   - NL-HTTP-54
   - MX-HTTP-01
   - NL-HTTP-55
-  - IT-SS-10
+  - IT-SS-08
   - SG-HTTP-17
-  - IT-SS-11
-  - IT-SS-12
+  - IT-SS-09
+  - IT-SS-10
   - SG-HTTP-18
   - SG-HTTP-19
   - US-HTTP-18
-  - IT-SS-13
-  - IT-SS-14
+  - IT-SS-11
+  - UN-SS-03
   - SG-HTTP-20
 rules:
 - DOMAIN-SUFFIX,cn,DIRECT

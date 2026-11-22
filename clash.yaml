@@ -9,7 +9,7 @@ proxies:
   client-fingerprint: chrome
   sni: docs.microsoft.com
   skip-cert-verify: true
-- name: US-SS-01
+- name: AU-SS-01
   type: ss
   server: 48.103.218.77
   port: 18443
@@ -1136,7 +1136,7 @@ proxy-groups:
   type: select
   proxies:
   - UN-ANYTLS-01
-  - US-SS-01
+  - AU-SS-01
   - NL-HTTP-01
   - NL-HTTP-02
   - NL-HTTP-03

@@ -2,6 +2,15 @@ mode: rule
 proxies:
 - name: UN-ANYTLS-01
   type: anytls
+  server: ibsdsf.df6h451rh.xin
+  port: 443
+  udp: true
+  password: 2902c46c8493
+  client-fingerprint: chrome
+  sni: docs.microsoft.com
+  skip-cert-verify: true
+- name: TW-ANYTLS-01
+  type: anytls
   server: rtifgjdr.df6h451rh.xin
   port: 443
   udp: true
@@ -9,175 +18,85 @@ proxies:
   client-fingerprint: chrome
   sni: docs.microsoft.com
   skip-cert-verify: true
-- name: DE-VLESS-01
-  type: vless
-  server: 189.24.115.30
+- name: TW-ANYTLS-02
+  type: anytls
+  server: er8u54dh.df6h451rh.xin
   port: 443
   udp: true
-  uuid: 3a1c6827-72a1-4d1c-9413-44109ff815f4
-  network: tcp
-  tls: true
-  servername: navi.bankrate.com
+  password: 2902c46c8493
   client-fingerprint: chrome
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-- name: DE-SS-01
-  type: ss
-  server: 47.254.167.157
-  port: 443
-  udp: true
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-- name: DE-VLESS-02
-  type: vless
-  server: 189.24.115.30
-  port: 443
-  udp: true
-  uuid: 3a1c6827-72a1-4d1c-9413-44109ff815f4
-  network: tcp
-  tls: true
-  servername: navi.bankrate.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-- name: AU-SS-01
-  type: ss
-  server: 48.103.218.77
-  port: 18443
-  udp: true
-  cipher: aes-256-gcm
-  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
-- name: DE-HTTP-01
-  type: http
-  server: 87.249.132.97
-  port: 9443
-  udp: true
-  tls: true
+  sni: px.ads.linkedin.com
   skip-cert-verify: true
-- name: BE-HTTP-01
-  type: http
-  server: 146.70.176.242
+- name: JP-TROJAN-01
+  type: trojan
+  server: win2loxfde0303.gggrelay.org
+  port: 34745
+  udp: true
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  sni: nu3rb.supertoolify.com
+- name: SG-TROJAN-01
+  type: trojan
+  server: atrsg1.hikigo.com
   port: 443
   udp: true
-  tls: true
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  sni: atrsg1.hikigo.com
+- name: UN-ANYTLS-02
+  type: anytls
+  server: rtifgjdr.df6h451rh.xin
+  port: 443
+  udp: true
+  password: 2902c46c8493
+  client-fingerprint: chrome
+  sni: docs.microsoft.com
   skip-cert-verify: true
 - name: NL-HTTP-01
   type: http
-  server: 84.17.47.150
+  server: 84.17.47.125
   port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
-- name: HU-HTTP-01
-  type: http
-  server: 146.70.203.18
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: IT-HTTP-01
-  type: http
-  server: 185.183.105.130
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
+  password: None
 - name: NL-HTTP-02
-  type: http
-  server: 149.36.51.129
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: AT-HTTP-01
-  type: http
-  server: 146.70.244.18
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: GB-HTTP-01
-  type: http
-  server: 37.120.233.18
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-VLESS-01
-  type: vless
-  server: 163.128.99.154
-  port: 443
-  udp: true
-  uuid: 3a1c6827-72a1-4d1c-9413-44109ff815f4
-  network: tcp
-  tls: true
-  servername: navi.bankrate.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-- name: NL-HTTP-03
-  type: http
-  server: 84.17.47.150
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: IT-SS-01
-  type: ss
-  server: 202.50.253.27
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: SG-VLESS-02
-  type: vless
-  server: 163.128.99.154
-  port: 443
-  udp: true
-  uuid: 3a1c6827-72a1-4d1c-9413-44109ff815f4
-  network: tcp
-  tls: true
-  servername: navi.bankrate.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-- name: NL-HTTP-04
   type: http
   server: 84.17.47.148
   port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
-  password: None
-- name: DE-HTTP-02
+- name: NL-HTTP-03
   type: http
-  server: 149.36.50.129
-  port: 443
+  server: 84.17.47.125
+  port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
-- name: BE-HTTP-02
-  type: http
-  server: 146.70.123.98
+- name: JP-TROJAN-02
+  type: trojan
+  server: dg4.ianai.it.com
   port: 443
+  udp: true
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  sni: dg4.ianai.it.com
+- name: NL-HTTP-04
+  type: http
+  server: 84.17.47.146
+  port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
 - name: NL-HTTP-05
   type: http
-  server: 84.17.47.150
+  server: 84.17.47.125
   port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
-- name: PL-HTTP-01
+- name: NL-HTTP-06
   type: http
-  server: 37.120.156.18
-  port: 443
+  server: 84.17.47.125
+  port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
@@ -188,63 +107,6 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: DE-HTTP-03
-  type: http
-  server: 149.36.50.1
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: AT-HTTP-02
-  type: http
-  server: 146.70.244.2
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NL-HTTP-06
-  type: http
-  server: 84.17.47.149
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: IE-HTTP-01
-  type: http
-  server: 149.88.96.12
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: IT-SS-02
-  type: ss
-  server: 202.50.253.18
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: IT-HTTP-02
-  type: http
-  server: 185.183.105.146
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NL-HTTP-07
-  type: http
-  server: 84.17.47.150
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NL-HTTP-08
-  type: http
-  server: 84.17.47.148
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  password: None
 - name: US-HTTP-02
   type: http
   server: fan.365747.xyz
@@ -259,104 +121,16 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-03
-  type: ss
-  server: 202.50.253.36
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: IT-SS-04
-  type: ss
-  server: 202.50.253.45
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: NL-HTTP-09
+- name: NL-HTTP-07
   type: http
   server: 84.17.47.150
   port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
-- name: CZ-HTTP-01
+- name: NL-HTTP-08
   type: http
-  server: 185.216.35.130
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NL-HTTP-10
-  type: http
-  server: 84.17.47.148
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  password: None
-- name: IT-SS-05
-  type: ss
-  server: 202.50.253.81
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: RS-HTTP-01
-  type: http
-  server: 146.70.221.34
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NL-HTTP-11
-  type: http
-  server: 84.17.47.148
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  password: None
-- name: DE-HTTP-04
-  type: http
-  server: 149.36.50.157
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NL-HTTP-12
-  type: http
-  server: 84.17.47.146
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: DE-HTTP-05
-  type: http
-  server: 87.249.132.97
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: GB-HTTP-02
-  type: http
-  server: 37.120.233.50
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: UN-ANYTLS-02
-  type: anytls
-  server: ibsdsf.df6h451rh.xin
-  port: 443
-  udp: true
-  password: 2902c46c8493
-  client-fingerprint: chrome
-  sni: docs.microsoft.com
-  skip-cert-verify: true
-- name: NL-HTTP-13
-  type: http
-  server: 84.17.47.146
+  server: 84.17.47.149
   port: 9002
   udp: true
   tls: true
@@ -364,99 +138,6 @@ proxies:
 - name: RO-HTTP-01
   type: http
   server: 193.176.84.24
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NL-HTTP-14
-  type: http
-  server: 84.17.47.150
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NL-HTTP-15
-  type: http
-  server: 84.17.47.150
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: IT-SS-06
-  type: ss
-  server: 202.50.253.72
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: NL-HTTP-16
-  type: http
-  server: 84.17.47.146
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: IT-SS-07
-  type: ss
-  server: 202.50.253.18
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: NL-HTTP-17
-  type: http
-  server: 84.17.47.148
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  password: None
-- name: NL-HTTP-18
-  type: http
-  server: 84.17.47.149
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NL-HTTP-19
-  type: http
-  server: 84.17.47.125
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-ANYTLS-01
-  type: anytls
-  server: sdf65h46wr.df6h451rh.xin
-  port: 443
-  udp: true
-  password: 0324fbc29561
-  sni: images.ctfassets.net
-  skip-cert-verify: true
-- name: NL-HTTP-20
-  type: http
-  server: 84.17.47.148
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NL-HTTP-21
-  type: http
-  server: 84.17.47.146
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NL-HTTP-22
-  type: http
-  server: 84.17.47.150
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: RO-HTTP-02
-  type: http
-  server: 193.176.84.35
   port: 9002
   udp: true
   tls: true
@@ -470,9 +151,16 @@ proxies:
   skip-cert-verify: true
   username: 'null'
   password: 'null'
-- name: RO-HTTP-03
+- name: RO-HTTP-02
   type: http
   server: 193.176.84.35
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: NL-HTTP-09
+  type: http
+  server: 84.17.47.148
   port: 9002
   udp: true
   tls: true
@@ -486,72 +174,7 @@ proxies:
   skip-cert-verify: true
   username: 'null'
   password: 'null'
-- name: NL-HTTP-23
-  type: http
-  server: 84.17.47.125
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NL-HTTP-24
-  type: http
-  server: 84.17.47.148
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NL-HTTP-25
-  type: http
-  server: 84.17.47.148
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  password: None
-- name: RO-HTTP-04
-  type: http
-  server: 193.176.84.35
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: UN-SS-01
-  type: ss
-  server: 202.50.253.72
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: LV-HTTP-01
-  type: http
-  server: 109.248.147.66
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
 - name: US-HTTP-06
-  type: http
-  server: 149.50.212.206
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: RO-HTTP-05
-  type: http
-  server: 193.176.84.33
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NL-HTTP-26
-  type: http
-  server: 84.17.47.125
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  password: None
-- name: US-HTTP-07
   type: http
   server: 138.199.35.216
   port: 9002
@@ -560,23 +183,193 @@ proxies:
   skip-cert-verify: true
   username: 'null'
   password: 'null'
-- name: NL-HTTP-27
+- name: NL-HTTP-10
   type: http
-  server: 84.17.47.146
+  server: 84.17.47.148
   port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
-- name: NL-HTTP-28
+  password: None
+- name: IT-SS-01
+  type: ss
+  server: 202.50.253.36
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: NL-HTTP-11
   type: http
-  server: 84.17.47.146
+  server: 84.17.47.148
   port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
+  password: None
+- name: HK-ANYTLS-01
+  type: anytls
+  server: 5641sdds.df6h451rh.xin
+  port: 443
+  udp: true
+  password: 0324fbc29561
+  client-fingerprint: chrome
+  sni: images.ctfassets.net
+  skip-cert-verify: true
+- name: RO-HTTP-03
+  type: http
+  server: 193.176.84.24
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: NL-HTTP-12
+  type: http
+  server: 84.17.47.149
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: RO-HTTP-04
+  type: http
+  server: 193.176.84.33
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: NL-HTTP-13
+  type: http
+  server: 84.17.47.148
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: IT-SS-02
+  type: ss
+  server: 202.50.253.54
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: RO-HTTP-05
+  type: http
+  server: 193.176.84.34
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
+- name: NL-HTTP-14
+  type: http
+  server: 84.17.47.125
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
 - name: RO-HTTP-06
   type: http
+  server: 193.176.84.35
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: NL-HTTP-15
+  type: http
+  server: 84.17.47.125
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
+- name: RO-HTTP-07
+  type: http
+  server: 193.176.84.33
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: NL-HTTP-16
+  type: http
+  server: 84.17.47.148
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
+- name: IT-SS-03
+  type: ss
+  server: 202.50.253.90
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: US-HTTP-07
+  type: http
+  server: fan.365747.xyz
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: IT-SS-04
+  type: ss
+  server: 202.50.253.27
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: RO-HTTP-08
+  type: http
   server: 193.176.84.32
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: NL-HTTP-17
+  type: http
+  server: 84.17.47.150
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: NL-HTTP-18
+  type: http
+  server: 84.17.47.146
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: RO-HTTP-09
+  type: http
+  server: 193.176.84.35
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: NL-HTTP-19
+  type: http
+  server: 84.17.47.148
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: RO-HTTP-10
+  type: http
+  server: 193.176.84.35
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: NL-HTTP-20
+  type: http
+  server: 84.17.47.148
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
+- name: RO-HTTP-11
+  type: http
+  server: 193.176.84.24
   port: 9002
   udp: true
   tls: true
@@ -590,129 +383,10 @@ proxies:
   skip-cert-verify: true
   username: 'null'
   password: 'null'
-- name: UN-SS-02
-  type: ss
-  server: 202.50.253.63
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: UN-SS-03
-  type: ss
-  server: 202.50.253.90
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: RO-HTTP-07
+- name: NL-HTTP-21
   type: http
-  server: 193.176.84.24
+  server: 84.17.47.149
   port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: IT-SS-08
-  type: ss
-  server: 202.50.253.36
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: RO-HTTP-08
-  type: http
-  server: 193.176.84.24
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: ES-HTTP-01
-  type: http
-  server: 130.195.250.18
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: RO-HTTP-09
-  type: http
-  server: 193.176.84.35
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NL-HTTP-29
-  type: http
-  server: 84.17.47.125
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: IT-SS-09
-  type: ss
-  server: 202.50.253.81
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: RO-HTTP-10
-  type: http
-  server: 193.176.84.35
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: RO-HTTP-11
-  type: http
-  server: 193.176.84.35
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: RO-HTTP-12
-  type: http
-  server: 193.176.84.32
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: RO-HTTP-13
-  type: http
-  server: 193.176.84.32
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: GR-HTTP-01
-  type: http
-  server: 149.22.85.65
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: RO-HTTP-14
-  type: http
-  server: 193.176.84.24
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: IT-SS-10
-  type: ss
-  server: 202.50.253.90
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: RO-HTTP-15
-  type: http
-  server: 193.176.84.24
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SE-HTTP-01
-  type: http
-  server: 146.70.242.146
-  port: 443
   udp: true
   tls: true
   skip-cert-verify: true
@@ -723,57 +397,21 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: NL-HTTP-30
-  type: http
-  server: 84.17.47.125
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  password: None
-- name: NL-HTTP-31
-  type: http
-  server: 84.17.47.149
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NL-HTTP-32
-  type: http
-  server: 84.17.47.125
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: RO-HTTP-16
-  type: http
-  server: 193.176.84.24
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: RO-HTTP-17
-  type: http
-  server: 193.176.84.33
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: IT-SS-11
+- name: IT-SS-05
   type: ss
-  server: 202.50.253.54
+  server: 202.50.253.45
   port: 19999
   udp: true
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: NL-HTTP-33
+- name: NL-HTTP-22
   type: http
-  server: 84.17.47.149
+  server: 84.17.47.125
   port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
-- name: NL-HTTP-34
+- name: NL-HTTP-23
   type: http
   server: 84.17.47.125
   port: 9002
@@ -781,9 +419,9 @@ proxies:
   tls: true
   skip-cert-verify: true
   password: None
-- name: RO-HTTP-18
+- name: RO-HTTP-12
   type: http
-  server: 193.176.84.35
+  server: 193.176.84.33
   port: 9002
   udp: true
   tls: true
@@ -806,89 +444,47 @@ proxies:
   skip-cert-verify: true
   username: 'null'
   password: 'null'
-- name: SE-HTTP-02
+- name: US-HTTP-12
   type: http
-  server: 79.142.77.63
-  port: 443
+  server: 138.199.35.216
+  port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IE-HTTP-02
-  type: http
-  server: 149.88.96.1
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: IT-SS-12
-  type: ss
-  server: 202.50.253.99
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: RO-HTTP-19
+  username: 'null'
+  password: 'null'
+- name: RO-HTTP-13
   type: http
   server: 193.176.84.24
   port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
-- name: NL-HTTP-35
+- name: IT-SS-06
+  type: ss
+  server: 202.50.253.81
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: NL-HTTP-24
+  type: http
+  server: 84.17.47.146
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: NL-HTTP-25
   type: http
   server: 84.17.47.148
   port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
-  password: None
-- name: NL-HTTP-36
+- name: NL-HTTP-26
   type: http
-  server: 51.158.243.91
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: RS-HTTP-02
-  type: http
-  server: 146.70.221.18
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NL-HTTP-37
-  type: http
-  server: 84.17.47.125
+  server: 84.17.47.150
   port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  password: None
-- name: RO-HTTP-20
-  type: http
-  server: 193.176.84.33
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NL-HTTP-38
-  type: http
-  server: 84.17.47.148
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: RO-HTTP-21
-  type: http
-  server: 193.176.84.33
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-HTTP-12
-  type: http
-  server: fan.365747.xyz
-  port: 443
   udp: true
   tls: true
   skip-cert-verify: true
@@ -901,21 +497,78 @@ proxies:
   skip-cert-verify: true
   username: 'null'
   password: 'null'
-- name: NL-HTTP-39
+- name: IT-SS-07
+  type: ss
+  server: 202.50.253.18
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: NL-HTTP-27
   type: http
-  server: 84.17.47.148
+  server: 84.17.47.146
   port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
-- name: NL-HTTP-40
+- name: RO-HTTP-14
   type: http
-  server: 84.17.47.150
+  server: 193.176.84.32
   port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
-- name: NL-HTTP-41
+- name: IT-SS-08
+  type: ss
+  server: 202.50.253.81
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: IT-SS-09
+  type: ss
+  server: 202.50.253.99
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: PL-HTTP-01
+  type: http
+  server: 151.115.54.133
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: NL-HTTP-28
+  type: http
+  server: 84.17.47.125
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: IT-SS-10
+  type: ss
+  server: 202.50.253.27
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: IT-SS-11
+  type: ss
+  server: 202.50.253.90
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: NL-HTTP-29
+  type: http
+  server: 84.17.47.125
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
+- name: NL-HTTP-30
   type: http
   server: 84.17.47.148
   port: 9002
@@ -923,10 +576,232 @@ proxies:
   tls: true
   skip-cert-verify: true
   password: None
-- name: LV-HTTP-02
+- name: NL-HTTP-31
   type: http
-  server: 109.248.149.34
+  server: 84.17.47.148
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
+- name: NL-HTTP-32
+  type: http
+  server: 84.17.47.148
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: IT-SS-12
+  type: ss
+  server: 202.50.253.72
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: IT-SS-13
+  type: ss
+  server: 202.50.253.99
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: NL-HTTP-33
+  type: http
+  server: 51.158.243.91
   port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: NL-HTTP-34
+  type: http
+  server: 84.17.47.125
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: NL-HTTP-35
+  type: http
+  server: 84.17.47.148
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: NL-HTTP-36
+  type: http
+  server: 84.17.47.150
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: IT-SS-14
+  type: ss
+  server: 202.50.253.45
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: NL-HTTP-37
+  type: http
+  server: 84.17.47.150
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: IT-SS-15
+  type: ss
+  server: 202.50.253.18
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: IT-SS-16
+  type: ss
+  server: 202.50.253.54
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: NL-HTTP-38
+  type: http
+  server: 84.17.47.148
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: NL-HTTP-39
+  type: http
+  server: 84.17.47.148
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
+- name: NL-HTTP-40
+  type: http
+  server: 84.17.47.125
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: RO-HTTP-15
+  type: http
+  server: 193.176.84.32
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: NL-HTTP-41
+  type: http
+  server: 84.17.47.146
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: RO-HTTP-16
+  type: http
+  server: 193.176.84.32
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: RO-HTTP-17
+  type: http
+  server: 193.176.84.32
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: IT-SS-17
+  type: ss
+  server: 202.50.253.63
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: NL-HTTP-42
+  type: http
+  server: 84.17.47.148
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
+- name: NL-HTTP-43
+  type: http
+  server: 84.17.47.146
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: IT-SS-18
+  type: ss
+  server: 202.50.253.36
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: RO-HTTP-18
+  type: http
+  server: 193.176.84.33
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: US-ANYTLS-01
+  type: anytls
+  server: sdf65h46wr.df6h451rh.xin
+  port: 443
+  udp: true
+  password: 0324fbc29561
+  sni: images.ctfassets.net
+  skip-cert-verify: true
+- name: RO-HTTP-19
+  type: http
+  server: 193.176.84.24
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: NL-HTTP-44
+  type: http
+  server: 84.17.47.150
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: NL-HTTP-45
+  type: http
+  server: 84.17.47.148
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  password: None
+- name: RO-HTTP-20
+  type: http
+  server: 193.176.84.35
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: AU-SS-01
+  type: ss
+  server: 48.103.218.77
+  port: 18443
+  udp: true
+  cipher: aes-256-gcm
+  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
+- name: NL-HTTP-46
+  type: http
+  server: 84.17.47.125
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: RO-HTTP-21
+  type: http
+  server: 193.176.84.24
+  port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
@@ -937,26 +812,25 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-14
+- name: NL-HTTP-47
   type: http
-  server: 138.199.35.216
+  server: 84.17.47.148
   port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
-  username: 'null'
-  password: 'null'
+  password: None
+- name: IT-SS-19
+  type: ss
+  server: 202.50.253.72
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: RO-HTTP-23
   type: http
-  server: 193.176.84.33
+  server: 193.176.84.24
   port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: ES-HTTP-02
-  type: http
-  server: 82.102.17.178
-  port: 443
   udp: true
   tls: true
   skip-cert-verify: true
@@ -967,129 +841,32 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: NL-HTTP-42
+- name: RO-HTTP-25
+  type: http
+  server: 193.176.84.35
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: NL-HTTP-48
   type: http
   server: 84.17.47.125
   port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
-- name: RO-HTTP-25
-  type: http
-  server: 193.176.84.32
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
+  password: None
 - name: RO-HTTP-26
   type: http
-  server: 193.176.84.32
+  server: 193.176.84.33
   port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
 - name: RO-HTTP-27
   type: http
-  server: 193.176.84.24
+  server: 193.176.84.32
   port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: IT-SS-13
-  type: ss
-  server: 202.50.253.45
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: NL-HTTP-43
-  type: http
-  server: 84.17.47.125
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: GR-HTTP-02
-  type: http
-  server: 149.22.85.78
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: ES-HTTP-03
-  type: http
-  server: 130.195.250.34
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: UN-SS-04
-  type: ss
-  server: 202.50.253.27
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: NL-HTTP-44
-  type: http
-  server: 84.17.47.125
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: DE-HTTP-06
-  type: http
-  server: 185.44.107.166
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: GB-HTTP-03
-  type: http
-  server: 37.120.233.34
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NL-HTTP-45
-  type: http
-  server: 84.17.47.146
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-HTTP-15
-  type: http
-  server: 149.22.88.65
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: PL-HTTP-02
-  type: http
-  server: 151.115.54.133
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NL-HTTP-46
-  type: http
-  server: 84.17.47.148
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NL-HTTP-47
-  type: http
-  server: 84.17.47.125
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: UN-HTTP-01
-  type: http
-  server: 87.120.103.242
-  port: 443
   udp: true
   tls: true
   skip-cert-verify: true
@@ -1100,504 +877,52 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: NL-HTTP-48
-  type: http
-  server: 84.17.47.148
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: JP-HTTP-01
-  type: http
-  server: 37.120.210.66
+- name: SG-TROJAN-02
+  type: trojan
+  server: bgsg1.hikigo.com
   port: 443
   udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-HTTP-16
-  type: http
-  server: 167.88.60.242
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: VN-HTTP-01
-  type: http
-  server: 103.9.79.218
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: PL-HTTP-03
-  type: http
-  server: 37.120.156.34
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-HTTP-17
-  type: http
-  server: 167.88.60.226
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: BG-HTTP-01
-  type: http
-  server: 185.94.192.210
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NL-HTTP-49
-  type: http
-  server: 84.17.47.148
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NL-HTTP-50
-  type: http
-  server: 84.17.47.125
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-HTTP-18
-  type: http
-  server: 38.28.193.188
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: IT-SS-14
-  type: ss
-  server: 202.50.253.99
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: US-HTTP-19
-  type: http
-  server: 38.28.193.188
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NL-HTTP-51
-  type: http
-  server: 84.17.47.148
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: UN-HTTP-02
-  type: http
-  server: 87.120.103.226
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-HTTP-20
-  type: http
-  server: 104.244.210.242
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: UN-SS-05
-  type: ss
-  server: 202.50.253.54
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: NL-HTTP-52
-  type: http
-  server: 84.17.47.148
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  password: None
-- name: DK-HTTP-01
-  type: http
-  server: 185.245.84.50
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-HTTP-21
-  type: http
-  server: 149.40.56.130
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NL-HTTP-53
-  type: http
-  server: 84.17.47.125
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  password: None
-- name: GB-HTTP-04
-  type: http
-  server: 212.102.63.61
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: JP-HTTP-02
-  type: http
-  server: 37.120.210.146
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-HTTP-22
-  type: http
-  server: 12.221.146.147
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-HTTP-23
-  type: http
-  server: 38.28.193.188
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SE-HTTP-03
-  type: http
-  server: 146.70.242.130
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-HTTP-24
-  type: http
-  server: 198.54.133.235
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  sni: bgsg1.hikigo.com
 - name: RO-HTTP-29
   type: http
-  server: 193.176.84.32
+  server: 193.176.84.24
   port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
-- name: PH-HTTP-01
-  type: http
-  server: 129.227.103.90
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-HTTP-25
+- name: US-HTTP-14
   type: http
   server: 162.217.114.50
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
-- name: RO-HTTP-30
-  type: http
-  server: 193.176.84.33
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: RO-HTTP-31
-  type: http
-  server: 193.176.84.32
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-HTTP-26
-  type: http
-  server: 38.28.193.188
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-HTTP-27
-  type: http
-  server: 38.28.193.188
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-HTTP-28
-  type: http
-  server: 38.28.193.188
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: CA-HTTP-01
-  type: http
-  server: 206.223.183.21
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-HTTP-29
-  type: http
-  server: 38.28.193.188
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-HTTP-30
-  type: http
-  server: 38.28.193.188
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: GB-HTTP-05
-  type: http
-  server: 212.102.63.31
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-HTTP-31
-  type: http
-  server: 192.34.83.226
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: AU-HTTP-01
-  type: http
-  server: 103.1.213.210
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SE-HTTP-04
-  type: http
-  server: 149.50.216.65
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-HTTP-32
-  type: http
-  server: 149.88.21.129
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: HK-HTTP-01
-  type: http
-  server: 146.70.9.226
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: CA-HTTP-02
-  type: http
-  server: 206.223.183.16
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: RO-HTTP-32
-  type: http
-  server: 193.176.84.35
-  port: 9002
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  username: 'null'
-  password: 'null'
-- name: CA-HTTP-03
-  type: http
-  server: 206.223.161.47
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: AU-HTTP-02
-  type: http
-  server: 103.1.212.242
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-HTTP-33
+- name: US-HTTP-15
   type: http
   server: 162.244.227.36
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
-- name: GB-HTTP-06
-  type: http
-  server: 84.17.50.193
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
 - name: FR-HTTP-01
   type: http
-  server: 149.102.245.65
+  server: 141.94.16.4
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
-- name: AU-HTTP-03
+- name: RO-HTTP-30
   type: http
-  server: 103.62.50.130
-  port: 9443
+  server: 193.176.84.32
+  port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
-- name: US-HTTP-34
+- name: NL-HTTP-49
   type: http
-  server: 149.102.227.77
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: AU-HTTP-04
-  type: http
-  server: 103.137.14.34
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: CA-HTTP-04
-  type: http
-  server: 206.223.183.13
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: MX-HTTP-01
-  type: http
-  server: 149.88.22.46
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: UN-HTTP-03
-  type: http
-  server: 154.47.29.161
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: CZ-HTTP-02
-  type: http
-  server: 185.216.35.66
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: PT-HTTP-01
-  type: http
-  server: 149.22.86.1
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: AU-HTTP-05
-  type: http
-  server: 103.62.50.130
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: CH-HTTP-01
-  type: http
-  server: 31.7.62.50
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: GB-HTTP-07
-  type: http
-  server: 212.102.63.1
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NZ-HTTP-01
-  type: http
-  server: 116.90.75.226
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: GE-HTTP-01
-  type: http
-  server: 195.54.178.210
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: PH-HTTP-02
-  type: http
-  server: 128.1.209.254
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-HTTP-35
-  type: http
-  server: 149.88.21.140
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: MX-HTTP-02
-  type: http
-  server: 149.88.22.33
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-HTTP-36
-  type: http
-  server: 24.225.10.211
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: PT-HTTP-02
-  type: http
-  server: 149.22.86.14
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: AU-HTTP-06
-  type: http
-  server: 116.90.72.242
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-HTTP-37
-  type: http
-  server: 68.235.56.51
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: CZ-HTTP-03
-  type: http
-  server: 193.35.104.196
-  port: 443
+  server: 84.17.47.149
+  port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
@@ -1611,247 +936,23 @@ proxies:
   tls: true
   servername: szqbx-ru-77dc.my-fade.cloud
   client-fingerprint: qq
-- name: HK-HTTP-02
+- name: RO-HTTP-31
   type: http
-  server: 149.40.54.129
-  port: 443
+  server: 193.176.84.33
+  port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
-- name: SG-HTTP-01
+- name: RO-HTTP-32
   type: http
-  server: 103.107.198.226
-  port: 443
+  server: 193.176.84.35
+  port: 9002
   udp: true
   tls: true
   skip-cert-verify: true
-- name: SG-HTTP-02
+- name: US-HTTP-16
   type: http
-  server: 103.107.198.242
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-HTTP-38
-  type: http
-  server: 68.235.56.59
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: UN-HTTP-04
-  type: http
-  server: 38.165.231.71
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: HK-HTTP-03
-  type: http
-  server: 84.17.57.113
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: IN-HTTP-01
-  type: http
-  server: 103.26.207.94
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: CA-HTTP-05
-  type: http
-  server: 142.44.210.129
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: PE-HTTP-01
-  type: http
-  server: 95.173.223.78
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: BR-HTTP-01
-  type: http
-  server: 149.102.251.193
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: ID-HTTP-01
-  type: http
-  server: 103.87.68.146
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: AU-HTTP-07
-  type: http
-  server: 103.107.197.146
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: UN-HTTP-05
-  type: http
-  server: 138.186.142.202
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: HK-HTTP-04
-  type: http
-  server: 146.70.9.242
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: BR-HTTP-02
-  type: http
-  server: 149.102.251.206
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-03
-  type: http
-  server: 185.250.38.137
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: AU-HTTP-08
-  type: http
-  server: 103.77.232.74
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: AU-HTTP-09
-  type: http
-  server: 116.206.228.178
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-04
-  type: http
-  server: 156.146.56.110
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: ID-HTTP-02
-  type: http
-  server: 103.87.68.50
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-05
-  type: http
-  server: 154.26.138.157
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-06
-  type: http
-  server: 154.26.139.7
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-07
-  type: http
-  server: 82.102.25.210
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-08
-  type: http
-  server: 82.102.25.50
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: NZ-HTTP-02
-  type: http
-  server: 103.108.94.162
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: AR-HTTP-01
-  type: http
-  server: 190.103.176.146
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-09
-  type: http
-  server: 154.26.139.27
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-10
-  type: http
-  server: 154.26.138.186
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-11
-  type: http
-  server: 154.26.138.253
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-12
-  type: http
-  server: 154.26.138.244
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-13
-  type: http
-  server: 154.26.138.240
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: AU-HTTP-10
-  type: http
-  server: 103.108.95.226
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-14
-  type: http
-  server: 154.26.139.23
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-15
-  type: http
-  server: 154.26.138.166
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-16
-  type: http
-  server: 154.26.139.24
+  server: 38.28.193.188
   port: 443
   udp: true
   tls: true
@@ -1863,30 +964,357 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: SG-HTTP-17
+- name: US-HTTP-17
   type: http
-  server: 154.26.138.229
+  server: fan.365747.xyz
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
-- name: SG-HTTP-18
+- name: US-HTTP-18
   type: http
-  server: 185.250.38.135
+  server: 71.43.26.234
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
-- name: SG-HTTP-19
+- name: US-HTTP-19
+  type: http
+  server: 38.28.193.188
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: US-HTTP-20
+  type: http
+  server: 38.28.193.188
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-01
+  type: http
+  server: 185.250.38.137
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: US-HTTP-21
+  type: http
+  server: 38.28.193.188
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: NL-HTTP-50
+  type: http
+  server: 84.17.47.125
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: US-HTTP-22
+  type: http
+  server: 38.28.193.188
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: US-HTTP-23
+  type: http
+  server: 38.28.193.188
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: NL-HTTP-51
+  type: http
+  server: 84.17.47.146
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: CZ-HTTP-01
+  type: http
+  server: 193.35.104.196
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: US-HTTP-24
+  type: http
+  server: 38.28.193.188
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-VLESS-01
+  type: vless
+  server: 163.128.99.154
+  port: 443
+  udp: true
+  uuid: 3a1c6827-72a1-4d1c-9413-44109ff815f4
+  network: tcp
+  tls: true
+  servername: navi.bankrate.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
+    short-id: 2da72ce6
+- name: NL-HTTP-52
+  type: http
+  server: 84.17.47.146
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: US-HTTP-25
+  type: http
+  server: 24.225.10.211
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-VLESS-02
+  type: vless
+  server: 163.128.99.154
+  port: 443
+  udp: true
+  uuid: 3a1c6827-72a1-4d1c-9413-44109ff815f4
+  network: tcp
+  tls: true
+  servername: navi.bankrate.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
+    short-id: 2da72ce6
+- name: SG-HTTP-02
+  type: http
+  server: 154.26.139.29
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: JP-TROJAN-03
+  type: trojan
+  server: nu2rb.supertoolify.com
+  port: 443
+  udp: true
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  sni: nu2rb.supertoolify.com
+- name: NL-HTTP-53
+  type: http
+  server: 84.17.47.150
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-03
+  type: http
+  server: 154.26.139.24
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-04
+  type: http
+  server: 154.26.138.241
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-05
+  type: http
+  server: 154.26.138.240
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-06
+  type: http
+  server: 154.26.139.7
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: RO-HTTP-34
+  type: http
+  server: 193.176.84.35
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  username: 'null'
+  password: 'null'
+- name: SG-HTTP-07
+  type: http
+  server: 154.26.139.23
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: NL-VLESS-01
+  type: vless
+  server: 196.196.148.85
+  port: 443
+  udp: true
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  network: tcp
+  tls: true
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+    short-id: 361d0dd59c70516f
+- name: SG-HTTP-08
   type: http
   server: 194.233.73.140
   port: 443
   udp: true
   tls: true
   skip-cert-verify: true
-- name: ZA-HTTP-01
+- name: HK-TROJAN-01
+  type: trojan
+  server: nb1hk.hikigo.com
+  port: 443
+  udp: true
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  sni: nb1hk.hikigo.com
+- name: SG-HTTP-09
   type: http
-  server: 197.242.155.197
+  server: 154.26.138.78
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: DE-HTTP-01
+  type: http
+  server: 185.44.107.166
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: RO-HTTP-35
+  type: http
+  server: 193.176.84.32
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-10
+  type: http
+  server: 154.26.138.233
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: IT-HTTP-01
+  type: http
+  server: 109.116.41.154
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: IT-HTTP-02
+  type: http
+  server: 91.243.118.217
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-11
+  type: http
+  server: 154.26.138.244
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-12
+  type: http
+  server: 154.26.138.246
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-13
+  type: http
+  server: 154.26.138.229
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: NL-HTTP-54
+  type: http
+  server: 84.17.47.150
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-14
+  type: http
+  server: 154.26.139.27
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-15
+  type: http
+  server: 154.26.138.157
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: IT-SS-20
+  type: ss
+  server: 202.50.253.63
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: SG-HTTP-16
+  type: http
+  server: 154.26.138.186
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-17
+  type: http
+  server: 154.26.138.253
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: NL-HTTP-55
+  type: http
+  server: 84.17.47.150
+  port: 9002
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: SG-HTTP-18
+  type: http
+  server: 154.26.139.24
+  port: 443
+  udp: true
+  tls: true
+  skip-cert-verify: true
+- name: NL-VLESS-02
+  type: vless
+  server: 196.196.148.85
+  port: 443
+  udp: true
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  network: tcp
+  tls: true
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+    short-id: 361d0dd59c70516f
+- name: SG-HTTP-19
+  type: http
+  server: 154.26.138.248
   port: 443
   udp: true
   tls: true
@@ -1898,160 +1326,19 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: SG-HTTP-21
-  type: http
-  server: 154.26.138.241
+- name: NL-VLESS-03
+  type: vless
+  server: 196.196.148.85
   port: 443
   udp: true
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  network: tcp
   tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-22
-  type: http
-  server: 154.26.138.78
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: AU-HTTP-11
-  type: http
-  server: 103.77.234.210
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-23
-  type: http
-  server: 154.26.138.233
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: ZA-HTTP-02
-  type: http
-  server: 108.181.120.26
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-24
-  type: http
-  server: 154.26.138.216
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-25
-  type: http
-  server: 154.26.139.29
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: ZA-HTTP-03
-  type: http
-  server: 165.73.248.90
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-26
-  type: http
-  server: 154.26.138.239
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: ZA-HTTP-04
-  type: http
-  server: 197.242.155.133
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: IT-HTTP-03
-  type: http
-  server: 93.42.177.250
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-27
-  type: http
-  server: 154.26.138.236
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: ZA-HTTP-05
-  type: http
-  server: 197.242.159.23
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: IT-HTTP-04
-  type: http
-  server: 109.116.41.154
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-28
-  type: http
-  server: 154.26.139.14
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-29
-  type: http
-  server: 154.26.138.246
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-30
-  type: http
-  server: 154.26.138.156
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: IT-SS-15
-  type: ss
-  server: 202.50.253.63
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: US-HTTP-39
-  type: http
-  server: 71.43.26.234
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: AU-HTTP-12
-  type: http
-  server: 51.161.152.170
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: SG-HTTP-31
-  type: http
-  server: 154.26.138.248
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
-- name: US-HTTP-40
-  type: http
-  server: 20.42.108.114
-  port: 443
-  udp: true
-  tls: true
-  skip-cert-verify: true
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+    short-id: 361d0dd59c70516f
 - name: DE-ANYTLS-01
   type: anytls
   server: sdf65h46wr.df6h451rh.xin
@@ -2061,337 +1348,215 @@ proxies:
   client-fingerprint: chrome
   sni: images.ctfassets.net
   skip-cert-verify: true
-- name: VN-VLESS-01
-  type: vless
-  server: 38.60.230.151
+- name: SG-HTTP-21
+  type: http
+  server: 185.250.38.135
   port: 443
   udp: true
-  uuid: 3a1c6827-72a1-4d1c-9413-44109ff815f4
-  network: tcp
   tls: true
-  servername: navi.bankrate.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-- name: US-VLESS-01
-  type: vless
-  server: 196.245.52.187
+  skip-cert-verify: true
+- name: SG-HTTP-22
+  type: http
+  server: 154.26.138.239
   port: 443
   udp: true
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  network: tcp
   tls: true
-  servername: 04535dt.us8.h1clayd.click
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
-    short-id: ba2a3dce62b99092
-- name: NL-VLESS-01
-  type: vless
-  server: 13.141.51.2
+  skip-cert-verify: true
+- name: SG-HTTP-23
+  type: http
+  server: 154.26.138.216
   port: 443
   udp: true
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  network: tcp
   tls: true
-  servername: 04535dt.us8.h1clayd.click
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
-    short-id: ba2a3dce62b99092
+  skip-cert-verify: true
 proxy-groups:
 - name: auto
   type: select
   proxies:
   - UN-ANYTLS-01
-  - DE-VLESS-01
-  - DE-SS-01
-  - DE-VLESS-02
-  - AU-SS-01
-  - DE-HTTP-01
-  - BE-HTTP-01
+  - TW-ANYTLS-01
+  - TW-ANYTLS-02
+  - JP-TROJAN-01
+  - SG-TROJAN-01
+  - UN-ANYTLS-02
   - NL-HTTP-01
-  - HU-HTTP-01
-  - IT-HTTP-01
   - NL-HTTP-02
-  - AT-HTTP-01
-  - GB-HTTP-01
-  - SG-VLESS-01
   - NL-HTTP-03
-  - IT-SS-01
-  - SG-VLESS-02
+  - JP-TROJAN-02
   - NL-HTTP-04
-  - DE-HTTP-02
-  - BE-HTTP-02
   - NL-HTTP-05
-  - PL-HTTP-01
-  - US-HTTP-01
-  - DE-HTTP-03
-  - AT-HTTP-02
   - NL-HTTP-06
-  - IE-HTTP-01
-  - IT-SS-02
-  - IT-HTTP-02
-  - NL-HTTP-07
-  - NL-HTTP-08
+  - US-HTTP-01
   - US-HTTP-02
   - US-HTTP-03
-  - IT-SS-03
-  - IT-SS-04
-  - NL-HTTP-09
-  - CZ-HTTP-01
-  - NL-HTTP-10
-  - IT-SS-05
-  - RS-HTTP-01
-  - NL-HTTP-11
-  - DE-HTTP-04
-  - NL-HTTP-12
-  - DE-HTTP-05
-  - GB-HTTP-02
-  - UN-ANYTLS-02
-  - NL-HTTP-13
+  - NL-HTTP-07
+  - NL-HTTP-08
   - RO-HTTP-01
+  - US-HTTP-04
+  - RO-HTTP-02
+  - NL-HTTP-09
+  - US-HTTP-05
+  - US-HTTP-06
+  - NL-HTTP-10
+  - IT-SS-01
+  - NL-HTTP-11
+  - HK-ANYTLS-01
+  - RO-HTTP-03
+  - NL-HTTP-12
+  - RO-HTTP-04
+  - NL-HTTP-13
+  - IT-SS-02
+  - RO-HTTP-05
   - NL-HTTP-14
+  - RO-HTTP-06
   - NL-HTTP-15
-  - IT-SS-06
+  - RO-HTTP-07
   - NL-HTTP-16
-  - IT-SS-07
+  - IT-SS-03
+  - US-HTTP-07
+  - IT-SS-04
+  - RO-HTTP-08
   - NL-HTTP-17
   - NL-HTTP-18
+  - RO-HTTP-09
   - NL-HTTP-19
-  - US-ANYTLS-01
+  - RO-HTTP-10
   - NL-HTTP-20
+  - RO-HTTP-11
+  - US-HTTP-08
   - NL-HTTP-21
+  - US-HTTP-09
+  - IT-SS-05
   - NL-HTTP-22
-  - RO-HTTP-02
-  - US-HTTP-04
-  - RO-HTTP-03
-  - US-HTTP-05
   - NL-HTTP-23
+  - RO-HTTP-12
+  - US-HTTP-10
+  - US-HTTP-11
+  - US-HTTP-12
+  - RO-HTTP-13
+  - IT-SS-06
   - NL-HTTP-24
   - NL-HTTP-25
-  - RO-HTTP-04
-  - UN-SS-01
-  - LV-HTTP-01
-  - US-HTTP-06
-  - RO-HTTP-05
   - NL-HTTP-26
-  - US-HTTP-07
+  - US-HTTP-13
+  - IT-SS-07
   - NL-HTTP-27
-  - NL-HTTP-28
-  - RO-HTTP-06
-  - US-HTTP-08
-  - UN-SS-02
-  - UN-SS-03
-  - RO-HTTP-07
-  - IT-SS-08
-  - RO-HTTP-08
-  - ES-HTTP-01
-  - RO-HTTP-09
-  - NL-HTTP-29
-  - IT-SS-09
-  - RO-HTTP-10
-  - RO-HTTP-11
-  - RO-HTTP-12
-  - RO-HTTP-13
-  - GR-HTTP-01
   - RO-HTTP-14
+  - IT-SS-08
+  - IT-SS-09
+  - PL-HTTP-01
+  - NL-HTTP-28
   - IT-SS-10
-  - RO-HTTP-15
-  - SE-HTTP-01
-  - US-HTTP-09
+  - IT-SS-11
+  - NL-HTTP-29
   - NL-HTTP-30
   - NL-HTTP-31
   - NL-HTTP-32
-  - RO-HTTP-16
-  - RO-HTTP-17
-  - IT-SS-11
+  - IT-SS-12
+  - IT-SS-13
   - NL-HTTP-33
   - NL-HTTP-34
-  - RO-HTTP-18
-  - US-HTTP-10
-  - US-HTTP-11
-  - SE-HTTP-02
-  - IE-HTTP-02
-  - IT-SS-12
-  - RO-HTTP-19
   - NL-HTTP-35
   - NL-HTTP-36
-  - RS-HTTP-02
+  - IT-SS-14
   - NL-HTTP-37
-  - RO-HTTP-20
+  - IT-SS-15
+  - IT-SS-16
   - NL-HTTP-38
-  - RO-HTTP-21
-  - US-HTTP-12
-  - US-HTTP-13
   - NL-HTTP-39
   - NL-HTTP-40
+  - RO-HTTP-15
   - NL-HTTP-41
-  - LV-HTTP-02
-  - RO-HTTP-22
-  - US-HTTP-14
-  - RO-HTTP-23
-  - ES-HTTP-02
-  - RO-HTTP-24
+  - RO-HTTP-16
+  - RO-HTTP-17
+  - IT-SS-17
   - NL-HTTP-42
+  - NL-HTTP-43
+  - IT-SS-18
+  - RO-HTTP-18
+  - US-ANYTLS-01
+  - RO-HTTP-19
+  - NL-HTTP-44
+  - NL-HTTP-45
+  - RO-HTTP-20
+  - AU-SS-01
+  - NL-HTTP-46
+  - RO-HTTP-21
+  - RO-HTTP-22
+  - NL-HTTP-47
+  - IT-SS-19
+  - RO-HTTP-23
+  - RO-HTTP-24
   - RO-HTTP-25
+  - NL-HTTP-48
   - RO-HTTP-26
   - RO-HTTP-27
-  - IT-SS-13
-  - NL-HTTP-43
-  - GR-HTTP-02
-  - ES-HTTP-03
-  - UN-SS-04
-  - NL-HTTP-44
-  - DE-HTTP-06
-  - GB-HTTP-03
-  - NL-HTTP-45
-  - US-HTTP-15
-  - PL-HTTP-02
-  - NL-HTTP-46
-  - NL-HTTP-47
-  - UN-HTTP-01
   - RO-HTTP-28
-  - NL-HTTP-48
-  - JP-HTTP-01
-  - US-HTTP-16
-  - VN-HTTP-01
-  - PL-HTTP-03
-  - US-HTTP-17
-  - BG-HTTP-01
+  - SG-TROJAN-02
+  - RO-HTTP-29
+  - US-HTTP-14
+  - US-HTTP-15
+  - FR-HTTP-01
+  - RO-HTTP-30
   - NL-HTTP-49
-  - NL-HTTP-50
+  - MY-VLESS-01
+  - RO-HTTP-31
+  - RO-HTTP-32
+  - US-HTTP-16
+  - RO-HTTP-33
+  - US-HTTP-17
   - US-HTTP-18
-  - IT-SS-14
   - US-HTTP-19
-  - NL-HTTP-51
-  - UN-HTTP-02
   - US-HTTP-20
-  - UN-SS-05
-  - NL-HTTP-52
-  - DK-HTTP-01
+  - SG-HTTP-01
   - US-HTTP-21
-  - NL-HTTP-53
-  - GB-HTTP-04
-  - JP-HTTP-02
+  - NL-HTTP-50
   - US-HTTP-22
   - US-HTTP-23
-  - SE-HTTP-03
+  - NL-HTTP-51
+  - CZ-HTTP-01
   - US-HTTP-24
-  - RO-HTTP-29
-  - PH-HTTP-01
+  - SG-VLESS-01
+  - NL-HTTP-52
   - US-HTTP-25
-  - RO-HTTP-30
-  - RO-HTTP-31
-  - US-HTTP-26
-  - US-HTTP-27
-  - US-HTTP-28
-  - CA-HTTP-01
-  - US-HTTP-29
-  - US-HTTP-30
-  - GB-HTTP-05
-  - US-HTTP-31
-  - AU-HTTP-01
-  - SE-HTTP-04
-  - US-HTTP-32
-  - HK-HTTP-01
-  - CA-HTTP-02
-  - RO-HTTP-32
-  - CA-HTTP-03
-  - AU-HTTP-02
-  - US-HTTP-33
-  - GB-HTTP-06
-  - FR-HTTP-01
-  - AU-HTTP-03
-  - US-HTTP-34
-  - AU-HTTP-04
-  - CA-HTTP-04
-  - MX-HTTP-01
-  - UN-HTTP-03
-  - CZ-HTTP-02
-  - PT-HTTP-01
-  - AU-HTTP-05
-  - CH-HTTP-01
-  - GB-HTTP-07
-  - NZ-HTTP-01
-  - GE-HTTP-01
-  - PH-HTTP-02
-  - US-HTTP-35
-  - MX-HTTP-02
-  - US-HTTP-36
-  - PT-HTTP-02
-  - AU-HTTP-06
-  - US-HTTP-37
-  - CZ-HTTP-03
-  - MY-VLESS-01
-  - HK-HTTP-02
-  - SG-HTTP-01
+  - SG-VLESS-02
   - SG-HTTP-02
-  - US-HTTP-38
-  - UN-HTTP-04
-  - HK-HTTP-03
-  - IN-HTTP-01
-  - CA-HTTP-05
-  - PE-HTTP-01
-  - BR-HTTP-01
-  - ID-HTTP-01
-  - AU-HTTP-07
-  - UN-HTTP-05
-  - HK-HTTP-04
-  - BR-HTTP-02
+  - JP-TROJAN-03
+  - NL-HTTP-53
   - SG-HTTP-03
-  - AU-HTTP-08
-  - AU-HTTP-09
   - SG-HTTP-04
-  - ID-HTTP-02
   - SG-HTTP-05
   - SG-HTTP-06
+  - RO-HTTP-34
   - SG-HTTP-07
+  - NL-VLESS-01
   - SG-HTTP-08
-  - NZ-HTTP-02
-  - AR-HTTP-01
+  - HK-TROJAN-01
   - SG-HTTP-09
+  - DE-HTTP-01
+  - RO-HTTP-35
   - SG-HTTP-10
+  - IT-HTTP-01
+  - IT-HTTP-02
   - SG-HTTP-11
   - SG-HTTP-12
   - SG-HTTP-13
-  - AU-HTTP-10
+  - NL-HTTP-54
   - SG-HTTP-14
   - SG-HTTP-15
+  - IT-SS-20
   - SG-HTTP-16
-  - RO-HTTP-33
   - SG-HTTP-17
+  - NL-HTTP-55
   - SG-HTTP-18
+  - NL-VLESS-02
   - SG-HTTP-19
-  - ZA-HTTP-01
   - SG-HTTP-20
+  - NL-VLESS-03
+  - DE-ANYTLS-01
   - SG-HTTP-21
   - SG-HTTP-22
-  - AU-HTTP-11
   - SG-HTTP-23
-  - ZA-HTTP-02
-  - SG-HTTP-24
-  - SG-HTTP-25
-  - ZA-HTTP-03
-  - SG-HTTP-26
-  - ZA-HTTP-04
-  - IT-HTTP-03
-  - SG-HTTP-27
-  - ZA-HTTP-05
-  - IT-HTTP-04
-  - SG-HTTP-28
-  - SG-HTTP-29
-  - SG-HTTP-30
-  - IT-SS-15
-  - US-HTTP-39
-  - AU-HTTP-12
-  - SG-HTTP-31
-  - US-HTTP-40
-  - DE-ANYTLS-01
-  - VN-VLESS-01
-  - US-VLESS-01
-  - NL-VLESS-01
 rules:
 - DOMAIN-SUFFIX,cn,DIRECT
 - GEOIP,CN,DIRECT

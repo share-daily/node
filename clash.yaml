@@ -2588,7 +2588,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-07
+- name: UN-SS-01
   type: ss
   server: 202.50.253.72
   port: 19999
@@ -2980,7 +2980,7 @@ proxy-groups:
   - HK-HTTP-02
   - NL-HTTP-62
   - SG-HTTP-27
-  - IT-SS-07
+  - UN-SS-01
   - NL-HTTP-63
   - US-HTTP-31
   - US-HTTP-32

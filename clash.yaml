@@ -603,14 +603,14 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-04
+- name: UN-SS-01
   type: ss
   server: 202.50.253.72
   port: 19999
   udp: true
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: IT-SS-05
+- name: IT-SS-04
   type: ss
   server: 202.50.253.18
   port: 19999
@@ -857,7 +857,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-06
+- name: IT-SS-05
   type: ss
   server: 202.50.253.90
   port: 19999
@@ -922,7 +922,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-07
+- name: UN-SS-02
   type: ss
   server: 202.50.253.63
   port: 19999
@@ -936,7 +936,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-08
+- name: IT-SS-06
   type: ss
   server: 202.50.253.45
   port: 19999
@@ -1030,7 +1030,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-09
+- name: IT-SS-07
   type: ss
   server: 202.50.253.72
   port: 19999
@@ -1066,6 +1066,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: UN-SS-03
+  type: ss
+  server: 202.50.253.54
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: RO-HTTP-37
   type: http
   server: 193.176.84.35
@@ -1073,13 +1080,6 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-10
-  type: ss
-  server: 202.50.253.54
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: RO-HTTP-38
   type: http
   server: 193.176.84.32
@@ -1203,7 +1203,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-11
+- name: IT-SS-08
   type: ss
   server: 202.50.253.63
   port: 19999
@@ -1273,7 +1273,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-12
+- name: IT-SS-09
   type: ss
   server: 202.50.253.54
   port: 19999
@@ -1597,7 +1597,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-13
+- name: IT-SS-10
   type: ss
   server: 202.50.253.27
   port: 19999
@@ -1660,21 +1660,21 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-14
+- name: UN-SS-04
   type: ss
   server: 202.50.253.90
   port: 19999
   udp: true
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: IT-SS-15
+- name: UN-SS-05
   type: ss
   server: 202.50.253.27
   port: 19999
   udp: true
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: IT-SS-16
+- name: IT-SS-11
   type: ss
   server: 202.50.253.81
   port: 19999
@@ -1766,8 +1766,8 @@ proxy-groups:
   - RO-HTTP-19
   - RO-HTTP-20
   - NL-HTTP-29
+  - UN-SS-01
   - IT-SS-04
-  - IT-SS-05
   - NL-HTTP-30
   - RO-HTTP-21
   - NL-HTTP-31
@@ -1801,7 +1801,7 @@ proxy-groups:
   - GR-HTTP-01
   - HU-HTTP-01
   - US-HTTP-17
-  - IT-SS-06
+  - IT-SS-05
   - NL-HTTP-45
   - NL-HTTP-46
   - NL-HTTP-47
@@ -1810,9 +1810,9 @@ proxy-groups:
   - NL-HTTP-49
   - RO-HTTP-29
   - NL-HTTP-50
-  - IT-SS-07
+  - UN-SS-02
   - US-HTTP-18
-  - IT-SS-08
+  - IT-SS-06
   - RO-HTTP-30
   - US-HTTP-19
   - IT-HTTP-01
@@ -1825,13 +1825,13 @@ proxy-groups:
   - US-HTTP-21
   - RO-HTTP-34
   - GB-HTTP-01
-  - IT-SS-09
+  - IT-SS-07
   - RO-HTTP-35
   - NL-HTTP-52
   - NL-HTTP-53
   - RO-HTTP-36
+  - UN-SS-03
   - RO-HTTP-37
-  - IT-SS-10
   - RO-HTTP-38
   - RO-HTTP-39
   - RO-HTTP-40
@@ -1849,7 +1849,7 @@ proxy-groups:
   - MY-VLESS-01
   - US-HTTP-24
   - CA-HTTP-05
-  - IT-SS-11
+  - IT-SS-08
   - AU-HTTP-01
   - DE-HTTP-05
   - GB-HTTP-03
@@ -1859,7 +1859,7 @@ proxy-groups:
   - GE-HTTP-01
   - CA-HTTP-06
   - RO-HTTP-45
-  - IT-SS-12
+  - IT-SS-09
   - UN-HTTP-02
   - US-HTTP-27
   - RO-HTTP-46
@@ -1904,7 +1904,7 @@ proxy-groups:
   - SG-HTTP-20
   - SG-HTTP-21
   - SG-HTTP-22
-  - IT-SS-13
+  - IT-SS-10
   - SG-HTTP-23
   - SG-HTTP-24
   - IT-HTTP-04
@@ -1913,9 +1913,9 @@ proxy-groups:
   - SG-HTTP-26
   - SG-HTTP-27
   - SG-HTTP-28
-  - IT-SS-14
-  - IT-SS-15
-  - IT-SS-16
+  - UN-SS-04
+  - UN-SS-05
+  - IT-SS-11
 rules:
 - DOMAIN-SUFFIX,cn,DIRECT
 - GEOIP,CN,DIRECT

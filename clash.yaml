@@ -111,7 +111,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-01
+- name: UN-SS-01
   type: ss
   server: 202.50.253.63
   port: 19999
@@ -228,7 +228,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-02
+- name: IT-SS-01
   type: ss
   server: 202.50.253.81
   port: 19999
@@ -449,6 +449,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
+- name: UN-SS-02
+  type: ss
+  server: 202.50.253.54
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: NL-HTTP-23
   type: http
   server: 84.17.47.149
@@ -456,13 +463,6 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-03
-  type: ss
-  server: 202.50.253.54
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: US-HTTP-13
   type: http
   server: 138.199.35.216
@@ -548,7 +548,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   password: None
-- name: IT-SS-04
+- name: IT-SS-02
   type: ss
   server: 202.50.253.54
   port: 19999
@@ -628,7 +628,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-05
+- name: IT-SS-03
   type: ss
   server: 202.50.253.18
   port: 19999
@@ -642,7 +642,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-06
+- name: IT-SS-04
   type: ss
   server: 202.50.253.81
   port: 19999
@@ -670,7 +670,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-07
+- name: IT-SS-05
   type: ss
   server: 202.50.253.45
   port: 19999
@@ -752,7 +752,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: ES-SS-01
+- name: UN-SS-03
   type: ss
   server: 202.50.253.72
   port: 19999
@@ -809,7 +809,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   password: None
-- name: IT-SS-08
+- name: IT-SS-06
   type: ss
   server: 202.50.253.18
   port: 19999
@@ -832,6 +832,13 @@ proxies:
   skip-cert-verify: true
   username: 'null'
   password: 'null'
+- name: UN-SS-04
+  type: ss
+  server: 202.50.253.90
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: RO-HTTP-32
   type: http
   server: 193.176.84.33
@@ -846,13 +853,6 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-09
-  type: ss
-  server: 202.50.253.90
-  port: 19999
-  udp: true
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: RO-HTTP-33
   type: http
   server: 193.176.84.27
@@ -1032,7 +1032,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-10
+- name: IT-SS-07
   type: ss
   server: 202.50.253.99
   port: 19999
@@ -1091,7 +1091,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-11
+- name: IT-SS-08
   type: ss
   server: 202.50.253.36
   port: 19999
@@ -1496,7 +1496,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-12
+- name: UN-SS-05
   type: ss
   server: 202.50.253.27
   port: 19999
@@ -1650,7 +1650,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-13
+- name: IT-SS-09
   type: ss
   server: 202.50.253.99
   port: 19999
@@ -1672,7 +1672,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-- name: IT-SS-14
+- name: IT-SS-10
   type: ss
   server: 202.50.253.36
   port: 19999
@@ -1746,7 +1746,7 @@ proxies:
   reality-opts:
     public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
     short-id: 361d0dd59c70516f
-- name: IT-SS-15
+- name: IT-SS-11
   type: ss
   server: 202.50.253.63
   port: 19999
@@ -1771,7 +1771,7 @@ proxy-groups:
   - NL-HTTP-04
   - UN-ANYTLS-02
   - NL-HTTP-05
-  - IT-SS-01
+  - UN-SS-01
   - RO-HTTP-01
   - NL-HTTP-06
   - NL-HTTP-07
@@ -1786,7 +1786,7 @@ proxy-groups:
   - NL-HTTP-10
   - NL-HTTP-11
   - RO-HTTP-03
-  - IT-SS-02
+  - IT-SS-01
   - NL-HTTP-12
   - NL-HTTP-13
   - NL-HTTP-14
@@ -1816,8 +1816,8 @@ proxy-groups:
   - NL-HTTP-22
   - US-HTTP-12
   - RO-HTTP-15
+  - UN-SS-02
   - NL-HTTP-23
-  - IT-SS-03
   - US-HTTP-13
   - RO-HTTP-16
   - NL-HTTP-24
@@ -1829,7 +1829,7 @@ proxy-groups:
   - NL-HTTP-26
   - NL-HTTP-27
   - NL-HTTP-28
-  - IT-SS-04
+  - IT-SS-02
   - US-HTTP-16
   - RO-HTTP-19
   - RO-HTTP-20
@@ -1839,13 +1839,13 @@ proxy-groups:
   - DE-HTTP-03
   - NL-HTTP-30
   - NL-HTTP-31
-  - IT-SS-05
+  - IT-SS-03
   - NL-HTTP-32
-  - IT-SS-06
+  - IT-SS-04
   - NL-HTTP-33
   - NL-HTTP-34
   - NL-HTTP-35
-  - IT-SS-07
+  - IT-SS-05
   - NL-HTTP-36
   - NL-HTTP-37
   - RO-HTTP-21
@@ -1856,7 +1856,7 @@ proxy-groups:
   - RO-HTTP-25
   - NL-HTTP-39
   - NL-HTTP-40
-  - ES-SS-01
+  - UN-SS-03
   - RO-HTTP-26
   - RO-HTTP-27
   - RO-HTTP-28
@@ -1864,12 +1864,12 @@ proxy-groups:
   - RO-HTTP-30
   - RO-HTTP-31
   - NL-HTTP-41
-  - IT-SS-08
+  - IT-SS-06
   - NL-HTTP-42
   - NL-HTTP-43
+  - UN-SS-04
   - RO-HTTP-32
   - NL-HTTP-44
-  - IT-SS-09
   - RO-HTTP-33
   - NL-HTTP-45
   - NL-HTTP-46
@@ -1895,7 +1895,7 @@ proxy-groups:
   - NL-HTTP-54
   - US-HTTP-23
   - NL-HTTP-55
-  - IT-SS-10
+  - IT-SS-07
   - NL-HTTP-56
   - RO-HTTP-40
   - NL-HTTP-57
@@ -1903,7 +1903,7 @@ proxy-groups:
   - RO-HTTP-42
   - NL-HTTP-58
   - IT-HTTP-01
-  - IT-SS-11
+  - IT-SS-08
   - US-HTTP-24
   - US-HTTP-25
   - NL-HTTP-59
@@ -1957,7 +1957,7 @@ proxy-groups:
   - RO-HTTP-69
   - DE-ANYTLS-01
   - SG-HTTP-06
-  - IT-SS-12
+  - UN-SS-05
   - SG-HTTP-07
   - RO-HTTP-70
   - FR-HTTP-02
@@ -1979,10 +1979,10 @@ proxy-groups:
   - SG-HTTP-22
   - SG-HTTP-23
   - SG-HTTP-24
-  - IT-SS-13
+  - IT-SS-09
   - KR-HTTP-01
   - IT-HTTP-02
-  - IT-SS-14
+  - IT-SS-10
   - SG-HTTP-25
   - SG-HTTP-26
   - SG-HTTP-27
@@ -1990,7 +1990,7 @@ proxy-groups:
   - NL-VLESS-01
   - HK-VLESS-01
   - UN-VLESS-01
-  - IT-SS-15
+  - IT-SS-11
 rules:
 - DOMAIN-SUFFIX,cn,DIRECT
 - GEOIP,CN,DIRECT
